@@ -66,6 +66,15 @@ document.addEventListener('DOMContentLoaded', function() {
     }, 5000);
   }
 
+  // Add magic cursor effect
+  document.addEventListener("mousemove", (e) => {
+    const magicCursor = document.querySelector(".magic-cursor");
+    if (magicCursor) {
+      magicCursor.style.left = e.clientX + "px";
+      magicCursor.style.top = e.clientY + "px";
+    }
+  });
+
   // Modified stack click handler to check if click is on favorite button
   document
     .querySelector("ul.card-stacks")

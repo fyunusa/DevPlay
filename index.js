@@ -5,6 +5,24 @@ document.addEventListener("DOMContentLoaded", function () {
   // Add floating bubbles to the background
   createFloatingBubbles();
 
+  // Ensure social links work
+  document.querySelectorAll(".social-link").forEach((link) => {
+    link.addEventListener("click", function (e) {
+      const href = this.getAttribute("href");
+      window.open(href, "_blank");
+      e.preventDefault(); // Prevent default link behavior
+    });
+  });
+
+  // Add magic cursor effect
+  document.addEventListener("mousemove", (e) => {
+    const magicCursor = document.querySelector(".magic-cursor");
+    if (magicCursor) {
+      magicCursor.style.left = e.clientX + "px";
+      magicCursor.style.top = e.clientY + "px";
+    }
+  });
+
   // Toggle between All Modules and Favorites
   const allModulesTab = document.getElementById("all-modules-tab");
   const favoritesTab = document.getElementById("favorites-tab");

@@ -164,6 +164,26 @@ body{
   }
 }
 
+.magic-cursor {
+    width: 30px;
+    height: 30px;
+    border: 2px solid var(--primary);
+    border-radius: 50%;
+    position: fixed;
+    pointer-events: none;
+    mix-blend-mode: difference;
+    transform: translate(-50%, -50%);
+    transition: width 0.3s, height 0.3s;
+    z-index: 9999;
+    display: none;
+}
+
+@media (min-width: 992px) {
+    .magic-cursor {
+        display: block;
+    }
+}
+
 .fun-divider {
   position: relative;
   bottom: 0;
