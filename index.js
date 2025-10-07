@@ -1,4 +1,10 @@
 document.addEventListener("DOMContentLoaded", function () {
+  // Add confetti effect when page loads
+  createConfetti();
+
+  // Add floating bubbles to the background
+  createFloatingBubbles();
+
   // Toggle between All Modules and Favorites
   const allModulesTab = document.getElementById("all-modules-tab");
   const favoritesTab = document.getElementById("favorites-tab");
@@ -7,6 +13,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Load favorites from localStorage
   let favorites = JSON.parse(localStorage.getItem("devplayFavorites")) || [];
+
+  // Add bounce effect to page header
+  const header = document.querySelector(".header-container h1");
+  if (header) {
+    header.classList.add("bounce-animation");
+  }
 
   // Initialize favorite buttons
   const favoriteButtons = document.querySelectorAll(".favorite-btn");
@@ -178,4 +190,125 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   });
+
+  // Add hover effect to module cards
+  const moduleCards = document.querySelectorAll(".module-card");
+  moduleCards.forEach((card) => {
+    card.addEventListener("mouseenter", () => {
+      card.classList.add("wobble");
+      setTimeout(() => {
+        card.classList.remove("wobble");
+      }, 1000);
+    });
+
+    // Add click animation for the card buttons
+    const cardBtn = card.querySelector(".module-btn");
+    if (cardBtn) {
+      cardBtn.addEventListener("click", (e) => {
+        createClickRipple(e);
+      });
+    }
+  });
 });
+
+// Create confetti effect
+function createConfetti() {
+  const confettiCount = 100;
+  const container = document.createElement("div");
+  container.className = "confetti-container";
+  document.body.appendChild(container);
+
+  for (let i = 0; i < confettiCount; i++) {
+    const confetti = document.createElement("div");
+    confetti.className = "confetti";
+
+    // Random colors
+    const colors = [
+      "#f94144",
+      "#f3722c",
+      "#f8961e",
+      "#f9c74f",
+      "#90be6d",
+      "#43aa8b",
+      "#577590",
+    ];
+    confetti.style.backgroundColor =
+      colors[Math.floor(Math.random() * colors.length)];
+
+    // Random size
+    const size = Math.random() * 10 + 5;
+    confetti.style.width = `${size}px`;
+    confetti.style.height = `${size}px`;
+
+    // Random position
+    confetti.style.left = `${Math.random() * 100}vw`;
+
+    // Random rotation and animation duration
+    const animDuration = Math.random() * 3 + 2;
+    confetti.style.animationDuration = `${animDuration}s`;
+    confetti.style.transform = `rotate(${Math.random() * 360}deg)`;
+
+    container.appendChild(confetti);
+
+    // Remove confetti after animation
+    setTimeout(() => {
+      confetti.remove();
+    }, animDuration * 1000);
+  }
+
+  // Clean up container after all confetti are gone
+  setTimeout(() => {
+    container.remove();
+  }, 5000);
+}
+
+// Create floating bubbles background
+function createFloatingBubbles() {
+  const bubbleCount = 15;
+  const container = document.createElement("div");
+  container.className = "bubbles-container";
+  document.body.appendChild(container);
+
+  for (let i = 0; i < bubbleCount; i++) {
+    const bubble = document.createElement("div");
+    bubble.className = "floating-bubble";
+
+    // Random size
+    const size = Math.random() * 100 + 50;
+    bubble.style.width = `${size}px`;
+    bubble.style.height = `${size}px`;
+
+    // Random position
+    bubble.style.left = `${Math.random() * 100}vw`;
+    bubble.style.top = `${Math.random() * 100}vh`;
+
+    // Random opacity
+    bubble.style.opacity = Math.random() * 0.3;
+
+    // Random animation duration
+    bubble.style.animationDuration = `${Math.random() * 10 + 10}s`;
+
+    container.appendChild(bubble);
+  }
+}
+
+// Add ripple effect to buttons when clicked
+function createClickRipple(event) {
+  const button = event.currentTarget;
+
+  const ripple = document.createElement("span");
+  ripple.className = "ripple";
+
+  const rect = button.getBoundingClientRect();
+  const size = Math.max(rect.width, rect.height);
+
+  ripple.style.width = ripple.style.height = `${size}px`;
+  ripple.style.left = `${event.clientX - rect.left - size / 2}px`;
+  ripple.style.top = `${event.clientY - rect.top - size / 2}px`;
+
+  button.appendChild(ripple);
+
+  setTimeout(() => {
+    ripple.remove();
+  }, 600);
+}

@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -15,30 +16,67 @@
     <body>
         <div class="header">
             <a href="/index.html" class="back-link" title="Back to DevPlay Hub">
-                <i class="fas fa-home"></i>
+                <i class="fas fa-home bounce-icon"></i>
             </a>
-            <h1>Code Giggles</h1>
+            <div class="header-content">
+                <h1><i class="fas fa-laugh-beam me-2"></i>Code Giggles<i class="fas fa-code ms-2"></i></h1>
+                <p class="header-tagline">Where developers come to laugh!</p>
+            </div>
+            <div class="emoji-float">
+                <span class="floating-emoji">😂</span>
+                <span class="floating-emoji">🤣</span>
+                <span class="floating-emoji">😆</span>
+            </div>
+        </div>
+        <div class="fun-divider">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"></path>
+            </svg>
+        </div>
+        <div class="category-title">
+            <h2>Pick a category:</h2>
         </div>
         <div class="btn-container my-3">
-            <button id="random-btn" class="btn btn-primary mx-2 my-2">Random</button>
-            <button id="hr-btn" class="btn btn-danger mx-2 my-2">HR</button>
-            <button id="pm-btn" class="btn btn-success mx-2 my-2">PM</button>
-            <button id="frontend-btn" class="btn btn-secondary mx-2 my-2">Frontend</button>
-            <button id="methods-btn" class="btn btn-success mx-2 my-2">Methods</button>
-            <button id="functions-btn" class="btn btn-danger mx-2 my-2">Functions</button>
-            <button id="aws-btn" class="btn btn-warning mx-2 my-2">AWS</button>
-            <button id="azure-btn" class="btn btn-primary mx-2 my-2">Azure</button>
-            <button id="google-btn" class="btn btn-success mx-2 my-2">Google</button>
-            <button id="digital-ocean-btn" class="btn btn-info mx-2 my-2">Digital Ocean</button>
+            <button id="random-btn" class="fun-btn mx-2 my-2"><i class="fas fa-dice me-2"></i>Random</button>
+            <button id="hr-btn" class="fun-btn red mx-2 my-2"><i class="fas fa-users me-2"></i>HR</button>
+            <button id="pm-btn" class="fun-btn green mx-2 my-2"><i class="fas fa-tasks me-2"></i>PM</button>
+            <button id="frontend-btn" class="fun-btn purple mx-2 my-2"><i class="fas fa-laptop-code me-2"></i>Frontend</button>
+            <button id="methods-btn" class="fun-btn green mx-2 my-2"><i class="fas fa-cogs me-2"></i>Methods</button>
+            <button id="functions-btn" class="fun-btn red mx-2 my-2"><i class="fas fa-function me-2"></i>Functions</button>
+            <button id="aws-btn" class="fun-btn orange mx-2 my-2"><i class="fab fa-aws me-2"></i>AWS</button>
+            <button id="azure-btn" class="fun-btn blue mx-2 my-2"><i class="fab fa-microsoft me-2"></i>Azure</button>
+            <button id="google-btn" class="fun-btn green mx-2 my-2"><i class="fab fa-google me-2"></i>Google</button>
+            <button id="digital-ocean-btn" class="fun-btn cyan mx-2 my-2"><i class="fas fa-water me-2"></i>Digital Ocean</button>
         </div>
         <div id="giggles-container" class="container d-flex align-items-center justify-content-center flex-wrap">
-            <ul class="card-stacks justify-content-center flex-wrap">
-                <li class="stack stack-1"></li>
-                <li class="stack stack-2"></li>
-                <li class="stack stack-3"></li>
-                <li class="stack stack-4"></li>
-            </ul>
+            <div class="giggles-wrapper">
+                <ul class="card-stacks justify-content-center flex-wrap">
+                    <li class="stack stack-1"></li>
+                    <li class="stack stack-2"></li>
+                    <li class="stack stack-3"></li>
+                    <li class="stack stack-4"></li>
+                </ul>
+                <div class="card-instructions">
+                    <p><i class="fas fa-hand-pointer me-2 animated-pointer"></i> Click anywhere on a card to expand the stack!</p>
+                </div>
+            </div>
         </div>
-    
+        
+        <div class="fun-facts">
+            <div class="fun-fact">
+                <i class="fas fa-lightbulb fact-icon"></i>
+                <p>The first computer bug was literally a bug - a moth found trapped in a computer in 1947!</p>
+            </div>
+        </div>
+        
+        <footer class="footer">
+            <div class="waves">
+                <div class="wave" id="wave1"></div>
+                <div class="wave" id="wave2"></div>
+                <div class="wave" id="wave3"></div>
+                <div class="wave" id="wave4"></div>
+            </div>
+            <p>&copy; 2025 DevPlay Hub | Keep coding & keep laughing!</p>
+        </footer>
     </body>
 </html>
