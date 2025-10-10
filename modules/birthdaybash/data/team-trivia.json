@@ -1,0 +1,75 @@
+{
+    "title": "Team Trivia",
+    "description": "Test your knowledge about colleagues and company culture!",
+    "questions": [
+        {
+            "id": "tt-1",
+            "text": "Which department typically handles employee onboarding?",
+            "options": [
+                {
+                    "text": "Sales",
+                    "correct": false
+                },
+                {
+                    "text": "Human Resources",
+                    "correct": true
+                },
+                {
+                    "text": "Quality Assurance",
+                    "correct": false
+                },
+                {
+                    "text": "Development",
+                    "correct": false
+                }
+            ],
+            "hint": "Think about who you met on your first day!"
+        },
+        {
+            "id": "tt-2",
+            "text": "What does 'EOD' commonly mean in office communications?",
+            "options": [
+                {
+                    "text": "End of Discussion",
+                    "correct": false
+                },
+                {
+                    "text": "Every Other Day",
+                    "correct": false
+                },
+                {
+                    "text": "End of Day",
+                    "correct": true
+                },
+                {
+                    "text": "Early Office Departure",
+                    "correct": false
+                }
+            ],
+            "hint": "It's about timing and deadlines."
+        },
+        {
+            "id": "tt-3",
+            "text": "Which team would most likely be responsible for User Experience design?",
+            "options": [
+                {
+                    "text": "Quality Assurance",
+                    "correct": false
+                },
+                {
+                    "text": "Sales",
+                    "correct": false
+                },
+                {
+                    "text": "Design",
+                    "correct": true
+                },
+                {
+                    "text": "Finance",
+                    "correct": false
+                }
+            ],
+            "hint": "Think about who creates the visual elements and workflows."
+        }
+    ]
+}

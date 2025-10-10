@@ -1,0 +1,62 @@
+
+    {
+        "title": "Career Journey",
+        "description":
+          "Fun questions about professional growth and career paths!",
+        "questions": [
+          {
+            "id": "cj-1",
+            "text": "What's often considered the best approach when starting a new role?",
+            "options": [
+              {
+                "text": "Make immediate changes to show authority",
+                "correct": false
+              },
+              {
+                "text": "Listen, learn, and observe before suggesting changes",
+                "correct": true
+              },
+              {
+                "text": "Tell everyone how your last company did things",
+                "correct": false
+              },
+              {
+                "text": "Work overtime to impress management",
+                "correct": false
+              }
+            ],
+            "hint": "Think about what builds trust with new colleagues."
+          },
+          {
+            "id": "cj-2",
+            "text": "Which of these is most important for long-term career success?",
+            "options": [
+              { "text": "Technical skills only", "correct": false },
+              { "text": "Office politics skills only", "correct": false },
+              {
+                "text": "Balance of technical, communication, and adaptability skills",
+                "correct": true
+              },
+              { "text": "Having a fancy job title", "correct": false }
+            ],
+            "hint": "Success typically requires multiple dimensions of skill."
+          },
+          {
+            "id": "cj-3",
+            "text": "What's a good way to handle receiving critical feedback?",
+            "options": [
+              { "text": "Argue that the feedback is wrong", "correct": false },
+              { "text": "Ignore it completely", "correct": false },
+              {
+                "text": "Listen carefully, ask questions, and consider how to improve",
+                "correct": true
+              },
+              {
+                "text": "Immediately ask for a different manager",
+                "correct": false
+              }
+            ],
+            "hint": "Growth requires being open to improvement opportunities."
+          }
+        ]
+      }

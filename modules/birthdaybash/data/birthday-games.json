@@ -1,0 +1,75 @@
+{
+    "title": "Birthday Games",
+    "description": "Classic party games with an office twist!",
+    "questions": [
+        {
+            "id": "bg-1",
+            "text": "In office charades, which of these would be the hardest to act out?",
+            "options": [
+                {
+                    "text": "Conference call",
+                    "correct": false
+                },
+                {
+                    "text": "Quarterly budget review",
+                    "correct": false
+                },
+                {
+                    "text": "Cloud computing",
+                    "correct": true
+                },
+                {
+                    "text": "Coffee break",
+                    "correct": false
+                }
+            ],
+            "hint": "Think about which concept is most abstract."
+        },
+        {
+            "id": "bg-2",
+            "text": "What's the office-appropriate version of 'Pin the Tail on the Donkey'?",
+            "options": [
+                {
+                    "text": "Pin the Blame on the Intern",
+                    "correct": false
+                },
+                {
+                    "text": "Pin the Logo on the Company",
+                    "correct": true
+                },
+                {
+                    "text": "Pin the Post-it on the Monitor",
+                    "correct": false
+                },
+                {
+                    "text": "Pin the Memo on the Manager",
+                    "correct": false
+                }
+            ],
+            "hint": "Which option is most positive and workplace-friendly?"
+        },
+        {
+            "id": "bg-3",
+            "text": "Which birthday treat is most likely to disappear first from the office kitchen?",
+            "options": [
+                {
+                    "text": "Fruit platter",
+                    "correct": false
+                },
+                {
+                    "text": "Vegetable tray with hummus",
+                    "correct": false
+                },
+                {
+                    "text": "Plain bagels",
+                    "correct": false
+                },
+                {
+                    "text": "Chocolate cake",
+                    "correct": true
+                }
+            ],
+            "hint": "Sweet treats tend to go quickly!"
+        }
+    ]
+}

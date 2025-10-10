@@ -1,0 +1,75 @@
+{
+    "title": "Milestone Memories",
+    "description": "Test your knowledge about company history and milestones!",
+    "questions": [
+        {
+            "id": "mm-1",
+            "text": "What's traditionally the gift for a 5-year work anniversary?",
+            "options": [
+                {
+                    "text": "Wood",
+                    "correct": true
+                },
+                {
+                    "text": "Paper",
+                    "correct": false
+                },
+                {
+                    "text": "Crystal",
+                    "correct": false
+                },
+                {
+                    "text": "Silver",
+                    "correct": false
+                }
+            ],
+            "hint": "It's something natural that symbolizes strength and growth."
+        },
+        {
+            "id": "mm-2",
+            "text": "Which milestone is typically considered a 'major' work anniversary?",
+            "options": [
+                {
+                    "text": "3 years",
+                    "correct": false
+                },
+                {
+                    "text": "5 years",
+                    "correct": true
+                },
+                {
+                    "text": "7 years",
+                    "correct": false
+                },
+                {
+                    "text": "9 years",
+                    "correct": false
+                }
+            ],
+            "hint": "It's usually celebrated with a special recognition or gift."
+        },
+        {
+            "id": "mm-3",
+            "text": "What's a thoughtful way to recognize a colleague's work anniversary?",
+            "options": [
+                {
+                    "text": "Ignore it to avoid making them feel old",
+                    "correct": false
+                },
+                {
+                    "text": "Send a company-wide email listing all their mistakes",
+                    "correct": false
+                },
+                {
+                    "text": "Share specific contributions they've made to the team",
+                    "correct": true
+                },
+                {
+                    "text": "Give them more work as a 'reward'",
+                    "correct": false
+                }
+            ],
+            "hint": "Think about what would make someone feel valued."
+        }
+    ]
+}

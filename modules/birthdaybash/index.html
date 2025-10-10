@@ -25,14 +25,24 @@
         </div>
         
         <div class="header">
-            <a href="/index.html" class="back-link bounce-icon" title="Back to DevPlay Hub">
-                <i class="fas fa-home"></i>
-            </a>
-            <div class="header-content">
-                <h1><i class="fas fa-birthday-cake me-2"></i>Birthday Bash<i class="fas fa-gift ms-2"></i></h1>
-                <p class="header-tagline">Fun games for office celebrations!</p>
-            </div>
+    <a href="/index.html" class="back-link bounce-icon" title="Back to DevPlay Hub">
+        <i class="fas fa-home"></i>
+    </a>
+    <div class="header-content">
+        <h1><i class="fas fa-birthday-cake me-2"></i>Birthday & Anniversary Bash<i class="fas fa-gift ms-2"></i></h1>
+        <p class="header-tagline">Fun games for office birthdays and work anniversaries!</p>
+        
+        <!-- Add a celebration type indicator -->
+        <div class="celebration-type-indicator">
+            <button class="celebration-type-button active" data-type="birthday">
+                <i class="fas fa-birthday-cake"></i> Birthday
+            </button>
+            <button class="celebration-type-button" data-type="anniversary">
+                <i class="fas fa-award"></i> Anniversary
+            </button>
         </div>
+    </div>
+</div>
         
         <div class="fun-divider">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -41,18 +51,33 @@
         </div>
         
         <div class="container main-container">
-            <!-- Birthday Celebrant Section (Optional) -->
+           <!-- Birthday/Anniversary Celebrant Section -->
             <div class="birthday-person-section">
                 <button class="btn birthday-toggle-btn" id="toggle-birthday-person">
-                    <i class="fas fa-user-circle"></i> Set Birthday Person
+                    <i class="fas fa-user-circle"></i> Set Celebrant
                 </button>
                 
                 <div class="birthday-person-form hidden" id="birthday-person-form">
                     <div class="form-content">
+                        <h3 class="celebration-form-title">Birthday Celebrant</h3>
+                        
+                        <!-- Add celebration type selector -->
+                        <div class="celebration-type-selector">
+                            <label class="switch">
+                                <input type="checkbox" id="celebration-type-toggle">
+                                <span class="slider round"></span>
+                            </label>
+                            <div class="toggle-labels">
+                                <span class="birthday-label">Birthday</span>
+                                <span class="anniversary-label">Work Anniversary</span>
+                            </div>
+                        </div>
+                        
                         <div class="form-group">
                             <label for="celebrant-name">Name:</label>
                             <input type="text" id="celebrant-name" class="form-control" placeholder="Enter name">
                         </div>
+                        
                         <div class="form-group">
                             <label for="celebrant-department">Department:</label>
                             <select id="celebrant-department" class="form-select">
@@ -67,6 +92,30 @@
                                 <option value="Other">Other</option>
                             </select>
                         </div>
+                        
+                        <!-- Add birthday-specific fields -->
+                        <div id="birthday-form-fields">
+                            <!-- Any birthday-specific fields would go here -->
+                        </div>
+                        
+                        <!-- Add anniversary-specific fields -->
+                        <div id="anniversary-form-fields" class="hidden">
+                            <div class="form-group">
+                                <label for="years-at-company">Years at Company:</label>
+                                <select id="years-at-company" class="form-control">
+                                    <option value="1">1 Year</option>
+                                    <option value="2">2 Years</option>
+                                    <option value="3">3 Years</option>
+                                    <option value="5">5 Years</option>
+                                    <option value="10">10 Years</option>
+                                    <option value="15">15 Years</option>
+                                    <option value="20">20 Years</option>
+                                    <option value="25">25 Years</option>
+                                    <option value="30">30 Years</option>
+                                </select>
+                            </div>
+                        </div>
+                        
                         <div class="form-actions">
                             <button class="btn save-btn" id="save-birthday-person">
                                 <i class="fas fa-save"></i> Save
@@ -86,6 +135,7 @@
                         <div class="celebrant-details">
                             <h3 id="display-name">Name</h3>
                             <p id="display-department">Department</p>
+                            <p id="display-years" class="hidden"></p>
                         </div>
                         <button class="btn edit-btn" id="edit-birthday-person">
                             <i class="fas fa-edit"></i>

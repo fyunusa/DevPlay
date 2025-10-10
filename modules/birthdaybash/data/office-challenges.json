@@ -1,0 +1,75 @@
+{
+    "title": "Office Challenges",
+    "description": "Fun scenarios from different departments!",
+    "questions": [
+        {
+            "id": "oc-1",
+            "text": "A client wants to meet but your calendar is full. What's the most professional response?",
+            "options": [
+                {
+                    "text": "Ignore their request until tomorrow",
+                    "correct": false
+                },
+                {
+                    "text": "Tell them you're too busy",
+                    "correct": false
+                },
+                {
+                    "text": "Suggest alternative times or delegate",
+                    "correct": true
+                },
+                {
+                    "text": "Cancel your other appointments",
+                    "correct": false
+                }
+            ],
+            "hint": "Consider what maintains relationships while respecting your time."
+        },
+        {
+            "id": "oc-2",
+            "text": "Your manager asks for a status update on a project you've fallen behind on. What's your best approach?",
+            "options": [
+                {
+                    "text": "Say everything is fine and work overtime",
+                    "correct": false
+                },
+                {
+                    "text": "Be honest, explain challenges, and present a solution",
+                    "correct": true
+                },
+                {
+                    "text": "Blame team members for the delay",
+                    "correct": false
+                },
+                {
+                    "text": "Ask for an extension without explanation",
+                    "correct": false
+                }
+            ],
+            "hint": "Think about transparency and problem-solving."
+        },
+        {
+            "id": "oc-3",
+            "text": "The sales team has promised a feature that development says will take 6 months to build. What's the best approach?",
+            "options": [
+                {
+                    "text": "Tell the client it's impossible",
+                    "correct": false
+                },
+                {
+                    "text": "Have sales and development discuss compromise solutions",
+                    "correct": true
+                },
+                {
+                    "text": "Build a quick, buggy version of the feature",
+                    "correct": false
+                },
+                {
+                    "text": "Ignore the problem until the deadline",
+                    "correct": false
+                }
+            ],
+            "hint": "Communication between departments is key."
+        }
+    ]
+}

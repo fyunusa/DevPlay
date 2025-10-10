@@ -1094,3 +1094,79 @@ input:checked + .slider:before {
 .game-card[data-game="career-journey"] {
   background-color: #FFDEAD;
 }
+
+/* Add these styles to the end of your CSS file */
+
+.celebration-type-indicator {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.celebration-type-button {
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: 2px solid white;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.celebration-type-button.active {
+    background: white;
+    color: var(--primary);
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.celebration-type-button:hover:not(.active) {
+    background: rgba(255, 255, 255, 0.3);
+    transform: translateY(-3px);
+}
+
+/* Update the game cards to show which are anniversary-focused */
+.game-card[data-game="milestone-memories"],
+.game-card[data-game="career-journey"] {
+    position: relative;
+    overflow: hidden;
+}
+
+.game-card[data-game="milestone-memories"]::before,
+.game-card[data-game="career-journey"]::before {
+    content: "Anniversary";
+    position: absolute;
+    top: 10px;
+    right: -35px;
+    background: #FFD700;
+    color: #333;
+    padding: 5px 40px;
+    font-size: 12px;
+    transform: rotate(45deg);
+    font-weight: 700;
+}
+
+/* Change game card styling based on celebration type */
+body.anniversary-mode .game-card[data-game="milestone-memories"],
+body.anniversary-mode .game-card[data-game="career-journey"] {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(218, 165, 32, 0.3);
+    border: 2px solid #FFD700;
+}
+
+body.anniversary-mode .game-card[data-game="birthday-games"] {
+    opacity: 0.7;
+}
+
+body.birthday-mode .game-card[data-game="birthday-games"] {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(255, 107, 107, 0.3);
+    border: 2px solid #FF6B6B;
+}
+
+body.birthday-mode .game-card[data-game="milestone-memories"],
+body.birthday-mode .game-card[data-game="career-journey"] {
+    opacity: 0.7;
+}
