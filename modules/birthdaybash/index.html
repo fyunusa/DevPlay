@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Birthday Bash | DevPlay Hub</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <link rel="stylesheet" href="bash.css">
+        <script src="bash.js" defer></script>
+    </head>
+    <body>
+        <div class="magic-cursor"></div>
+        
+        <!-- Floating Decorations -->
+        <div class="floating-decorations">
+            <div class="balloon" style="--color: #FF6B6B; --delay: 0s; --position: 10%"></div>
+            <div class="balloon" style="--color: #6C63FF; --delay: 2s; --position: 30%"></div>
+            <div class="balloon" style="--color: #FFD166; --delay: 1s; --position: 50%"></div>
+            <div class="balloon" style="--color: #06D6A0; --delay: 3s; --position: 70%"></div>
+            <div class="balloon" style="--color: #118AB2; --delay: 0.5s; --position: 90%"></div>
+        </div>
+        
+        <div class="header">
+            <a href="/index.html" class="back-link bounce-icon" title="Back to DevPlay Hub">
+                <i class="fas fa-home"></i>
+            </a>
+            <div class="header-content">
+                <h1><i class="fas fa-birthday-cake me-2"></i>Birthday Bash<i class="fas fa-gift ms-2"></i></h1>
+                <p class="header-tagline">Fun games for office celebrations!</p>
+            </div>
+        </div>
+        
+        <div class="fun-divider">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"></path>
+            </svg>
+        </div>
+        
+        <div class="container main-container">
+            <!-- Birthday Celebrant Section (Optional) -->
+            <div class="birthday-person-section">
+                <button class="btn birthday-toggle-btn" id="toggle-birthday-person">
+                    <i class="fas fa-user-circle"></i> Set Birthday Person
+                </button>
+                
+                <div class="birthday-person-form hidden" id="birthday-person-form">
+                    <div class="form-content">
+                        <div class="form-group">
+                            <label for="celebrant-name">Name:</label>
+                            <input type="text" id="celebrant-name" class="form-control" placeholder="Enter name">
+                        </div>
+                        <div class="form-group">
+                            <label for="celebrant-department">Department:</label>
+                            <select id="celebrant-department" class="form-select">
+                                <option value="">Select department</option>
+                                <option value="Development">Development</option>
+                                <option value="QA">Quality Assurance</option>
+                                <option value="Product">Product Management</option>
+                                <option value="Sales">Sales</option>
+                                <option value="HR">Human Resources</option>
+                                <option value="Marketing">Marketing</option>
+                                <option value="Design">Design</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-actions">
+                            <button class="btn save-btn" id="save-birthday-person">
+                                <i class="fas fa-save"></i> Save
+                            </button>
+                            <button class="btn cancel-btn" id="cancel-birthday-person">
+                                <i class="fas fa-times"></i> Cancel
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="birthday-person-display hidden" id="birthday-person-display">
+                    <div class="celebrant-info">
+                        <div class="celebrant-avatar">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <div class="celebrant-details">
+                            <h3 id="display-name">Name</h3>
+                            <p id="display-department">Department</p>
+                        </div>
+                        <button class="btn edit-btn" id="edit-birthday-person">
+                            <i class="fas fa-edit"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Game Selection Area -->
+            <div class="game-selection-area" id="game-selection-area">
+                <h2 class="section-title">Choose a Game</h2>
+                
+                <div class="game-cards">
+                    <div class="game-card" data-game="team-trivia">
+                        <div class="game-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Team Trivia</h3>
+                        <p>Test your knowledge about colleagues and company culture!</p>
+                    </div>
+                    
+                    <div class="game-card" data-game="office-challenges">
+                        <div class="game-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <h3>Office Challenges</h3>
+                        <p>Fun scenarios from different departments!</p>
+                    </div>
+                    
+                    <div class="game-card" data-game="birthday-games">
+                        <div class="game-icon">
+                            <i class="fas fa-gift"></i>
+                        </div>
+                        <h3>Birthday Games</h3>
+                        <p>Classic party games with an office twist!</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Game Area -->
+            <div class="game-area hidden" id="game-area">
+                <div class="game-header">
+                    <h2 id="game-title">Game Title</h2>
+                    <div class="game-controls">
+                        <button class="btn hint-btn" id="hint-btn">
+                            <i class="far fa-lightbulb"></i> Hint
+                        </button>
+                        <button class="btn back-btn" id="back-to-games">
+                            <i class="fas fa-arrow-left"></i> Back to Games
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="game-content">
+                    <div class="game-description" id="game-description">
+                        Game description goes here...
+                    </div>
+                    
+                    <div class="question-container">
+                        <div class="question-text" id="question-text">
+                            Question goes here...
+                        </div>
+                        
+                        <div class="image-container hidden" id="image-container">
+                            <img id="question-image" src="" alt="Question Image">
+                        </div>
+                        
+                        <div class="options-container" id="options-container">
+                            <!-- Options will be generated here -->
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="game-footer">
+                    <div class="player-score">
+                        <span class="score-label">Score:</span>
+                        <span class="score-value" id="player-score">0</span>
+                    </div>
+                    <button class="btn submit-btn" id="submit-answer">
+                        <i class="fas fa-check-circle"></i> Submit Answer
+                    </button>
+                    <button class="btn next-btn hidden" id="next-question">
+                        <i class="fas fa-forward"></i> Next Question
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Result Modal -->
+            <div class="result-modal hidden" id="result-modal">
+                <div class="result-content">
+                    <div class="result-header">
+                        <h3 id="result-title">Result</h3>
+                        <button class="close-btn" id="close-result">×</button>
+                    </div>
+                    <div class="result-body" id="result-body">
+                        Result details go here...
+                    </div>
+                    <div class="result-footer">
+                        <button class="btn share-btn" id="share-result">
+                            <i class="fas fa-share-alt"></i> Share
+                        </button>
+                        <button class="btn continue-btn" id="continue-btn">
+                            Continue
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Birthday Card Section -->
+            <div class="birthday-card-section hidden" id="birthday-card-section">
+                <div class="birthday-card">
+                    <div class="card-header">
+                        <h3>Happy Birthday, <span id="card-name">Name</span>!</h3>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-message" id="card-messages">
+                            <!-- Messages will be added here -->
+                        </div>
+                        <div class="add-message-form">
+                            <textarea id="new-message" placeholder="Add your birthday message here..." class="form-control"></textarea>
+                            <div class="message-form-footer">
+                                <input type="text" id="message-name" placeholder="Your name" class="form-control">
+                                <button class="btn add-message-btn" id="add-message-btn">
+                                    <i class="fas fa-paper-plane"></i> Add Message
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Final Celebration Screen -->
+            <div class="celebration-screen hidden" id="celebration-screen">
+                <div class="celebration-content">
+                    <h2>Celebration Complete!</h2>
+                    <div class="final-score">
+                        <p>Total Score: <span id="final-score">0</span></p>
+                    </div>
+                    <div class="celebration-message">
+                        <p>You've completed all the birthday bash games!</p>
+                        <p>Don't forget to sign the birthday card before you go.</p>
+                    </div>
+                    <div class="celebration-actions">
+                        <button class="btn view-card-btn" id="view-card-btn">
+                            <i class="fas fa-envelope-open-text"></i> View Birthday Card
+                        </button>
+                        <button class="btn restart-btn" id="restart-btn">
+                            <i class="fas fa-redo"></i> Play Again
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="hint-tooltip hidden" id="hint-tooltip">
+            <div class="hint-content">
+                <p id="hint-text">This is a hint</p>
+                <button class="close-hint" id="close-hint">Got it</button>
+            </div>
+        </div>
+        
+        <footer class="footer">
+            <div class="footer-content">
+                <p>&copy; 2025 DevPlay Hub | Created by Umar Yunusa</p>
+            </div>
+        </footer>
+    </body>
+</html>

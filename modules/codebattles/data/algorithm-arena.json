@@ -1,0 +1,43 @@
+{
+  "challenges": [
+    {
+      "id": "aa-1",
+      "title": "Sort the Squad",
+      "description": "Choose the most efficient sorting algorithm for a nearly-sorted array of 10,000 integers.",
+      "code": "const nearlyOrderedArray = [1, 2, 3, 5, 4, 6, 7, 8, 10, 9, ...];",
+      "options": [
+        { "text": "Bubble Sort", "correct": false },
+        { "text": "Merge Sort", "correct": false },
+        { "text": "Insertion Sort", "correct": true },
+        { "text": "Quick Sort", "correct": false }
+      ],
+      "hint": "Consider which algorithm performs best when most elements are already in position."
+    },
+    {
+      "id": "aa-2",
+      "title": "Find the Spy",
+      "description": "Which algorithm would you use to find a specific number in a sorted array of 1 million numbers with the best time complexity?",
+      "code": "const sortedNumbers = [1, 3, 5, 7, 9, ..., 1999999];",
+      "options": [
+        { "text": "Linear Search (iterate through each element)", "correct": false },
+        { "text": "Binary Search", "correct": true },
+        { "text": "Depth-First Search", "correct": false },
+        { "text": "Hash Table Lookup", "correct": false }
+      ],
+      "hint": "Think about algorithms that can take advantage of the array already being sorted."
+    },
+    {
+      "id": "aa-3",
+      "title": "The Balancing Act",
+      "description": "Which data structure would you use to check if a string of brackets is balanced (e.g., \"{[()]}\")?",
+      "code": "function isBalanced(str) {\n  // Which data structure should we use here?\n}",
+      "options": [
+        { "text": "Queue", "correct": false },
+        { "text": "Stack", "correct": true },
+        { "text": "Linked List", "correct": false },
+        { "text": "Binary Tree", "correct": false }
+      ],
+      "hint": "You need to match the most recently opened bracket with the current closing bracket."
+    }
+  ]
+}

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Code Battles | DevPlay Hub</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Press+Start+2P&family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/atom-one-dark.min.css">
+        <link rel="stylesheet" href="battles.css">
+        <script src="battles.js" defer></script>
+    </head>
+    <body>
+        <div class="magic-cursor"></div>
+        
+        <!-- Corner Decorations -->
+        <div class="corner-decoration top-left"></div>
+        <div class="corner-decoration top-right"></div>
+        <div class="corner-decoration bottom-left"></div>
+        <div class="corner-decoration bottom-right"></div>
+        
+        <div class="header">
+            <a href="/index.html" class="back-link bounce-icon" title="Back to DevPlay Hub">
+                <i class="fas fa-home"></i>
+            </a>
+            <div class="header-content">
+                <h1><i class="fas fa-gamepad me-2"></i>Code Battles<i class="fas fa-code ms-2"></i></h1>
+                <p class="header-tagline">Challenge your skills in the coding arena!</p>
+            </div>
+            <div class="floating-elements">
+                <i class="fas fa-bug floating-element"></i>
+                <i class="fas fa-rocket floating-element"></i>
+                <i class="fas fa-terminal floating-element"></i>
+            </div>
+        </div>
+        
+        <div class="fun-divider">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"></path>
+            </svg>
+        </div>
+        
+        <div class="container main-container">
+            <div class="battle-arena">
+                <div class="arena-header">
+                    <h2>Choose Your Battle</h2>
+                    <div class="player-stats">
+                        <div class="player-level">
+                            <span class="level-label">Level:</span>
+                            <span class="level-value">1</span>
+                        </div>
+                        <div class="player-score">
+                            <span class="score-label">Score:</span>
+                            <span class="score-value">0</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="battle-modes">
+                    <div class="battle-mode" data-mode="bug-boss">
+                        <div class="mode-icon"><i class="fas fa-bug"></i></div>
+                        <h3>Bug Boss</h3>
+                        <p>Defeat common programming bugs in epic battles!</p>
+                    </div>
+                    <div class="battle-mode" data-mode="algorithm-arena">
+                        <div class="mode-icon"><i class="fas fa-sort"></i></div>
+                        <h3>Algorithm Arena</h3>
+                        <p>Challenge yourself with algorithm puzzles!</p>
+                    </div>
+                    <div class="battle-mode" data-mode="syntax-showdown">
+                        <div class="mode-icon"><i class="fas fa-code"></i></div>
+                        <h3>Syntax Showdown</h3>
+                        <p>Test your knowledge of language quirks!</p>
+                    </div>
+                </div>
+                
+                <div class="challenge-container hidden">
+                    <div class="challenge-header">
+                        <h3 id="challenge-title">Challenge Title</h3>
+                        <div class="challenge-controls">
+                            <button class="btn hint-btn" id="hint-btn">
+                                <i class="far fa-lightbulb"></i> Hint
+                            </button>
+                            <button class="btn back-btn" id="back-to-modes">
+                                <i class="fas fa-arrow-left"></i> Back
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="challenge-content">
+                        <div class="challenge-description" id="challenge-description">
+                            Challenge description goes here...
+                        </div>
+                        
+                        <div class="code-container">
+                            <pre><code class="language-javascript" id="challenge-code">// Code will be loaded here</code></pre>
+                        </div>
+                        
+                        <div class="options-container" id="options-container">
+                            <!-- Answer options will be generated here -->
+                        </div>
+                    </div>
+                    
+                    <div class="challenge-footer">
+                        <button class="btn submit-btn" id="submit-answer">
+                            <i class="fas fa-check-circle"></i> Submit Answer
+                        </button>
+                        <button class="btn next-btn hidden" id="next-challenge">
+                            <i class="fas fa-forward"></i> Next Challenge
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="result-modal hidden" id="result-modal">
+                    <div class="result-content">
+                        <div class="result-header">
+                            <h3 id="result-title">Result</h3>
+                            <button class="close-btn" id="close-result">×</button>
+                        </div>
+                        <div class="result-body" id="result-body">
+                            Result details go here...
+                        </div>
+                        <div class="result-footer">
+                            <button class="btn share-btn" id="share-result">
+                                <i class="fas fa-share-alt"></i> Share
+                            </button>
+                            <button class="btn continue-btn" id="continue-btn">
+                                Continue
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="leaderboard-section">
+                <h3><i class="fas fa-trophy"></i> Top Code Warriors</h3>
+                <div class="leaderboard" id="leaderboard">
+                    <div class="loading-spinner">
+                        <i class="fas fa-spinner fa-spin"></i> Loading...
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="hint-tooltip hidden" id="hint-tooltip">
+            <div class="hint-content">
+                <p id="hint-text">This is a hint</p>
+                <button class="close-hint" id="close-hint">Got it</button>
+            </div>
+        </div>
+        
+        <footer class="footer">
+            <div class="footer-content">
+                <p>&copy; 2025 DevPlay Hub | Created by Umar Yunusa</p>
+            </div>
+        </footer>
+    </body>
+</html>

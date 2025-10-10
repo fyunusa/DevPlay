@@ -1,0 +1,43 @@
+{
+  "challenges": [
+    {
+      "id": "bb-1",
+      "title": "The Infinite Loop Monster",
+      "description": "Oh no! This loop will run forever and crash the program. Find the bug and fix it!",
+      "code": "function countDown(n) {\n  while (n >= 0) {\n    console.log(n);\n    // Something's wrong here...\n  }\n  console.log(\"Blast off!\");\n}",
+      "options": [
+        { "text": "Remove the while loop entirely", "correct": false },
+        { "text": "Add n-- to decrement the counter", "correct": true },
+        { "text": "Change >= to >", "correct": false },
+        { "text": "Add a break statement", "correct": false }
+      ],
+      "hint": "The loop needs to change the value of n each time it runs."
+    },
+    {
+      "id": "bb-2",
+      "title": "The Null Pointer Nemesis",
+      "description": "This code is trying to access a property of an object that might not exist. Fix it to prevent the dreaded null pointer exception!",
+      "code": "function getUserName(user) {\n  return user.profile.name;\n}\n\nconst result = getUserName({ id: 123 });",
+      "options": [
+        { "text": "return user?.profile?.name;", "correct": true },
+        { "text": "return user.profile?.name;", "correct": false },
+        { "text": "return user.profile.name || \"\";", "correct": false },
+        { "text": "return user.hasOwnProperty(\"profile\") ? user.profile.name : null;", "correct": false }
+      ],
+      "hint": "Optional chaining (?.) can help with nested properties that might be undefined."
+    },
+    {
+      "id": "bb-3",
+      "title": "Array Index Attacker",
+      "description": "This function is supposed to return the last element of an array, but sometimes it fails. Fix it!",
+      "code": "function getLastElement(arr) {\n  return arr[arr.length];\n}",
+      "options": [
+        { "text": "return arr[arr.length - 1];", "correct": true },
+        { "text": "return arr.slice(-1);", "correct": false },
+        { "text": "return arr.pop();", "correct": false },
+        { "text": "return arr[arr.length || 0];", "correct": false }
+      ],
+      "hint": "Array indices are zero-based, so the last element is at length-1."
+    }
+  ]
+}

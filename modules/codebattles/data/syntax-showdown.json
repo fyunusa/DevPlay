@@ -1,0 +1,43 @@
+{
+  "challenges": [
+    {
+      "id": "ss-1",
+      "title": "JavaScript Quirks",
+      "description": "What will the following code output?",
+      "code": "console.log(1 + \"2\" + \"2\");\nconsole.log(1 + +\"2\" + \"2\");\nconsole.log(1 + -\"1\" + \"2\");\nconsole.log(+\"1\" + \"1\" + \"2\");",
+      "options": [
+        { "text": "\"122\", \"32\", \"02\", \"112\"", "correct": false },
+        { "text": "\"122\", \"32\", \"02\", \"12\"", "correct": false },
+        { "text": "\"122\", 32, \"02\", \"112\"", "correct": false },
+        { "text": "\"122\", \"32\", \"02\", \"112\"", "correct": true }
+      ],
+      "hint": "Remember type coercion in JavaScript: + can concatenate strings or add numbers."
+    },
+    {
+      "id": "ss-2",
+      "title": "Python Indentation",
+      "description": "What's wrong with this Python code?",
+      "code": "def calculate_sum(a, b):\n    result = a + b\n        return result\n\nprint(calculate_sum(5, 3))",
+      "options": [
+        { "text": "Missing semicolons", "correct": false },
+        { "text": "Incorrect indentation on the return statement", "correct": true },
+        { "text": "The function name should be camelCase", "correct": false },
+        { "text": "The print statement should be inside the function", "correct": false }
+      ],
+      "hint": "Python is very particular about consistent indentation levels."
+    },
+    {
+      "id": "ss-3",
+      "title": "Java Declarations",
+      "description": "Which of the following Java variable declarations is NOT valid?",
+      "code": "// Which one will cause a compiler error?",
+      "options": [
+        { "text": "int _count = 10;", "correct": false },
+        { "text": "int $value = 100;", "correct": false },
+        { "text": "int 1stPlace = 500;", "correct": true },
+        { "text": "int total_sum = 250;", "correct": false }
+      ],
+      "hint": "Java variable names can include letters, digits, underscores, and dollar signs, but must not start with a digit."
+    }
+  ]
+}
