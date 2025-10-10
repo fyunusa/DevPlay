@@ -99,123 +99,258 @@ document.addEventListener('DOMContentLoaded', function() {
     // Mock game data in case the JSON files don't exist yet
     function getMockGameData(game) {
         const mockData = {
-            'team-trivia': {
-                title: "Team Trivia",
-                description: "Test your knowledge about colleagues and company culture!",
-                questions: [
-                    {
-                        id: 'tt-1',
-                        text: "Which department typically handles employee onboarding?",
-                        options: [
-                            { text: "Sales", correct: false },
-                            { text: "Human Resources", correct: true },
-                            { text: "Quality Assurance", correct: false },
-                            { text: "Development", correct: false }
-                        ],
-                        hint: "Think about who you met on your first day!"
-                    },
-                    {
-                        id: 'tt-2',
-                        text: "What does 'EOD' commonly mean in office communications?",
-                        options: [
-                            { text: "End of Discussion", correct: false },
-                            { text: "Every Other Day", correct: false },
-                            { text: "End of Day", correct: true },
-                            { text: "Early Office Departure", correct: false }
-                        ],
-                        hint: "It's about timing and deadlines."
-                    },
-                    {
-                        id: 'tt-3',
-                        text: "Which team would most likely be responsible for User Experience design?",
-                        options: [
-                            { text: "Quality Assurance", correct: false },
-                            { text: "Sales", correct: false },
-                            { text: "Design", correct: true },
-                            { text: "Finance", correct: false }
-                        ],
-                        hint: "Think about who creates the visual elements and workflows."
-                    }
-                ]
-            },
-            'office-challenges': {
-                title: "Office Challenges",
-                description: "Fun scenarios from different departments!",
-                questions: [
-                    {
-                        id: 'oc-1',
-                        text: "A client wants to meet but your calendar is full. What's the most professional response?",
-                        options: [
-                            { text: "Ignore their request until tomorrow", correct: false },
-                            { text: "Tell them you're too busy", correct: false },
-                            { text: "Suggest alternative times or delegate", correct: true },
-                            { text: "Cancel your other appointments", correct: false }
-                        ],
-                        hint: "Consider what maintains relationships while respecting your time."
-                    },
-                    {
-                        id: 'oc-2',
-                        text: "Your manager asks for a status update on a project you've fallen behind on. What's your best approach?",
-                        options: [
-                            { text: "Say everything is fine and work overtime", correct: false },
-                            { text: "Be honest, explain challenges, and present a solution", correct: true },
-                            { text: "Blame team members for the delay", correct: false },
-                            { text: "Ask for an extension without explanation", correct: false }
-                        ],
-                        hint: "Think about transparency and problem-solving."
-                    },
-                    {
-                        id: 'oc-3',
-                        text: "The sales team has promised a feature that development says will take 6 months to build. What's the best approach?",
-                        options: [
-                            { text: "Tell the client it's impossible", correct: false },
-                            { text: "Have sales and development discuss compromise solutions", correct: true },
-                            { text: "Build a quick, buggy version of the feature", correct: false },
-                            { text: "Ignore the problem until the deadline", correct: false }
-                        ],
-                        hint: "Communication between departments is key."
-                    }
-                ]
-            },
-            'birthday-games': {
-                title: "Birthday Games",
-                description: "Classic party games with an office twist!",
-                questions: [
-                    {
-                        id: 'bg-1',
-                        text: "In office charades, which of these would be the hardest to act out?",
-                        options: [
-                            { text: "Conference call", correct: false },
-                            { text: "Quarterly budget review", correct: false },
-                            { text: "Cloud computing", correct: true },
-                            { text: "Coffee break", correct: false }
-                        ],
-                        hint: "Think about which concept is most abstract."
-                    },
-                    {
-                        id: 'bg-2',
-                        text: "What's the office-appropriate version of 'Pin the Tail on the Donkey'?",
-                        options: [
-                            { text: "Pin the Blame on the Intern", correct: false },
-                            { text: "Pin the Logo on the Company", correct: true },
-                            { text: "Pin the Post-it on the Monitor", correct: false },
-                            { text: "Pin the Memo on the Manager", correct: false }
-                        ],
-                        hint: "Which option is most positive and workplace-friendly?"
-                    },
-                    {
-                        id: 'bg-3',
-                        text: "Which birthday treat is most likely to disappear first from the office kitchen?",
-                        options: [
-                            { text: "Fruit platter", correct: false },
-                            { text: "Vegetable tray with hummus", correct: false },
-                            { text: "Plain bagels", correct: false },
-                            { text: "Chocolate cake", correct: true }
-                        ],
-                        hint: "Sweet treats tend to go quickly!"
-                    }
-                ]
-            }
+          "team-trivia": {
+            title: "Team Trivia",
+            description:
+              "Test your knowledge about colleagues and company culture!",
+            questions: [
+              {
+                id: "tt-1",
+                text: "Which department typically handles employee onboarding?",
+                options: [
+                  { text: "Sales", correct: false },
+                  { text: "Human Resources", correct: true },
+                  { text: "Quality Assurance", correct: false },
+                  { text: "Development", correct: false },
+                ],
+                hint: "Think about who you met on your first day!",
+              },
+              {
+                id: "tt-2",
+                text: "What does 'EOD' commonly mean in office communications?",
+                options: [
+                  { text: "End of Discussion", correct: false },
+                  { text: "Every Other Day", correct: false },
+                  { text: "End of Day", correct: true },
+                  { text: "Early Office Departure", correct: false },
+                ],
+                hint: "It's about timing and deadlines.",
+              },
+              {
+                id: "tt-3",
+                text: "Which team would most likely be responsible for User Experience design?",
+                options: [
+                  { text: "Quality Assurance", correct: false },
+                  { text: "Sales", correct: false },
+                  { text: "Design", correct: true },
+                  { text: "Finance", correct: false },
+                ],
+                hint: "Think about who creates the visual elements and workflows.",
+              },
+            ],
+          },
+          "office-challenges": {
+            title: "Office Challenges",
+            description: "Fun scenarios from different departments!",
+            questions: [
+              {
+                id: "oc-1",
+                text: "A client wants to meet but your calendar is full. What's the most professional response?",
+                options: [
+                  {
+                    text: "Ignore their request until tomorrow",
+                    correct: false,
+                  },
+                  { text: "Tell them you're too busy", correct: false },
+                  {
+                    text: "Suggest alternative times or delegate",
+                    correct: true,
+                  },
+                  { text: "Cancel your other appointments", correct: false },
+                ],
+                hint: "Consider what maintains relationships while respecting your time.",
+              },
+              {
+                id: "oc-2",
+                text: "Your manager asks for a status update on a project you've fallen behind on. What's your best approach?",
+                options: [
+                  {
+                    text: "Say everything is fine and work overtime",
+                    correct: false,
+                  },
+                  {
+                    text: "Be honest, explain challenges, and present a solution",
+                    correct: true,
+                  },
+                  { text: "Blame team members for the delay", correct: false },
+                  {
+                    text: "Ask for an extension without explanation",
+                    correct: false,
+                  },
+                ],
+                hint: "Think about transparency and problem-solving.",
+              },
+              {
+                id: "oc-3",
+                text: "The sales team has promised a feature that development says will take 6 months to build. What's the best approach?",
+                options: [
+                  { text: "Tell the client it's impossible", correct: false },
+                  {
+                    text: "Have sales and development discuss compromise solutions",
+                    correct: true,
+                  },
+                  {
+                    text: "Build a quick, buggy version of the feature",
+                    correct: false,
+                  },
+                  {
+                    text: "Ignore the problem until the deadline",
+                    correct: false,
+                  },
+                ],
+                hint: "Communication between departments is key.",
+              },
+            ],
+          },
+          "birthday-games": {
+            title: "Birthday Games",
+            description: "Classic party games with an office twist!",
+            questions: [
+              {
+                id: "bg-1",
+                text: "In office charades, which of these would be the hardest to act out?",
+                options: [
+                  { text: "Conference call", correct: false },
+                  { text: "Quarterly budget review", correct: false },
+                  { text: "Cloud computing", correct: true },
+                  { text: "Coffee break", correct: false },
+                ],
+                hint: "Think about which concept is most abstract.",
+              },
+              {
+                id: "bg-2",
+                text: "What's the office-appropriate version of 'Pin the Tail on the Donkey'?",
+                options: [
+                  { text: "Pin the Blame on the Intern", correct: false },
+                  { text: "Pin the Logo on the Company", correct: true },
+                  { text: "Pin the Post-it on the Monitor", correct: false },
+                  { text: "Pin the Memo on the Manager", correct: false },
+                ],
+                hint: "Which option is most positive and workplace-friendly?",
+              },
+              {
+                id: "bg-3",
+                text: "Which birthday treat is most likely to disappear first from the office kitchen?",
+                options: [
+                  { text: "Fruit platter", correct: false },
+                  { text: "Vegetable tray with hummus", correct: false },
+                  { text: "Plain bagels", correct: false },
+                  { text: "Chocolate cake", correct: true },
+                ],
+                hint: "Sweet treats tend to go quickly!",
+              },
+            ],
+          },
+          "career-journey": {
+            title: "Career Journey",
+            description:
+              "Fun questions about professional growth and career paths!",
+            questions: [
+              {
+                id: "cj-1",
+                text: "What's often considered the best approach when starting a new role?",
+                options: [
+                  {
+                    text: "Make immediate changes to show authority",
+                    correct: false,
+                  },
+                  {
+                    text: "Listen, learn, and observe before suggesting changes",
+                    correct: true,
+                  },
+                  {
+                    text: "Tell everyone how your last company did things",
+                    correct: false,
+                  },
+                  {
+                    text: "Work overtime to impress management",
+                    correct: false,
+                  },
+                ],
+                hint: "Think about what builds trust with new colleagues.",
+              },
+              {
+                id: "cj-2",
+                text: "Which of these is most important for long-term career success?",
+                options: [
+                  { text: "Technical skills only", correct: false },
+                  { text: "Office politics skills only", correct: false },
+                  {
+                    text: "Balance of technical, communication, and adaptability skills",
+                    correct: true,
+                  },
+                  { text: "Having a fancy job title", correct: false },
+                ],
+                hint: "Success typically requires multiple dimensions of skill.",
+              },
+              {
+                id: "cj-3",
+                text: "What's a good way to handle receiving critical feedback?",
+                options: [
+                  { text: "Argue that the feedback is wrong", correct: false },
+                  { text: "Ignore it completely", correct: false },
+                  {
+                    text: "Listen carefully, ask questions, and consider how to improve",
+                    correct: true,
+                  },
+                  {
+                    text: "Immediately ask for a different manager",
+                    correct: false,
+                  },
+                ],
+                hint: "Growth requires being open to improvement opportunities.",
+              },
+            ],
+          },
+          "milestone-memories": {
+            title: "Milestone Memories",
+            description:
+              "Test your knowledge about company history and milestones!",
+            questions: [
+              {
+                id: "mm-1",
+                text: "What's traditionally the gift for a 5-year work anniversary?",
+                options: [
+                  { text: "Wood", correct: true },
+                  { text: "Paper", correct: false },
+                  { text: "Crystal", correct: false },
+                  { text: "Silver", correct: false },
+                ],
+                hint: "It's something natural that symbolizes strength and growth.",
+              },
+              {
+                id: "mm-2",
+                text: "Which milestone is typically considered a 'major' work anniversary?",
+                options: [
+                  { text: "3 years", correct: false },
+                  { text: "5 years", correct: true },
+                  { text: "7 years", correct: false },
+                  { text: "9 years", correct: false },
+                ],
+                hint: "It's usually celebrated with a special recognition or gift.",
+              },
+              {
+                id: "mm-3",
+                text: "What's a thoughtful way to recognize a colleague's work anniversary?",
+                options: [
+                  {
+                    text: "Ignore it to avoid making them feel old",
+                    correct: false,
+                  },
+                  {
+                    text: "Send a company-wide email listing all their mistakes",
+                    correct: false,
+                  },
+                  {
+                    text: "Share specific contributions they've made to the team",
+                    correct: true,
+                  },
+                  { text: "Give them more work as a 'reward'", correct: false },
+                ],
+                hint: "Think about what would make someone feel valued.",
+              },
+            ],
+          },
         };
         
         return mockData[game];
