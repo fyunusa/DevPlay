@@ -641,3 +641,80 @@ body {
 .badge-new {
   left: -5px;
 }
+
+
+
+
+
+
+/* Add these styles to reduce card sizes on web */
+
+@media (min-width: 992px) {
+  /* Adjust card sizes for desktop/larger screens */
+  .module-card {
+    max-width: 100%;
+    margin-bottom: 20px; /* Reduced from 30px */
+  }
+  
+  .module-img {
+    height: 180px; /* Reduced from 220px */
+  }
+  
+  .module-info {
+    padding: 1.3rem; /* Reduced from 1.8rem */
+  }
+  
+  .module-title {
+    font-size: 1.5rem; /* Reduced from 1.8rem */
+    margin-bottom: 0.6rem; /* Reduced from 0.8rem */
+  }
+  
+  .module-description {
+    font-size: 0.95rem; /* Reduced from 1.05rem */
+    margin-bottom: 1.5rem; /* Reduced from 2rem */
+    line-height: 1.4;
+  }
+  
+  .module-btn {
+    padding: 8px 20px; /* Reduced from 10px 25px */
+    font-size: 0.9rem;
+  }
+  
+  /* Adjust badge positions for smaller cards */
+  .badge-new {
+    top: 10px;
+    font-size: 0.8rem;
+    padding: 6px 12px;
+  }
+  
+  .badge-beta {
+    top: 8px;
+    left: 65px;
+    font-size: 0.75rem;
+    padding: 4px 8px;
+  }
+  
+  .favorite-btn {
+    width: 40px;
+    height: 40px;
+    top: 10px;
+    right: 10px;
+  }
+  
+  .favorite-btn i {
+    font-size: 1.2rem;
+  }
+}
+
+/* Optional: Make it a 3-column layout on very large screens */
+@media (min-width: 1400px) {
+  .row {
+    --bs-gutter-x: 1.5rem; /* Default Bootstrap gutter */
+  }
+  
+  #all-modules-section .col-md-6 {
+    width: 33.333%;
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    padding-right: calc(var(--bs-gutter-x) * .5);
+  }
+}
