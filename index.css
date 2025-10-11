@@ -617,3 +617,27 @@ body {
     opacity: 0;
   }
 }
+
+
+.badge-beta {
+  position: absolute;
+  top: 10px;
+  left: 75px;
+  background-color: #ff8800;
+  color: white;
+  padding: 5px 10px;
+  font-size: 0.8rem;
+  border-radius: 4px;
+  z-index: 2;
+  font-weight: 600;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.badge-beta {
+  transform: rotate(2deg);
+  font-family: var(--font-fun);
+}
+
+.badge-new {
+  left: -5px;
+}
