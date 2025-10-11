@@ -9,6 +9,33 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
+    <!-- Corner decorations (keep these) -->
+    <div class="corner-decoration top-left"></div>
+    <div class="corner-decoration top-right"></div>
+    <div class="corner-decoration bottom-left"></div>
+    <div class="corner-decoration bottom-right"></div>
+    
+    <!-- New header style to match Code Giggles -->
+    <div class="header">
+        <a href="/index.html" class="back-link" title="Back to DevPlay Hub">
+            <i class="fas fa-home bounce-icon"></i>
+        </a>
+        <div class="header-content">
+            <h1><i class="fab fa-git-alt me-2"></i>Git Games<i class="fas fa-code-branch ms-2"></i></h1>
+            <p class="header-tagline">Interactive games to master Git concepts</p>
+        </div>
+        <div class="floating-elements">
+            <i class="fas fa-code-branch floating-element"></i>
+            <i class="fas fa-code-commit floating-element"></i>
+            <i class="fas fa-terminal floating-element"></i>
+        </div>
+    </div>
+    
+    <div class="fun-divider">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"></path>
+        </svg>
+    </div>
     <div class="game-container">
         <header class="game-header">
             <h1><i class="fab fa-git-alt"></i> Git Games</h1>
@@ -155,6 +182,139 @@
             .games-grid {
                 grid-template-columns: 1fr;
             }
+        }
+
+      /* Add styles for the new header */
+        .header {
+            background: linear-gradient(135deg, #2b3137, #24292e, #4078c0);
+            color: white;
+            text-align: center;
+            padding: 2.5rem 1rem;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .header-content h1 {
+            font-family: 'Source Code Pro', monospace;
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+        
+        .header-tagline {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        .back-link {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: all 0.3s;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .back-link:hover {
+            transform: translateY(-3px);
+            background: rgba(255, 255, 255, 0.3);
+        }
+        
+        .bounce-icon {
+            animation: bounce 2s infinite;
+        }
+        
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-5px); }
+        }
+        
+        .floating-elements {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            overflow: hidden;
+        }
+        
+        .floating-element {
+            position: absolute;
+            color: rgba(255, 255, 255, 0.3);
+            animation: float 8s infinite linear;
+        }
+        
+        .floating-element:nth-child(1) {
+            top: 20%;
+            left: 10%;
+            font-size: 1.8rem;
+            animation-duration: 10s;
+        }
+
+        .floating-element:nth-child(2) {
+            top: 30%;
+            right: 15%;
+            font-size: 2.2rem;
+            animation-duration: 12s;
+            animation-delay: 2s;
+        }
+        
+        .floating-element:nth-child(3) {
+            bottom: 20%;
+            left: 20%;
+            font-size: 1.5rem;
+            animation-duration: 9s;
+            animation-delay: 1s;
+        }
+        
+        @keyframes float {
+            0% { transform: translate(0, 0) rotate(0deg); }
+            25% { transform: translate(10px, -15px) rotate(5deg); }
+            50% { transform: translate(20px, 0) rotate(10deg); }
+            75% { transform: translate(10px, 15px) rotate(5deg); }
+            100% { transform: translate(0, 0) rotate(0deg); }
+        }
+        
+        .fun-divider {
+            position: relative;
+            height: 100px;
+            overflow: hidden;
+            margin-top: -1px;
+        }
+        
+        .fun-divider svg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+         .fun-divider path {
+            fill: #2b3137;
+        }
+        
+        /* Adjust game container spacing */
+        .game-container {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Your existing styles */
+        .games-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
         }
     </style>
 </body>
