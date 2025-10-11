@@ -1,0 +1,46 @@
+<!-- In each game HTML file (e.g., branching.html) -->
+<head>
+  <!-- Always include the shared CSS first -->
+  <link rel="stylesheet" href="../css/git-games.css">
+  
+  <!-- Then include the game-specific CSS if needed -->
+  <link rel="stylesheet" href="../css/branching.css">
+
+  <script src="../js/git-common.js" defer></script>
+<script src="../js/timeline.js" defer></script>
+</head>
+
+<div class="game-container commit-timeline">
+  <div class="game-header">
+    <h2>Commit History Timeline</h2>
+    <div class="level-indicator">Level: <span id="timeline-level">1</span></div>
+    <div class="score">Score: <span id="timeline-score">0</span></div>
+  </div>
+  
+  <div class="timeline-container">
+    <div class="current-timeline" id="current-timeline">
+      <!-- Commits will be inserted here as draggable elements -->
+    </div>
+    
+    <div class="target-timeline" id="target-timeline">
+      <!-- Target order will be displayed here -->
+    </div>
+  </div>
+  
+  <div class="timeline-controls">
+    <button id="check-solution">Submit Solution</button>
+    <button id="reset-timeline">Reset Timeline</button>
+    <button id="show-hint" class="hint-button">Show Hint</button>
+  </div>
+  
+  <div class="commit-info-panel">
+    <h3>Commit Details</h3>
+    <div id="commit-details">Click on a commit to see details</div>
+  </div>
+  
+  <div class="game-instructions">
+    <h3>Goal:</h3>
+    <p>Reorder the commits to create a logical history that matches the target timeline.</p>
+    <p>Drag and drop commits to change their order.</p>
+  </div>
+</div>

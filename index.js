@@ -330,3 +330,21 @@ function createClickRipple(event) {
     ripple.remove();
   }, 600);
 }
+
+// Add button hover effects
+    const buttons = document.querySelectorAll('.module-btn', '.nav-item');
+    buttons.forEach(button => {
+        button.addEventListener('mouseenter', () => {
+            if (document.querySelector('.magic-cursor')) {
+                document.querySelector('.magic-cursor').style.width = '50px';
+                document.querySelector('.magic-cursor').style.height = '50px';
+            }
+        });
+        
+        button.addEventListener('mouseleave', () => {
+            if (document.querySelector('.magic-cursor')) {
+                document.querySelector('.magic-cursor').style.width = '30px';
+                document.querySelector('.magic-cursor').style.height = '30px';
+            }
+        });
+    });

@@ -1,0 +1,51 @@
+<!-- In each game HTML file (e.g., branching.html) -->
+<head>
+  <!-- Always include the shared CSS first -->
+  <link rel="stylesheet" href="../css/git-games.css">
+  
+  <!-- Then include the game-specific CSS if needed -->
+  <link rel="stylesheet" href="../css/branching.css">
+
+  <script src="../js/git-common.js" defer></script>
+<script src="../js/escape-room.js" defer></script>
+</head>
+
+<div class="game-container git-escape-room">
+  <div class="game-header">
+    <h2>Git Escape Room</h2>
+    <div class="room-indicator">Room: <span id="room-number">1</span></div>
+    <div class="score">Score: <span id="escape-score">0</span></div>
+    <div class="time-remaining">Time: <span id="time-remaining">10:00</span></div>
+  </div>
+  
+  <div class="terminal-container">
+    <div class="terminal-output" id="terminal-output">
+      <div class="welcome-message">
+        Welcome to the Git Escape Room!<br>
+        You're trapped in a broken Git repository. Use Git commands to fix the issues and escape.
+      </div>
+    </div>
+    
+    <div class="terminal-input-line">
+      <span class="terminal-prompt">$</span>
+      <input type="text" id="terminal-input" placeholder="Enter Git command..." autofocus>
+    </div>
+  </div>
+  
+  <div class="room-description" id="room-description">
+    <!-- Room description will be inserted here -->
+  </div>
+  
+  <div class="game-controls">
+    <button id="hint-button" class="hint-button">Get Hint</button>
+    <button id="give-up" class="give-up-button">Give Up</button>
+    <div class="hints-remaining">Hints: <span id="hints-remaining">3</span></div>
+  </div>
+  
+  <div class="inventory-panel">
+    <h3>Inventory</h3>
+    <div id="inventory-items">
+      <!-- Found items will be listed here -->
+    </div>
+  </div>
+</div>

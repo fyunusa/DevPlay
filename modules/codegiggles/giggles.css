@@ -249,7 +249,6 @@ body{
   border: none;
   color: #ccc;
   font-size: 22px;
-  cursor: pointer;
   transition: all 0.3s;
   padding: 5px;
   z-index: 5;
@@ -300,7 +299,6 @@ ul.cards{
   list-style-type: none;
   position: relative;
   padding: 20px 0;
-  cursor: pointer;
   li.title{ margin: 0 0 20px;
     h2{ font-weight: 700; }
   }
@@ -366,7 +364,6 @@ ul.card-stacks{
   width: 660px; 
   list-style-type: none; margin: 0 auto 20px; padding: 0;
   position: relative;
-  cursor: pointer;
   height: 700px;
   li.title{ margin: 0 0 20px;
     h2{ font-weight: 700; }
@@ -450,7 +447,6 @@ ul.cards-split{
   position: relative;
   margin: 0 auto 20px;
   padding: 20px;
-  cursor: pointer;
   li.title{ margin: 0 0 20px;
     h2{ font-weight: 700; }
   }
@@ -519,7 +515,6 @@ ul.cards-split-delay{
   list-style-type: none;
   position: relative;
   margin: 0 auto 20px; padding: 20px;
-  cursor: pointer;
   li.title{ margin: 0 0 20px;
     h2{ font-weight: 700; }
   }
@@ -631,7 +626,6 @@ pre {
   border-radius: 25px;
   font-weight: 500;
   font-family: 'Rubik', sans-serif;
-  cursor: pointer;
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;

@@ -593,6 +593,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Update party effect function to handle both types
   function addPartyEffect() {
+    console.log("adding party effects....");
     if (celebrant.celebrationType === "anniversary") {
       addAnniversaryEffect();
     } else {
@@ -743,6 +744,9 @@ document.addEventListener('DOMContentLoaded', function() {
   // Add celebration effect to completion screen
   celebrationScreen.addEventListener("animationend", () => {
     if (!celebrationScreen.classList.contains("hidden")) {
+      console.log(
+        "Celebration screen animation ended, adding party effects..."
+      );
       addPartyEffect();
     }
   });
@@ -757,6 +761,9 @@ document.addEventListener('DOMContentLoaded', function() {
   partyModeBtn.addEventListener("click", () => {
     document.body.classList.toggle("party-mode");
     if (document.body.classList.contains("party-mode")) {
+      console.log(
+        "Celebration screen animation ended, adding party effects..."
+      );
       addPartyEffect();
     }
   });
@@ -799,7 +806,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 font-size: 20px;
                 border: none;
                 box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-                cursor: pointer;
                 z-index: 100;
                 transition: all 0.3s ease;
             }

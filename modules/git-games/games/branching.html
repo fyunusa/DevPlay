@@ -1,0 +1,47 @@
+<!-- In each game HTML file (e.g., branching.html) -->
+<head>
+  <!-- Always include the shared CSS first -->
+  <link rel="stylesheet" href="../css/git-games.css">
+  
+  <!-- Then include the game-specific CSS if needed -->
+  <link rel="stylesheet" href="../css/branching.css">
+
+  <script src="../js/git-common.js" defer></script>
+<script src="../js/branching.js" defer></script>
+</head>
+
+<div class="game-container branching-puzzle">
+  <div class="game-header">
+    <h2>Git Branching Puzzle</h2>
+    <div class="level-indicator">Level: <span id="branch-level">1</span></div>
+    <div class="score">Score: <span id="branch-score">0</span></div>
+  </div>
+  
+  <div class="git-graph-container">
+    <div class="branch-visualization" id="branch-vis"></div>
+    <div class="target-visualization" id="target-vis"></div>
+  </div>
+  
+  <div class="commands-panel">
+    <div class="available-commands">
+      <button class="git-cmd" data-cmd="merge">git merge</button>
+      <button class="git-cmd" data-cmd="checkout">git checkout</button>
+      <button class="git-cmd" data-cmd="rebase">git rebase</button>
+      <button class="git-cmd" data-cmd="branch">git branch</button>
+    </div>
+    
+    <div class="command-builder">
+      <span class="cmd-prompt">$</span>
+      <span id="current-command">git </span>
+      <span class="cursor"></span>
+    </div>
+    
+    <button id="execute-cmd">Execute</button>
+    <button id="reset-puzzle">Reset Puzzle</button>
+  </div>
+  
+  <div class="puzzle-instructions">
+    <h3>Goal:</h3>
+    <p>Merge the branches to match the target repository state shown on the right.</p>
+  </div>
+</div>
