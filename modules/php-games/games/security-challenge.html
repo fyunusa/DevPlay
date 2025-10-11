@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PHP Security Challenge | DevPlay</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="../css/games.css">
+  <link rel="stylesheet" href="../css/security-challenge.css">
+</head>
+<body>
+  <div class="game-container security-challenge">
+    <header>
+      <a href="../index.html" class="back-btn"><i class="fas fa-arrow-left"></i> Back to Games</a>
+      <h1><i class="fas fa-shield-alt"></i> PHP Security Challenge</h1>
+      <div class="game-stats">
+        <div class="level">Level: <span id="current-level">1</span></div>
+        <div class="score">Score: <span id="score">0</span></div>
+        <div class="vulnerabilities">Found: <span id="vulnerabilities-found">0</span>/<span id="total-vulnerabilities">0</span></div>
+      </div>
+    </header>
+
+    <div class="game-area">
+      <div class="scenario-container">
+        <h2>Scenario: <span id="scenario-title">Login Form Vulnerabilities</span></h2>
+        <p id="scenario-description">
+          This login form code has multiple security vulnerabilities. Identify and fix them to secure the application.
+        </p>
+        
+        <div class="security-categories">
+          <div class="category-pill" data-category="sql-injection">SQL Injection</div>
+          <div class="category-pill" data-category="xss">XSS</div>
+          <div class="category-pill" data-category="csrf">CSRF</div>
+          <div class="category-pill" data-category="auth">Authentication</div>
+          <div class="category-pill" data-category="input">Input Validation</div>
+        </div>
+      </div>
+
+      <div class="code-editor">
+        <div class="code-header">
+          <span id="current-file">login.php</span>
+          <div class="code-actions">
+            <button id="hint-btn" class="hint-btn">
+              <i class="fas fa-lightbulb"></i> Hint (<span id="hints-left">3</span>)
+            </button>
+            <button id="reset-btn">
+              <i class="fas fa-redo"></i> Reset Code
+            </button>
+          </div>
+        </div>
+        
+        <div class="editor-area">
+          <div class="line-numbers" id="line-numbers"></div>
+          <textarea id="code-editor" spellcheck="false"></textarea>
+          <div class="vulnerability-markers" id="vulnerability-markers"></div>
+        </div>
+        
+        <div class="editor-footer">
+          <button id="check-vulnerabilities" class="check-btn">
+            <i class="fas fa-bug"></i> Check for Vulnerabilities
+          </button>
+          <button id="submit-solution" class="submit-btn">
+            <i class="fas fa-check-circle"></i> Submit Fix
+          </button>
+        </div>
+      </div>
+
+      <div class="vulnerability-info">
+        <h3>Security Report</h3>
+        <div id="vulnerability-list">
+          <p class="placeholder">Click "Check for Vulnerabilities" to analyze the code.</p>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Result modal -->
+    <div class="modal" id="result-modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 id="result-title">Security Analysis</h2>
+          <span class="close-modal">&times;</span>
+        </div>
+        <div class="modal-body" id="result-body">
+          <!-- Content will be dynamically inserted -->
+        </div>
+        <div class="modal-footer">
+          <button id="continue-btn">Continue</button>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Hint modal -->
+    <div class="modal" id="hint-modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>Security Hint</h2>
+          <span class="close-modal">&times;</span>
+        </div>
+        <div class="modal-body">
+          <p id="hint-text"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../js/php-common.js"></script>
+  <script src="../js/security-challenge.js"></script>
+</body>
+</html>

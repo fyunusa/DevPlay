@@ -1,0 +1,82 @@
+[
+  {
+    "level": 1,
+    "title": "Login Form Vulnerabilities",
+    "description": "This login form code has multiple security vulnerabilities. Identify and fix them to secure the application.",
+    "filename": "login.php",
+    "code": "<?php\nsession_start();\n\n// Login form processing\nif ($_SERVER['REQUEST_METHOD'] === 'POST') {\n  $username = $_POST['username'];\n  $password = $_POST['password'];\n  \n  // Connect to database\n  $conn = mysqli_connect('localhost', 'dbuser', 'dbpass', 'users_db');\n  \n  // Check if user exists\n  $query = \"SELECT * FROM users WHERE username='$username' AND password='$password'\";\n  $result = mysqli_query($conn, $query);\n  \n  if (mysqli_num_rows($result) > 0) {\n    $user = mysqli_fetch_assoc($result);\n    $_SESSION['user_id'] = $user['id'];\n    $_SESSION['username'] = $user['username'];\n    \n    // Redirect to dashboard\n    header('Location: dashboard.php');\n    exit;\n  } else {\n    $error = \"Invalid username or password\";\n  }\n  \n  mysqli_close($conn);\n}\n?>\n\n<!DOCTYPE html>\n<html>\n<head>\n  <title>Login</title>\n</head>\n<body>\n  <h1>Login</h1>\n  \n  <?php if (isset($error)): ?>\n    <div class=\"error\"><?= $error ?></div>\n  <?php endif; ?>\n  \n  <form method=\"post\" action=\"\">\n    <div>\n      <label for=\"username\">Username:</label>\n      <input type=\"text\" id=\"username\" name=\"username\" value=\"<?= isset($_POST['username']) ? $_POST['username'] : '' ?>\">\n    </div>\n    <div>\n      <label for=\"password\">Password:</label>\n      <input type=\"password\" id=\"password\" name=\"password\">\n    </div>\n    <div>\n      <button type=\"submit\">Login</button>\n    </div>\n  </form>\n</body>\n</html>",
+    "vulnerabilities": [
+      {
+        "id": "sql-injection",
+        "name": "SQL Injection",
+        "category": "sql-injection",
+        "code": "\"SELECT * FROM users WHERE username='$username' AND password='$password'\"",
+        "description": "The query is vulnerable to SQL injection attacks because user input is directly inserted into the SQL query without proper sanitization.",
+        "hint": "Use prepared statements to prevent SQL injection attacks.",
+        "solution": "mysqli_prepare"
+      },
+      {
+        "id": "password-plain",
+        "name": "Plain Text Password Storage",
+        "category": "auth",
+        "code": "password='$password'",
+        "description": "Passwords are being stored and compared in plain text, which is a serious security risk.",
+        "hint": "Passwords should be hashed before storage and comparison.",
+        "solution": "password_verify"
+      },
+      {
+        "id": "xss-error",
+        "name": "Cross-Site Scripting (XSS)",
+        "category": "xss",
+        "code": "<?= $error ?>",
+        "description": "Error messages are output directly without sanitization, which can lead to XSS attacks.",
+        "hint": "Use htmlspecialchars() to prevent XSS attacks in output.",
+        "solution": "htmlspecialchars"
+      },
+      {
+        "id": "xss-username",
+        "name": "Cross-Site Scripting (XSS) in Form",
+        "category": "xss",
+        "code": "value=\"<?= isset($_POST['username']) ? $_POST['username'] : '' ?>\"",
+        "description": "User input is reflected back in the form without sanitization, which can lead to XSS attacks.",
+        "hint": "Always sanitize user input before reflecting it back in HTML.",
+        "solution": "htmlspecialchars($_POST['username'])"
+      },
+      {
+        "id": "csrf",
+        "name": "Cross-Site Request Forgery (CSRF)",
+        "category": "csrf",
+        "code": "<form method=\"post\" action=\"\">",
+        "description": "The form lacks CSRF protection, making it vulnerable to cross-site request forgery attacks.",
+        "hint": "Implement CSRF tokens to protect against CSRF attacks.",
+        "solution": "csrf_token"
+      }
+    ],
+    "solutions": [
+      {
+        "name": "Prepared Statements",
+        "code": "mysqli_prepare($conn, \"SELECT * FROM users WHERE username=? AND password=?\")",
+        "description": "Using prepared statements prevents SQL injection by separating SQL logic from the data.",
+        "hint": "Replace direct string interpolation with prepared statements."
+      },
+      {
+        "name": "Password Hashing",
+        "code": "password_verify($password, $user['password'])",
+        "description": "Passwords should be hashed with password_hash() and verified with password_verify() to secure user credentials.",
+        "hint": "Use PHP's built-in password_hash and password_verify functions."
+      },
+      {
+        "name": "Output Escaping",
+        "code": "htmlspecialchars($error, ENT_QUOTES, 'UTF-8')",
+        "description": "All output should be properly escaped to prevent XSS attacks.",
+        "hint": "Always use htmlspecialchars() when outputting user data or error messages."
+      },
+      {
+        "name": "CSRF Protection",
+        "code": "<input type=\"hidden\" name=\"csrf_token\" value=\"<?= $_SESSION['csrf_token'] ?>\"",
+        "description": "Adding and validating CSRF tokens prevents cross-site request forgery attacks.",
+        "hint": "Generate and validate a unique token for each form submission."
+      }
+    ]
+  }
+]

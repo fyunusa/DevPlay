@@ -1,0 +1,271 @@
+{
+  "frameworks": [
+    {
+      "id": "laravel",
+      "name": "Laravel",
+      "icon": "fa-laravel",
+      "version": "9.x",
+      "releaseYear": 2011,
+      "type": "Full-stack Framework",
+      "description": "Laravel is a free, open-source PHP web framework intended for the development of web applications following the model–view–controller (MVC) architectural pattern.",
+      "features": [
+        "Eloquent ORM",
+        "Blade templating engine",
+        "Artisan CLI",
+        "Built-in authentication"
+      ]
+    },
+    {
+      "id": "symfony",
+      "name": "Symfony",
+      "icon": "fa-symfony",
+      "version": "6.x",
+      "releaseYear": 2005,
+      "type": "Full-stack/Component Framework",
+      "description": "Symfony is a PHP framework for web and console applications and a set of reusable PHP components. It's used as the foundation for many other popular frameworks.",
+      "features": [
+        "Reusable components",
+        "Twig templating",
+        "Dependency injection",
+        "Console component"
+      ]
+    },
+    {
+      "id": "codeigniter",
+      "name": "CodeIgniter",
+      "icon": "fa-php",
+      "version": "4.x",
+      "releaseYear": 2006,
+      "type": "Lightweight Framework",
+      "description": "CodeIgniter is a powerful PHP framework with a very small footprint, built for developers who need a simple and elegant toolkit to create full-featured web applications.",
+      "features": [
+        "Minimal configuration",
+        "Zero dependencies",
+        "Small footprint",
+        "MVC architecture"
+      ]
+    },
+    {
+      "id": "cakephp",
+      "name": "CakePHP",
+      "icon": "fa-php",
+      "version": "4.x",
+      "releaseYear": 2005,
+      "type": "Full-stack Framework",
+      "description": "CakePHP is a rapid development framework for PHP that provides an extensible architecture for developing, maintaining, and deploying applications.",
+      "features": [
+        "Convention over configuration",
+        "Built-in ORM",
+        "CRUD scaffolding",
+        "Security features"
+      ]
+    },
+    {
+      "id": "slim",
+      "name": "Slim",
+      "icon": "fa-php",
+      "version": "4.x",
+      "releaseYear": 2010,
+      "type": "Micro-framework",
+      "description": "Slim is a PHP micro framework that helps you quickly write simple yet powerful web applications and APIs.",
+      "features": [
+        "Middleware architecture",
+        "PSR-7 support",
+        "Route dispatcher",
+        "Dependency injection"
+      ]
+    },
+    {
+      "id": "lumen",
+      "name": "Lumen",
+      "icon": "fa-laravel",
+      "version": "9.x",
+      "releaseYear": 2015,
+      "type": "Micro-framework",
+      "description": "Lumen is a micro-framework by Laravel, delivering lightning-fast performance for micro-services and APIs.",
+      "features": [
+        "Laravel components",
+        "Fast routing",
+        "Minimal configuration",
+        "Eloquent ORM optional"
+      ]
+    },
+    {
+      "id": "yii",
+      "name": "Yii",
+      "icon": "fa-php",
+      "version": "2.x",
+      "releaseYear": 2008,
+      "type": "Full-stack Framework",
+      "description": "Yii is a high-performance, component-based PHP framework for developing modern web applications.",
+      "features": [
+        "Active Record ORM",
+        "Form input/validation",
+        "Widgets system",
+        "Caching support"
+      ]
+    },
+    {
+      "id": "laminas",
+      "name": "Laminas",
+      "icon": "fa-php",
+      "version": "3.x",
+      "releaseYear": 2019,
+      "type": "Component-based Framework",
+      "description": "Laminas Project (formerly Zend Framework) is an open-source, object-oriented web application framework implemented in PHP.",
+      "features": [
+        "Modular architecture",
+        "MVC components",
+        "Enterprise-ready",
+        "Service manager"
+      ]
+    },
+    {
+      "id": "phalcon",
+      "name": "Phalcon",
+      "icon": "fa-php",
+      "version": "5.x",
+      "releaseYear": 2012,
+      "type": "Full-stack Framework (C-extension)",
+      "description": "Phalcon is an open source full stack framework for PHP, written as a C-extension offering high performance and lower resource consumption.",
+      "features": [
+        "Written in C",
+        "Low overhead",
+        "Full MVC components",
+        "Asset management"
+      ]
+    },
+    {
+      "id": "wordpress",
+      "name": "WordPress",
+      "icon": "fa-wordpress",
+      "version": "6.x",
+      "releaseYear": 2003,
+      "type": "CMS Framework",
+      "description": "While primarily a CMS, WordPress provides a robust framework for building websites, plugins, and web applications.",
+      "features": [
+        "Plugin architecture",
+        "Theme system",
+        "REST API",
+        "Hooks system"
+      ]
+    }
+  ],
+  
+  "useCases": [
+    {
+      "id": "enterprise",
+      "name": "Enterprise Applications",
+      "description": "Large-scale applications with complex business logic requiring reliability, scalability, and long-term support."
+    },
+    {
+      "id": "api",
+      "name": "REST API Development",
+      "description": "Lightweight, fast APIs with minimal overhead focused on delivering data efficiently."
+    },
+    {
+      "id": "rapid",
+      "name": "Rapid Application Development",
+      "description": "Projects requiring quick development cycles with built-in scaffolding and convention over configuration."
+    },
+    {
+      "id": "content",
+      "name": "Content Management",
+      "description": "Website or application where content creation, publishing, and management are the primary focus."
+    },
+    {
+      "id": "performance",
+      "name": "High-Performance Applications",
+      "description": "Applications requiring exceptional speed and low memory footprint, often handling high traffic."
+    },
+    {
+      "id": "microservices",
+      "name": "Microservices Architecture",
+      "description": "Distributed system built as small, independent services that communicate over a network."
+    },
+    {
+      "id": "legacy",
+      "name": "Legacy System Integration",
+      "description": "Projects that need to work with or gradually replace older PHP systems while maintaining compatibility."
+    },
+    {
+      "id": "ecommerce",
+      "name": "E-commerce Platforms",
+      "description": "Online stores and marketplaces requiring robust cart systems, payment processing, and product management."
+    }
+  ],
+  
+  "levels": [
+    {
+      "level": 1,
+      "title": "PHP Fundamentals",
+      "description": "Match popular PHP frameworks with their basic use cases. Perfect for beginners!",
+      "timeLimit": 90,
+      "frameworkIds": ["laravel", "symfony", "codeigniter", "wordpress"],
+      "useCaseIds": ["rapid", "enterprise", "performance", "content"],
+      "correctMatches": {
+        "rapid": "laravel",
+        "enterprise": "symfony",
+        "performance": "codeigniter",
+        "content": "wordpress"
+      }
+    },
+    {
+      "level": 2,
+      "title": "Micro vs Full-Stack",
+      "description": "Learn the difference between micro-frameworks and full-stack solutions.",
+      "timeLimit": 80,
+      "frameworkIds": ["slim", "laravel", "lumen", "phalcon"],
+      "useCaseIds": ["api", "enterprise", "microservices", "performance"],
+      "correctMatches": {
+        "api": "slim",
+        "enterprise": "laravel",
+        "microservices": "lumen",
+        "performance": "phalcon"
+      }
+    },
+    {
+      "level": 3,
+      "title": "Specialized Solutions",
+      "description": "Match frameworks with more specialized application requirements.",
+      "timeLimit": 75,
+      "frameworkIds": ["symfony", "yii", "laminas", "cakephp"],
+      "useCaseIds": ["enterprise", "legacy", "rapid", "ecommerce"],
+      "correctMatches": {
+        "enterprise": "symfony",
+        "legacy": "laminas",
+        "rapid": "cakephp",
+        "ecommerce": "yii"
+      }
+    },
+    {
+      "level": 4,
+      "title": "Performance Champions",
+      "description": "Focus on frameworks known for their speed and efficiency.",
+      "timeLimit": 70,
+      "frameworkIds": ["phalcon", "slim", "codeigniter", "lumen"],
+      "useCaseIds": ["performance", "api", "microservices", "rapid"],
+      "correctMatches": {
+        "performance": "phalcon",
+        "api": "slim",
+        "microservices": "lumen",
+        "rapid": "codeigniter"
+      }
+    },
+    {
+      "level": 5,
+      "title": "Framework Master",
+      "description": "The ultimate challenge! Match a wide variety of frameworks with their ideal use cases.",
+      "timeLimit": 60,
+      "frameworkIds": ["laravel", "symfony", "wordpress", "phalcon", "slim"],
+      "useCaseIds": ["rapid", "enterprise", "content", "performance", "api"],
+      "correctMatches": {
+        "rapid": "laravel",
+        "enterprise": "symfony",
+        "content": "wordpress",
+        "performance": "phalcon",
+        "api": "slim"
+      }
+    }
+  ]
+}

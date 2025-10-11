@@ -1,0 +1,390 @@
+/* Main Styles for PHP Games Module */
+:root {
+  --php-primary: #8892bf;
+  --php-secondary: #4f5b93;
+  --php-accent: #e2e4ef;
+  --php-dark: #232531;
+  --php-light: #f8f9fa;
+  --php-success: #28a745;
+  --php-danger: #dc3545;
+  --php-warning: #ffc107;
+  --card-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+body {
+  background-color: var(--php-light);
+  color: var(--php-dark);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header Styles */
+.main-header {
+  background-color: var(--php-secondary);
+  color: white;
+  padding: 15px 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.logo:hover {
+  color: var(--php-accent);
+}
+
+.logo i {
+  margin-right: 10px;
+}
+
+.module-nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.module-nav li {
+  margin-left: 20px;
+}
+
+.module-nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.module-nav a:hover {
+  color: var(--php-accent);
+}
+
+/* Main Content Styles */
+.main-container {
+  padding: 30px 15px;
+}
+
+.module-title {
+  color: var(--php-secondary);
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  position: relative;
+  display: inline-block;
+}
+
+.module-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 80px;
+  height: 4px;
+  background-color: var(--php-primary);
+  border-radius: 2px;
+}
+
+.module-intro {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 40px;
+  max-width: 800px;
+}
+
+/* Game Selection Cards */
+.game-selection {
+  margin-bottom: 50px;
+}
+
+.game-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: var(--card-shadow);
+  margin-bottom: 25px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  height: 100%;
+}
+
+.game-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.game-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  background-color: var(--php-primary);
+  color: white;
+  font-size: 2rem;
+  transition: all 0.3s ease;
+}
+
+.game-card:hover .game-icon {
+  background-color: var(--php-secondary);
+}
+
+.game-info {
+  padding: 20px;
+  flex: 1;
+}
+
+.game-info h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  color: var(--php-secondary);
+  font-weight: 600;
+}
+
+.game-info p {
+  color: #666;
+  margin-bottom: 20px;
+  font-size: 0.95rem;
+}
+
+.game-meta {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.game-meta span {
+  font-size: 0.85rem;
+  color: #666;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.game-meta i {
+  color: var(--php-primary);
+  margin-right: 5px;
+}
+
+.btn-play {
+  display: inline-block;
+  background-color: var(--php-primary);
+  color: white;
+  padding: 8px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.btn-play:hover {
+  background-color: var(--php-secondary);
+  color: white;
+}
+
+/* User Stats Section */
+.user-stats {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: var(--card-shadow);
+  padding: 30px;
+  margin-bottom: 50px;
+}
+
+.user-stats h2 {
+  color: var(--php-secondary);
+  font-size: 1.8rem;
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+
+.stat-card {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.stat-icon {
+  background-color: var(--php-accent);
+  color: var(--php-secondary);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  margin-right: 15px;
+}
+
+.stat-info h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: var(--php-dark);
+}
+
+.stat-info p {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--php-primary);
+  margin: 0;
+}
+
+/* PHP Tips Section */
+.tips-section {
+  margin-bottom: 50px;
+}
+
+.tips-section h2 {
+  color: var(--php-secondary);
+  font-size: 1.8rem;
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+
+.tip-card {
+  background-color: #fff;
+  border-left: 4px solid var(--php-primary);
+  border-radius: 5px;
+  box-shadow: var(--card-shadow);
+  padding: 20px;
+  height: 100%;
+  margin-bottom: 20px;
+}
+
+.tip-card h4 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--php-secondary);
+  margin-bottom: 10px;
+}
+
+.tip-card h4 i {
+  color: var(--php-primary);
+  margin-right: 8px;
+}
+
+.tip-card p {
+  color: #666;
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+/* Footer Styles */
+.main-footer {
+  background-color: var(--php-dark);
+  color: #ccc;
+  padding: 15px 0;
+  font-size: 0.9rem;
+  margin-top: 50px;
+  text-align: center;
+}
+
+/* Modal Styles */
+.modal-content {
+  border-radius: 10px;
+  border: none;
+}
+
+.modal-header {
+  background-color: var(--php-secondary);
+  color: white;
+  border-radius: 10px 10px 0 0;
+}
+
+.modal-body h6 {
+  color: var(--php-secondary);
+  font-weight: 600;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.modal-body ul {
+  padding-left: 20px;
+}
+
+.modal-body li {
+  margin-bottom: 8px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .logo span {
+    display: none;
+  }
+  
+  .game-icon {
+    width: 80px;
+    font-size: 1.5rem;
+  }
+  
+  .game-info h3 {
+    font-size: 1.2rem;
+  }
+  
+  .module-title {
+    font-size: 2rem;
+  }
+  
+  .user-stats, .tips-section {
+    padding: 20px 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .game-card {
+    flex-direction: column;
+  }
+  
+  .game-icon {
+    width: 100%;
+    height: 80px;
+  }
+  
+  .stat-card {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .stat-icon {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  
+  .module-title::after {
+    width: 60px;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.game-card, .stat-card, .tip-card {
+  animation: fadeIn 0.5s ease forwards;
+}
+
+.game-selection .col-lg-4:nth-child(1) .game-card {
+  animation-delay: 0.1s;
+}
+
+.game-selection .col-lg-4:nth-child(2) .game-card {
+  animation-delay: 0.2s;
+}
+
+.game-selection .col-lg-4:nth-child(3) .game-card {
+  animation-delay: 0.3s;
+}

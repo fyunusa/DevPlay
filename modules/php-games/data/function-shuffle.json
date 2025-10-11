@@ -1,0 +1,42 @@
+[
+  {
+    "level": 1,
+    "title": "Connect to Database and Get User Data",
+    "description": "Arrange the PHP functions in the correct order to connect to a MySQL database, query for user data, and return the results as JSON.",
+    "prefix": "<?php\n// Function sequence needed to solve this problem:\n",
+    "suffix": "// End of solution\necho $result;\n?>",
+    "functions": [
+      {
+        "id": "connect",
+        "code": "function connectToDatabase() {\n  $conn = new mysqli('localhost', 'user', 'password', 'database');\n  if ($conn->connect_error) {\n    die('Connection failed: ' . $conn->connect_error);\n  }\n  return $conn;\n}",
+        "hint": "establishes a database connection"
+      },
+      {
+        "id": "query",
+        "code": "function queryUserData($conn) {\n  $sql = \"SELECT id, name, email FROM users WHERE active = 1\";\n  $result = $conn->query($sql);\n  return $result;\n}",
+        "hint": "executes a query on the database"
+      },
+      {
+        "id": "process",
+        "code": "function processResults($result) {\n  $users = [];\n  if ($result->num_rows > 0) {\n    while($row = $result->fetch_assoc()) {\n      $users[] = $row;\n    }\n  }\n  return $users;\n}",
+        "hint": "transforms query results into an array"
+      },
+      {
+        "id": "json",
+        "code": "function convertToJson($data) {\n  return json_encode($data);\n}",
+        "hint": "converts data to JSON format"
+      },
+      {
+        "id": "execute",
+        "code": "function executeSequence() {\n  $conn = connectToDatabase();\n  $result = queryUserData($conn);\n  $users = processResults($result);\n  $json = convertToJson($users);\n  $conn->close();\n  return $json;\n}\n\n$result = executeSequence();",
+        "hint": "runs the entire sequence of operations"
+      }
+    ],
+    "solution": ["connect", "query", "process", "json", "execute"],
+    "output": "[\n  {\"id\":1, \"name\":\"John Doe\", \"email\":\"john@example.com\"},\n  {\"id\":2, \"name\":\"Jane Smith\", \"email\":\"jane@example.com\"}\n]",
+    "hints": {
+      "start": "First, you need to establish a connection to the database.",
+      "general": "Remember the logical flow: connect to database, query data, process results, format as JSON, then execute the sequence."
+    }
+  }
+]

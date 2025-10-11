@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PHP Function Shuffle | DevPlay</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="../css/games.css">
+  <link rel="stylesheet" href="../css/function-shuffle.css">
+</head>
+<body>
+  <div class="game-container function-shuffle">
+    <header>
+      <a href="../index.html" class="back-btn"><i class="fas fa-arrow-left"></i> Back to Games</a>
+      <h1><i class="fab fa-php"></i> Function Shuffle</h1>
+      <div class="game-stats">
+        <div class="level">Level: <span id="current-level">1</span></div>
+        <div class="score">Score: <span id="score">0</span></div>
+        <div class="time">Time: <span id="time-remaining">02:00</span></div>
+      </div>
+    </header>
+
+    <div class="game-area">
+      <div class="problem-statement">
+        <h2>Problem: <span id="problem-title">Connect to Database and Get User Data</span></h2>
+        <p id="problem-description">
+          Arrange the PHP functions in the correct order to connect to a MySQL database,
+          query for user data, and return the results as JSON.
+        </p>
+      </div>
+
+      <div class="code-container">
+        <div class="code-header">
+          <span>PHP Code</span>
+          <div class="code-actions">
+            <button id="hint-btn" class="hint-btn">
+              <i class="fas fa-lightbulb"></i> Hint (<span id="hints-left">3</span>)
+            </button>
+            <button id="reset-btn">
+              <i class="fas fa-redo"></i> Reset
+            </button>
+          </div>
+        </div>
+        
+        <div class="php-code-area">
+          <pre class="code-prefix" id="code-prefix">
+&lt;?php
+// Function sequence needed to solve this problem:
+          </pre>
+          
+          <div class="sortable-functions" id="function-sequence">
+            <!-- Functions will be inserted here via JavaScript -->
+          </div>
+          
+          <pre class="code-suffix" id="code-suffix">
+// End of solution
+echo $result;
+?&gt;
+          </pre>
+        </div>
+
+        <button id="check-solution" class="check-btn">Check Solution</button>
+      </div>
+
+      <div class="available-functions">
+        <h3>Available Functions</h3>
+        <div class="function-palette" id="function-palette">
+          <!-- Functions will be inserted here via JavaScript -->
+        </div>
+      </div>
+    </div>
+    
+    <!-- Result modal -->
+    <div class="modal" id="result-modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 id="result-title">Great job!</h2>
+          <span class="close-modal">&times;</span>
+        </div>
+        <div class="modal-body" id="result-body">
+          <p>You've solved the problem correctly!</p>
+          <div class="code-result" id="code-result"></div>
+        </div>
+        <div class="modal-footer">
+          <button id="continue-btn">Continue</button>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Hint modal -->
+    <div class="modal" id="hint-modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>Hint</h2>
+          <span class="close-modal">&times;</span>
+        </div>
+        <div class="modal-body">
+          <p id="hint-text"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../js/php-common.js"></script>
+  <script src="../js/function-shuffle.js"></script>
+</body>
+</html>
