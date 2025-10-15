@@ -718,3 +718,37 @@ body {
     padding-right: calc(var(--bs-gutter-x) * .5);
   }
 }
+
+
+.badge-external {
+  position: absolute;
+  top: 60px; /* Position below other badges */
+  right: 10px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  z-index: 2;
+  box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+/* External link icon animation */
+.module-btn .fa-external-link-alt {
+  transition: transform 0.3s ease;
+}
+
+.module-btn:hover .fa-external-link-alt {
+  transform: translate(2px, -2px);
+}
