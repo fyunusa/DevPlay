@@ -32,6 +32,11 @@ class DatasetCreatorApp {
       this.seedSampleData();
     }
 
+    // Initialize file handler
+    if (typeof FileHandler !== "undefined") {
+      window.fileHandler = new FileHandler(DataExtractor);
+    }
+
     // Setup feature event listeners
     this.setupTransformFeature();
     this.setupAugmentFeature();
@@ -218,16 +223,149 @@ class DatasetCreatorApp {
   }
 
   setupAugmentFeature() {
-    const generateBtn = document.getElementById("generate-variations-btn");
-    if (generateBtn) {
-      generateBtn.addEventListener("click", () => {
+  const generateBtn = document.getElementById("generate-variations-btn");
+  const optionCards = document.querySelectorAll(".option-card .btn-primary");
+  let selectedTechnique = null;
+
+  // Setup technique selection
+  if (optionCards) {
+    optionCards.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        // Remove selected class from all buttons
+        optionCards.forEach((b) => {
+          b.classList.remove("selected");
+          b.textContent = "Use This";
+        });
+
+        // Add selected class to clicked button
+        btn.classList.add("selected");
+        btn.textContent = "Selected";
+
+        // Get technique from parent's heading
+        const heading = btn.parentElement.querySelector("h4").textContent;
+
+        if (heading.includes("Paraphrase")) {
+          selectedTechnique = "rephrase";
+        } else if (heading.includes("Synonym")) {
+          selectedTechnique = "synonym";
+        } else if (heading.includes("Case")) {
+          selectedTechnique = "case";
+        } else if (heading.includes("Context")) {
+          selectedTechnique = "context";
+        }
+
+        // Update prompts list
+        this.populatePromptsForAugmentation();
+      });
+    });
+  }
+
+  if (generateBtn) {
+    generateBtn.addEventListener("click", () => {
+      // Get selected pairs for augmentation
+      const checkboxes = document.querySelectorAll(
+        "#prompts-to-augment input[type=checkbox]:checked"
+      );
+      const selectedPairs = Array.from(checkboxes).map((cb) => {
+        return this.datasetManager.get(cb.value);
+      });
+
+      if (selectedPairs.length === 0) {
         this.uiManager.showNotification(
-          "Augmentation feature coming soon!",
+          "Please select at least one prompt to augment",
           "warning"
         );
+        return;
+      }
+
+      if (!selectedTechnique) {
+        this.uiManager.showNotification(
+          "Please select an augmentation technique",
+          "warning"
+        );
+        return;
+      }
+
+      // Setup options based on technique
+      let options = {
+        count: 2,
+        techniques: [],
+      };
+
+      switch (selectedTechnique) {
+        case "rephrase":
+          options.techniques = ["synonym", "insertion"];
+          options.synonymRate = 0.4;
+          break;
+        case "synonym":
+          options.techniques = ["synonym"];
+          options.synonymRate = 0.5;
+          break;
+        case "case":
+          options.techniques = ["case"];
+          break;
+        case "context":
+          options.techniques = ["context"];
+          break;
+      }
+
+      // Generate variations
+      let augmented = [];
+
+      selectedPairs.forEach((pair) => {
+        // Generate variations but don't include original
+        const variations = DataAugmenters.augmentPair(pair, options).slice(1);
+        augmented = augmented.concat(variations);
       });
-    }
+
+      // Add augmented pairs to dataset
+      if (augmented.length > 0) {
+        augmented.forEach((pair) => {
+          this.datasetManager.add(pair);
+        });
+
+        this.uiManager.showNotification(
+          `Created ${augmented.length} new variations!`,
+          "success"
+        );
+      } else {
+        this.uiManager.showNotification(
+          "No variations could be generated.",
+          "error"
+        );
+      }
+    });
   }
+}
+
+// Add this helper method to populate the prompts list
+populatePromptsForAugmentation() {
+  const container = document.getElementById("prompts-to-augment");
+  if (!container) return;
+
+  const pairs = this.datasetManager.getAll();
+
+  if (pairs.length === 0) {
+    container.innerHTML =
+      '<p class="empty-state">No prompts available. Add some data first!</p>';
+    return;
+  }
+
+  container.innerHTML = pairs
+    .map((pair, index) => {
+      return `
+      <div class="prompt-checkbox">
+        <input type="checkbox" id="aug-pair-${index}" value="${
+        pair.id || index
+      }">
+        <label for="aug-pair-${index}">${pair.prompt.substring(0, 60)}${
+        pair.prompt.length > 60 ? "..." : ""
+      }</label>
+      </div>
+    `;
+    })
+    .join("");
+}
 
   setupCleanFeature() {
     const cleanBtn = document.getElementById("run-cleaning-btn");
@@ -322,28 +460,28 @@ class DatasetCreatorApp {
   }
 
   setupAnalyzeFeature() {
-    const analyzeBtn = document.getElementById('analyze-btn');
+    const analyzeBtn = document.getElementById("analyze-btn");
     if (analyzeBtn) {
-        analyzeBtn.addEventListener('click', () => {
-            const dataset = this.datasetManager.getAll();
-            
-            if (dataset.length === 0) {
-                this.uiManager.showNotification('No data to analyze!', 'warning');
-                return;
-            }
-            
-            // Perform comprehensive analysis
-            const analysis = DataAnalyzers.analyzeDataset(dataset);
-            
-            if (analysis) {
-                this.uiManager.displayAnalysisResults(analysis);
-                this.uiManager.showNotification('Analysis complete!', 'success');
-            } else {
-                this.uiManager.showNotification('Error analyzing dataset', 'error');
-            }
-        });
+      analyzeBtn.addEventListener("click", () => {
+        const dataset = this.datasetManager.getAll();
+
+        if (dataset.length === 0) {
+          this.uiManager.showNotification("No data to analyze!", "warning");
+          return;
+        }
+
+        // Perform comprehensive analysis
+        const analysis = DataAnalyzers.analyzeDataset(dataset);
+
+        if (analysis) {
+          this.uiManager.displayAnalysisResults(analysis);
+          this.uiManager.showNotification("Analysis complete!", "success");
+        } else {
+          this.uiManager.showNotification("Error analyzing dataset", "error");
+        }
+      });
     }
-}
+  }
 
   setupManualAdd() {
     const manualAddBtn = document.getElementById("manual-add-btn");
@@ -356,7 +494,13 @@ class DatasetCreatorApp {
 
   setupExport() {
     const exportBtn = document.getElementById("export-dataset-btn");
-    if (exportBtn) {
+    if (exportBtn && this.importExportManager) {
+      exportBtn.addEventListener("click", () => {
+        // Use the ImportExportManager instead of direct export
+        this.importExportManager.openExportModal();
+      });
+    } else if (exportBtn) {
+      // Fallback to direct export if ImportExportManager is not available
       exportBtn.addEventListener("click", () => {
         const dataset = this.datasetManager.getAll();
         if (dataset.length === 0) {
