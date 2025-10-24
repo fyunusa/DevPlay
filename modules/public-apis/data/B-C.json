@@ -1,0 +1,188 @@
+{
+    "Business": [
+      {
+        "API": "Apache Superset",
+        "Description": "API to manage your BI dashboards and data sources on Superset",
+        "Auth": "apiKey",
+        "HTTPS": true,
+        "CORS": true,
+        "URL": "https://superset.apache.org/docs/api"
+      },
+      {
+        "API": "Charity Search",
+        "Description": "Non-profit charity data",
+        "Auth": "apiKey",
+        "HTTPS": false,
+        "CORS": null,
+        "URL": "http://charityapi.orghunter.com/"
+      },
+      {
+        "API": "Clearbit Logo",
+        "Description": "Search for company logos and embed them in your projects",
+        "Auth": "apiKey",
+        "HTTPS": true,
+        "CORS": null,
+        "URL": "https://clearbit.com/docs#logo-api"
+      },
+      {
+        "API": "Domainsdb.info",
+        "Description": "Registered Domain Names Search",
+        "Auth": null,
+        "HTTPS": true,
+        "CORS": false,
+        "URL": "https://domainsdb.info/"
+      },
+      {
+        "API": "Freelancer",
+        "Description": "Hire freelancers to get work done",
+        "Auth": "OAuth",
+        "HTTPS": true,
+        "CORS": null,
+        "URL": "https://developers.freelancer.com"
+      },
+      {
+        "API": "Gmail",
+        "Description": "Flexible, RESTful access to the user's inbox",
+        "Auth": "OAuth",
+        "HTTPS": true,
+        "CORS": null,
+        "URL": "https://developers.google.com/gmail/api/"
+      },
+      {
+        "API": "Google Analytics",
+        "Description": "Collect, configure and analyze your data to reach the right audience",
+        "Auth": "OAuth",
+        "HTTPS": true,
+        "CORS": null,
+        "URL": "https://developers.google.com/analytics/"
+      },
+      {
+        "API": "Instatus",
+        "Description": "Post to and update maintenance and incidents on your status page through an HTTP REST API",
+        "Auth": "apiKey",
+        "HTTPS": true,
+        "CORS": null,
+        "URL": "https://instatus.com/help/api"
+      },
+      {
+        "API": "Mailchimp",
+        "Description": "Send marketing campaigns and transactional mails",
+        "Auth": "apiKey",
+        "HTTPS": true,
+        "CORS": null,
+        "URL": "https://mailchimp.com/developer/"
+      },
+      {
+        "API": "mailjet",
+        "Description": "Marketing email can be sent and mail templates made in MJML or HTML can be sent using API",
+        "Auth": "apiKey",
+        "HTTPS": true,
+        "CORS": null,
+        "URL": "https://www.mailjet.com/"
+      },
+      {
+        "API": "markerapi",
+        "Description": "Trademark Search",
+        "Auth": null,
+        "HTTPS": false,
+        "CORS": null,
+        "URL": "https://markerapi.com"
+      },
+      {
+        "API": "ORB Intelligence",
+        "Description": "Company lookup",
+        "Auth": "apiKey",
+        "HTTPS": true,
+        "CORS": null,
+        "URL": "https://api.orb-intelligence.com/docs/"
+      },
+      {
+        "API": "Redash",
+        "Description": "Access your queries and dashboards on Redash",
+        "Auth": "apiKey",
+        "HTTPS": true,
+        "CORS": true,
+        "URL": "https://redash.io/help/user-guide/integrations-and-api/api"
+      },
+      {
+        "API": "Smartsheet",
+        "Description": "Allows you to programmatically access and Smartsheet data and account information",
+        "Auth": "OAuth",
+        "HTTPS": true,
+        "CORS": false,
+        "URL": "https://smartsheet.redoc.ly/"
+      },
+      {
+        "API": "Square",
+        "Description": "Easy way to take payments, manage refunds, and help customers checkout online",
+        "Auth": "OAuth",
+        "HTTPS": true,
+        "CORS": null,
+        "URL": "https://developer.squareup.com/reference/square"
+      },
+      {
+        "API": "SwiftKanban",
+        "Description": "Kanban software, Visualize Work, Increase Organizations Lead Time, Throughput & Productivity",
+        "Auth": "apiKey",
+        "HTTPS": true,
+        "CORS": null,
+        "URL": "https://www.digite.com/knowledge-base/swiftkanban/article/api-for-swift-kanban-web-services/#restapi"
+      },
+      {
+        "API": "Tenders in Hungary",
+        "Description": "Get data for procurements in Hungary in JSON format",
+        "Auth": null,
+        "HTTPS": true,
+        "CORS": null,
+        "URL": "https://tenders.guru/hu/api"
+      },
+      {
+        "API": "Tenders in Poland",
+        "Description": "Get data for procurements in Poland in JSON format",
+        "Auth": null,
+        "HTTPS": true,
+        "CORS": null,
+        "URL": "https://tenders.guru/pl/api"
+      },
+      {
+        "API": "Tenders in Romania",
+        "Description": "Get data for procurements in Romania in JSON format",
+        "Auth": null,
+        "HTTPS": true,
+        "CORS": null,
+        "URL": "https://tenders.guru/ro/api"
+      },
+      {
+        "API": "Tenders in Spain",
+        "Description": "Get data for procurements in Spain in JSON format",
+        "Auth": null,
+        "HTTPS": true,
+        "CORS": null,
+        "URL": "https://tenders.guru/es/api"
+      },
+      {
+        "API": "Tenders in Ukraine",
+        "Description": "Get data for procurements in Ukraine in JSON format",
+        "Auth": null,
+        "HTTPS": true,
+        "CORS": null,
+        "URL": "https://tenders.guru/ua/api"
+      },
+      {
+        "API": "Tomba email finder",
+        "Description": "Email Finder for B2B sales and email marketing and email verifier",
+        "Auth": "apiKey",
+        "HTTPS": true,
+        "CORS": true,
+        "URL": "https://tomba.io/api"
+      },
+      {
+        "API": "Trello",
+        "Description": "Boards, lists and cards to help you organize and prioritize your projects",
+        "Auth": "OAuth",
+        "HTTPS": true,
+        "CORS": null,
+        "URL": "https://developers.trello.com/"
+      }
+    ]
+  }

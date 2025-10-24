@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PromptoScope - Visual Prompt Engineering Laboratory</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/promptoscope.css">
+  <!-- Add D3.js for visualizations -->
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+  <!-- Header with animated elements -->
+  <div class="header">
+    <div class="header-content">
+      <h1><i class="fas fa-microscope me-2"></i>PromptoScope<i class="fas fa-wand-magic-sparkles ms-2"></i></h1>
+      <p class="header-tagline">Visual Prompt Engineering & Testing Laboratory</p>
+    </div>
+    <div class="floating-elements">
+      <i class="fas fa-magnifying-glass floating-element"></i>
+      <i class="fas fa-brain floating-element"></i>
+      <i class="fas fa-lightbulb floating-element"></i>
+    </div>
+  </div>
+
+  <div class="wave-divider">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+      <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"></path>
+    </svg>
+  </div>
+
+  <!-- Main Content -->
+  <div class="container">
+    <!-- Workspace Tabs -->
+    <div class="workspace-tabs">
+      <button class="tab-btn active" data-tab="editor">
+        <i class="fas fa-edit"></i> Prompt Editor
+      </button>
+      <button class="tab-btn" data-tab="visualize">
+        <i class="fas fa-eye"></i> Visualizer
+      </button>
+      <button class="tab-btn" data-tab="test">
+        <i class="fas fa-vial"></i> A/B Testing
+      </button>
+      <button class="tab-btn" data-tab="templates">
+        <i class="fas fa-clipboard-list"></i> Templates
+      </button>
+    </div>
+
+    <!-- Editor Tab -->
+    <div class="tab-content active" id="editor-tab">
+      <div class="editor-container">
+        <div class="prompt-panel">
+          <div class="panel-header">
+            <h3><i class="fas fa-pen"></i> Prompt Editor</h3>
+            <div class="panel-actions">
+              <button id="save-prompt-btn" class="btn btn-sm btn-primary">
+                <i class="fas fa-save"></i> Save
+              </button>
+              <button id="clear-prompt-btn" class="btn btn-sm btn-secondary">
+                <i class="fas fa-trash"></i> Clear
+              </button>
+            </div>
+          </div>
+          
+          <div class="panel-body">
+            <div class="input-section">
+              <label>Prompt Name:</label>
+              <input type="text" id="prompt-name" placeholder="My awesome prompt">
+            </div>
+            
+            <div class="input-section">
+              <label>Model:</label>
+              <select id="model-select" class="input-select">
+                <option value="gpt-4">GPT-4</option>
+                <option value="gpt-3.5-turbo">GPT-3.5 Turbo</option>
+                <option value="claude-3-opus">Claude 3 Opus</option>
+                <option value="claude-3-sonnet">Claude 3 Sonnet</option>
+                <option value="mixtral-8x7b">Mixtral 8x7B</option>
+                <option value="llama-3-70b">Llama 3 70B</option>
+              </select>
+            </div>
+
+            <div class="input-section">
+              <label>Your Prompt:</label>
+              <textarea id="prompt-input" class="prompt-textarea" placeholder="Enter your prompt here...
+
+Example:
+You are an expert biology teacher helping a high school student.
+Explain the process of photosynthesis in simple terms.
+Include a brief analogy that makes it easy to understand."></textarea>
+            </div>
+
+            <div class="token-counter">
+              <span id="token-count">0</span> tokens used
+              <div class="token-meter">
+                <div id="token-meter-fill" style="width: 0%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="parameters-panel">
+          <div class="panel-header">
+            <h3><i class="fas fa-sliders"></i> Parameters</h3>
+            <button id="reset-params-btn" class="btn btn-sm btn-secondary">
+              <i class="fas fa-undo"></i> Reset
+            </button>
+          </div>
+          
+          <div class="panel-body parameters">
+            <div class="parameter-control">
+              <label for="temperature">Temperature: <span id="temp-value">0.7</span></label>
+              <input type="range" id="temperature" min="0" max="2" step="0.1" value="0.7">
+              <div class="parameter-info">Higher values make output more random, lower values more deterministic</div>
+            </div>
+
+            <div class="parameter-control">
+              <label for="top-p">Top P: <span id="top-p-value">1.0</span></label>
+              <input type="range" id="top-p" min="0" max="1" step="0.05" value="1">
+              <div class="parameter-info">Nucleus sampling - considers tokens with top_p probability mass</div>
+            </div>
+
+            <div class="parameter-control">
+              <label for="max-tokens">Max Tokens: <span id="max-tokens-value">256</span></label>
+              <input type="range" id="max-tokens" min="50" max="4000" step="50" value="256">
+              <div class="parameter-info">Maximum number of tokens to generate in the response</div>
+            </div>
+
+            <div class="parameter-control">
+              <label for="presence-penalty">Presence Penalty: <span id="presence-penalty-value">0</span></label>
+              <input type="range" id="presence-penalty" min="-2" max="2" step="0.1" value="0">
+              <div class="parameter-info">Positive values penalize tokens that have already appeared</div>
+            </div>
+
+            <div class="parameter-control">
+              <label for="frequency-penalty">Frequency Penalty: <span id="frequency-penalty-value">0</span></label>
+              <input type="range" id="frequency-penalty" min="-2" max="2" step="0.1" value="0">
+              <div class="parameter-info">Positive values penalize tokens based on their frequency in text</div>
+            </div>
+
+            <div class="parameter-info-box">
+              <div class="info-header"><i class="fas fa-lightbulb"></i> Parameter Tip</div>
+              <div id="parameter-tip">Try using a temperature of 0.7 for creative tasks, and lower values like 0.2 for more factual or predictable responses.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="response-panel">
+          <div class="panel-header">
+            <h3><i class="fas fa-robot"></i> AI Response</h3>
+            <div class="panel-actions">
+              <button id="generate-btn" class="btn btn-sm btn-success">
+                <i class="fas fa-play"></i> Generate
+              </button>
+              <button id="copy-response-btn" class="btn btn-sm btn-secondary">
+                <i class="fas fa-copy"></i> Copy
+              </button>
+            </div>
+          </div>
+          
+          <div class="panel-body">
+            <div id="response-container" class="response-container">
+              <div class="response-placeholder">
+                <i class="fas fa-robot"></i>
+                <p>Response will appear here after generation</p>
+              </div>
+              <div id="ai-response" class="ai-response" style="display: none;"></div>
+            </div>
+            
+            <div class="response-metadata">
+              <div class="metadata-item">
+                <span class="metadata-label">Tokens:</span>
+                <span id="response-tokens" class="metadata-value">0</span>
+              </div>
+              <div class="metadata-item">
+                <span class="metadata-label">Time:</span>
+                <span id="response-time" class="metadata-value">0s</span>
+              </div>
+              <div class="metadata-item">
+                <span class="metadata-label">Model:</span>
+                <span id="response-model" class="metadata-value">-</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Visualizer Tab -->
+    <div class="tab-content" id="visualize-tab">
+      <div class="tool-card">
+        <h3><i class="fas fa-chart-network"></i> Prompt X-Ray</h3>
+        <p>Visualize how the AI interprets your prompt</p>
+
+        <div class="visualization-container">
+          <div class="viz-sidebar">
+            <div class="viz-option active" data-viz="attention">
+              <i class="fas fa-bullseye"></i>
+              <span>Attention Map</span>
+            </div>
+            <div class="viz-option" data-viz="structure">
+              <i class="fas fa-sitemap"></i>
+              <span>Structure Analysis</span>
+            </div>
+            <div class="viz-option" data-viz="tokens">
+              <i class="fas fa-cubes"></i>
+              <span>Token Breakdown</span>
+            </div>
+            <div class="viz-option" data-viz="context">
+              <i class="fas fa-compress-arrows-alt"></i>
+              <span>Context Window</span>
+            </div>
+          </div>
+          <div class="viz-content">
+            <div id="visualization-area">
+              <div class="empty-state">
+                <i class="fas fa-chart-line"></i>
+                <p>Generate a response first to see visualizations</p>
+              </div>
+            </div>
+            <div class="viz-legend">
+              <div class="legend-item">
+                <div class="legend-color" style="background-color: #FF5252;"></div>
+                <span>High Influence</span>
+              </div>
+              <div class="legend-item">
+                <div class="legend-color" style="background-color: #FFEB3B;"></div>
+                <span>Medium Influence</span>
+              </div>
+              <div class="legend-item">
+                <div class="legend-color" style="background-color: #4CAF50;"></div>
+                <span>Low Influence</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- A/B Testing Tab -->
+    <div class="tab-content" id="test-tab">
+      <div class="tool-card">
+        <h3><i class="fas fa-balance-scale"></i> A/B Testing</h3>
+        <p>Compare different versions of your prompt</p>
+
+        <div class="ab-testing-container">
+          <div class="test-setup">
+            <div class="test-prompt">
+              <h4>Prompt A</h4>
+              <textarea id="prompt-a" class="prompt-textarea" placeholder="Enter your first prompt version here..."></textarea>
+            </div>
+            <div class="vs-divider">VS</div>
+            <div class="test-prompt">
+              <h4>Prompt B</h4>
+              <textarea id="prompt-b" class="prompt-textarea" placeholder="Enter your second prompt version here..."></textarea>
+            </div>
+          </div>
+          
+          <div class="test-params">
+            <h4>Test Parameters</h4>
+            <div class="input-section">
+              <label>Model:</label>
+              <select id="test-model" class="input-select">
+                <option value="gpt-4">GPT-4</option>
+                <option value="gpt-3.5-turbo">GPT-3.5 Turbo</option>
+                <option value="claude-3-opus">Claude 3 Opus</option>
+                <option value="claude-3-sonnet">Claude 3 Sonnet</option>
+              </select>
+            </div>
+            <div class="input-section">
+              <label>Evaluation Method:</label>
+              <select id="eval-method" class="input-select">
+                <option value="side-by-side">Side-by-side Comparison</option>
+                <option value="metrics">Objective Metrics</option>
+                <option value="ai-judge">AI Judge Evaluation</option>
+              </select>
+            </div>
+            <div class="test-actions">
+              <button id="run-test-btn" class="btn btn-primary">
+                <i class="fas fa-play"></i> Run Test
+              </button>
+            </div>
+          </div>
+          
+          <div id="test-results" class="test-results">
+            <h4>Test Results</h4>
+            <div class="results-placeholder">
+              <i class="fas fa-chart-bar"></i>
+              <p>Results will appear after running the test</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Templates Tab -->
+    <div class="tab-content" id="templates-tab">
+      <div class="tool-card">
+        <h3><i class="fas fa-clipboard-list"></i> Prompt Templates</h3>
+        <p>Ready-to-use templates for common use cases</p>
+
+        <div class="templates-container">
+          <div class="templates-sidebar">
+            <div class="template-category active" data-category="instructional">
+              <i class="fas fa-chalkboard-teacher"></i>
+              <span>Instructional</span>
+            </div>
+            <div class="template-category" data-category="creative">
+              <i class="fas fa-paint-brush"></i>
+              <span>Creative</span>
+            </div>
+            <div class="template-category" data-category="analytical">
+              <i class="fas fa-chart-pie"></i>
+              <span>Analytical</span>
+            </div>
+            <div class="template-category" data-category="conversational">
+              <i class="fas fa-comments"></i>
+              <span>Conversational</span>
+            </div>
+            <div class="template-category" data-category="coding">
+              <i class="fas fa-code"></i>
+              <span>Coding</span>
+            </div>
+            <div class="template-category" data-category="custom">
+              <i class="fas fa-bookmark"></i>
+              <span>My Templates</span>
+            </div>
+          </div>
+
+          <div class="templates-list">
+            <div id="templates-area">
+              <!-- Templates will be loaded here -->
+            </div>
+          </div>
+
+          <div class="template-preview">
+            <h4 id="template-preview-name">Select a template</h4>
+            <div id="template-preview-content" class="template-preview-content">
+              <div class="empty-state">
+                <i class="fas fa-file-alt"></i>
+                <p>Select a template to preview</p>
+              </div>
+            </div>
+            <div class="template-actions">
+              <button id="use-template-btn" class="btn btn-primary" disabled>
+                <i class="fas fa-check"></i> Use Template
+              </button>
+              <button id="save-custom-btn" class="btn btn-secondary" disabled>
+                <i class="fas fa-save"></i> Save as Custom
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Version History Panel -->
+    <div class="history-panel">
+      <div class="panel-header">
+        <h3><i class="fas fa-history"></i> Version History</h3>
+      </div>
+      <div id="version-history" class="version-list">
+        <div class="empty-state">
+          <i class="fas fa-save"></i>
+          <p>Save prompts to see version history</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <p>© 2025 PromptoScope | Made with ❤️ for prompt engineers</p>
+      <div class="footer-links">
+        <a href="#" target="_blank">API Keys</a>
+        <a href="#" target="_blank">Documentation</a>
+        <a href="#" target="_blank">GitHub</a>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- Modal for API Key -->
+  <div id="api-key-modal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3><i class="fas fa-key"></i> Set API Keys</h3>
+        <button id="close-api-modal" class="close-btn">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="api-key-form">
+          <div class="input-section">
+            <label>OpenAI API Key:</label>
+            <input type="password" id="openai-key" placeholder="sk-...">
+            <div class="input-info">Required for GPT-3.5 and GPT-4</div>
+          </div>
+          
+          <div class="input-section">
+            <label>Anthropic API Key:</label>
+            <input type="password" id="anthropic-key" placeholder="sk-ant-...">
+            <div class="input-info">Required for Claude models</div>
+          </div>
+          
+          <div class="api-storage-options">
+            <div class="checkbox-option">
+              <input type="checkbox" id="save-locally" checked>
+              <label for="save-locally">Save keys locally (encrypted)</label>
+            </div>
+          </div>
+          
+          <div class="input-info warning">
+            <i class="fas fa-exclamation-triangle"></i> Your API keys are stored locally in your browser and never sent to our servers.
+          </div>
+        </div>
+        
+        <div class="modal-actions">
+          <button id="save-api-keys" class="btn btn-primary">
+            <i class="fas fa-save"></i> Save Keys
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/storage.js"></script>
+  <script src="js/parameter-manager.js"></script>
+  <script src="js/prompt-analyzer.js"></script>
+  <script src="js/response-analyzer.js"></script>
+  <script src="js/visualization.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

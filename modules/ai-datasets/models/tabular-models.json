@@ -1,0 +1,49 @@
+{
+  "models": [
+    {
+      "name": "Random Forest",
+      "description": "An ensemble learning method for classification and regression that operates by constructing multiple decision trees.",
+      "performance": {
+        "accuracy": "85%",
+        "f1_score": "0.82",
+        "roc_auc": "0.87"
+      }
+    },
+    {
+      "name": "Gradient Boosting Machine",
+      "description": "A machine learning technique for regression and classification problems, which builds a model in a stage-wise fashion from weak learners.",
+      "performance": {
+        "accuracy": "88%",
+        "f1_score": "0.85",
+        "roc_auc": "0.90"
+      }
+    },
+    {
+      "name": "Support Vector Machine",
+      "description": "A supervised learning model that analyzes data for classification and regression analysis, using hyperplanes to separate different classes.",
+      "performance": {
+        "accuracy": "84%",
+        "f1_score": "0.80",
+        "roc_auc": "0.85"
+      }
+    },
+    {
+      "name": "XGBoost",
+      "description": "An optimized distributed gradient boosting library designed to be highly efficient, flexible, and portable.",
+      "performance": {
+        "accuracy": "90%",
+        "f1_score": "0.88",
+        "roc_auc": "0.92"
+      }
+    },
+    {
+      "name": "LightGBM",
+      "description": "A gradient boosting framework that uses tree-based learning algorithms, designed for distributed and efficient training.",
+      "performance": {
+        "accuracy": "89%",
+        "f1_score": "0.87",
+        "roc_auc": "0.91"
+      }
+    }
+  ]
+}

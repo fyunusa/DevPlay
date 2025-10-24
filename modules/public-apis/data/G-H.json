@@ -1,0 +1,1276 @@
+{
+  "Games & Comics": [
+    {
+      "API": "Age of Empires II",
+      "URL": "https://age-of-empires-2-api.herokuapp.com",
+      "Description": "Get information about Age of Empires II resources",
+      "Auth": "No",
+      "HTTPS": "Yes",
+      "CORS": "No"
+    },
+    {
+      "API": "AmiiboAPI",
+      "URL": "https://amiiboapi.com/",
+      "Description": "Nintendo Amiibo Information",
+      "Auth": "No",
+      "HTTPS": "Yes",
+      "CORS": "Yes"
+    },
+    {
+      "API": "Animal Crossing: New Horizons",
+      "URL": "http://acnhapi.com/",
+      "Description": "API for critters, fossils, art, music, furniture and villagers",
+      "Auth": "No",
+      "HTTPS": "Yes",
+      "CORS": "Unknown"
+    },
+    {
+      "API": "Autochess VNG",
+      "URL": "https://github.com/didadadida93/autochess-vng-api",
+      "Description": "Rest Api for Autochess VNG",
+      "Auth": "No",
+      "HTTPS": "Yes",
+      "CORS": "Yes"
+    },
+    {
+      "API": "Barter.VG",
+      "URL": "https://github.com/bartervg/barter.vg/wiki",
+      "Description": "Provides information about Game, DLC, Bundles, Giveaways, Trading",
+      "Auth": "No",
+      "HTTPS": "Yes",
+      "CORS": "Yes"
+    },
+    {
+      "API": "Battle.net",
+      "URL": "https://develop.battle.net/documentation/guides/getting-started",
+      "Description": "Diablo III, Hearthstone, StarCraft II and World of Warcraft game data APIs",
+      "Auth": "OAuth",
+      "HTTPS": "Yes",
+      "CORS": "Yes"
+    },
+    {
+      "API": "Board Game Geek",
+      "URL": "https://boardgamegeek.com/wiki/page/BGG_XML_API2",
+      "Description": "Board games, RPG and videogames",
+      "Auth": "No",
+      "HTTPS": "Yes",
+      "CORS": "No"
+    },
+    {
+      "API": "Brawl Stars",
+      "URL": "https://developer.brawlstars.com",
+      "Description": "Brawl Stars Game Information",
+      "Auth": "apiKey",
+      "HTTPS": "Yes",
+      "CORS": "Unknown"
+    },
+    {
+      "API": "Bugsnax",
+      "URL": "https://www.bugsnaxapi.com/",
+      "Description": "Get information about Bugsnax",
+      "Auth": "No",
+      "HTTPS": "Yes",
+      "CORS": "Yes"
+    },
+    {
+      "API": "CheapShark",
+      "URL": "https://www.cheapshark.com/api",
+      "Description": "Steam/PC Game Prices and Deals",
+      "Auth": "No",
+      "HTTPS": "Yes",
+      "CORS": "Yes"
+    },
+    {
+      "API": "Chess.com",
+      "URL": "https://www.chess.com/news/view/published-data-api",
+      "Description": "Chess.com read-only REST API",
+      "Auth": "No",
+      "HTTPS": "Yes",
+      "CORS": "Unknown"
+    },
+    {
+      "API": "Chuck Norris Database",
+      "URL": "http://www.icndb.com/api/",
+      "Description": "Jokes",
+      "Auth": "No",
+      "HTTPS": "No",
+      "CORS": "Unknown"
+    },
+    {
+      "API": "Clash of Clans",
+      "URL": "https://developer.clashofclans.com",
+      "Description": "Clash of Clans Game Information",
+      "Auth": "apiKey",
+      "HTTPS": "Yes",
+      "CORS": "Unknown"
+    },
+    {
+      "API": "Clash Royale",
+      "URL": "https://developer.clashroyale.com",
+      "Description": "Clash Royale Game Information",
+      "Auth": "apiKey",
+      "HTTPS": "Yes",
+      "CORS": "Unknown"
+    },
+    {
+      "API": "Comic Vine",
+      "URL": "https://comicvine.gamespot.com/api/documentation",
+      "Description": "Comics",
+      "Auth": "No",
+      "HTTPS": "Yes",
+      "CORS": "Unknown"
+    },
+    {
+      "API": "Crafatar",
+      "URL": "https://crafatar.com",
+      "Description": "API for Minecraft skins and faces",
+      "Auth": "No",
+      "HTTPS": "Yes",
+      "CORS": "Yes"
+    },
+    {
+      "API": "Cross Universe",
+      "URL": "https://crossuniverse.psychpsyo.com/apiDocs.html",
+      "Description": "Cross Universe Card Data",
+      "Auth": "No",
+      "HTTPS": "Yes",
+      "CORS": "Yes"
+    },
+    {
+      "API": "Deck of Cards",
+      "URL": "http://deckofcardsapi.com/",
+      "Description": "Deck of Cards",
+      "Auth": "No",
+      "HTTPS": "No",
+      "CORS": "Unknown"
+    },
+    {
+      "API": "Destiny The Game",
+      "URL": "https://bungie-net.github.io/multi/index.html",
+      "Description": "Bungie Platform API",
+      "Auth": "apiKey",
+      "HTTPS": "Yes",
+      "CORS": "Unknown"
+    },
+    {
+      "API": "Digimon Information",
+      "URL": "https://digimon-api.vercel.app/",
+      "Description": "Provides information about digimon creatures",
+      "Auth": "No",
+      "HTTPS": "Yes",
+      "CORS": "Unknown"
+    },
+    {
+      "API": "Digimon TCG",
+      "URL": "https://documenter.getpostman.com/view/14059948/TzecB4fH",
+      "Description": "Search for Digimon cards in digimoncard.io",
+      "Auth": "No",
+      "HTTPS": "Yes",
+      "CORS": "Unknown"
+    },
+    {
+      "API": "Disney",
+      "URL": "https://disneyapi.dev",
+      "Description": "Information of Disney characters",
+      "Auth": "No",
+      "HTTPS": "Yes",
+      "CORS": "Yes"
+    },
+    {
+      "API": "Dota 2",
+      "URL": "https://docs.opendota.com/",
+      "Description": "Provides information about Player stats , Match stats, Rankings for Dota 2",
+      "Auth": "apiKey",
+      "HTTPS": "Yes",
+      "CORS": "Unknown"
+    },
+    {
+      "API": "Dungeons and Dragons",
+      "URL": "https://www.dnd5eapi.co/docs/",
+      "Description": "Reference for 5th edition spells, classes, monsters, and more",
+      "Auth": "No",
+      "HTTPS": "No",
+      "CORS": "No"
+    },
+    {
+      "API": "Dungeons and Dragons (Alternate)",
+      "URL": "https://open5e.com/",
+      "Description": "Includes all monsters and spells from the SRD (System Reference Document) as well as a search API",
+      "Auth": "No",
+      "HTTPS": "Yes",
+      "CORS": "Yes"
+    },
+    {
+      "API": "Eve Online",
+      "URL": "https://esi.evetech.net/ui",
+      "Description": "Third-Party Developer Documentation",
+      "Auth": "OAuth",
+      "HTTPS": "Yes",
+      "CORS": "Unknown"
+    },
+    {
+      "API": "FFXIV Collect",
+      "URL": "https://ffxivcollect.com/",
+      "Description": "Final Fantasy XIV data on collectables",
+      "Auth": "No",
+      "HTTPS": "Yes",
+      "CORS": "Yes"
+    },
+    {
+      "API": "FIFA Ultimate Team",
+      "URL": "https://www.easports.com/fifa/ultimate-team/api/fut/item",
+      "Description": "FIFA Ultimate Team items API",
+      "Auth": "No",
+      "HTTPS": "Yes",
+      "CORS": "Unknown"
+    },
+    {
+      "API": "Final Fantasy XIV",
+      "URL": "https://xivapi.com/",
+      "Description": "Final Fantasy XIV Game data API",
+      "Auth": "No",
+      "HTTPS": "Yes",
+      "CORS": "Yes"
+    },
+    {
+      "API": "Fortnite",
+      "URL": "https://fortnitetracker.com/site-api",
+      "Description": "Fortnite Stats",
+      "Auth": "apiKey",
+      "HTTPS": "Yes",
+      "CORS": "Unknown"
+    },
+    {
+      "API": "Forza",
+      "URL": "https://docs.forza-api.tk",
+      "Description": "Show random image of car from Forza",
+      "Auth": "No",
+      "HTTPS": "Yes",
+      "CORS": "Unknown"
+    },
+    {
+      "API": "FreeToGame",
+      "URL": "https://www.freetogame.com/api-doc",
+      "Description": "Free-To-Play Games Database",
+      "Auth": "No",
+      "HTTPS": "Yes",
+      "CORS": "Yes"
+    },
+    {
+      "API": "Fun Facts",
+      "URL": "https://asli-fun-fact-api.herokuapp.com/",
+      "Description": "Random Fun Facts",
+      "Auth": "No",
+      "HTTPS": "Yes",
+      "CORS": "Yes"
+    },
+    {
+      "API": "FunTranslations",
+      "URL": "https://api.funtranslations.com/",
+      "Description": "Translate Text into funny languages",
+      "Auth": "No",
+      "HTTPS": "Yes",
+      "CORS": "Yes"
+    },
+    {
+      "API": "GamerPower",
+      "URL": "https://www.gamerpower.com/api-read",
+      "Description": "Game Giveaways Tracker",
+      "Auth": "No",
+      "HTTPS": "Yes",
+      "CORS": "Yes"
+    },
+    {
+      "API": "GDBrowser",
+      "URL": "https://gdbrowser.com/api",
+      "Description": "Easy way to use the Geometry Dash Servers",
+      "Auth": "No",
+      "HTTPS": "Yes",
+      "CORS": "Unknown"
+    },
+    {
+      "API": "Geek-Jokes",
+      "URL": "https://github.com/sameerkumar18/geek-joke-api",
+      "Description": "Fetch a random geeky/programming related joke for use in all sorts of applications",
+      "Auth": "No",
+      "HTTPS": "Yes",
+      "CORS": "Yes"
+    },
+    {
+      "API": "Genshin Impact",
+      "URL": "https://genshin.dev",
+      "Description": "Genshin Impact game data",
+      "Auth": "No",
+      "HTTPS": "Yes",
+      "CORS": "Yes"
+    },
+    {
+      "API": "Giant Bomb",
+      "URL": "https://www.giantbomb.com/api/documentation",
+      "Description": "Video Games",
+      "Auth": "apiKey",
+      "HTTPS": "Yes",
+      "CORS": "Unknown"
+    },
+    {
+      "API": "GraphQL Pokemon",
+      "URL": "https://github.com/favware/graphql-pokemon",
+      "Description": "GraphQL powered Pokemon API. Supports generations 1 through 8",
+      "Auth": "No",
+      "HTTPS": "Yes",
+      "CORS": "Yes"
+    },
+    {
+      "API": "Guild Wars 2",
+      "URL": "https://wiki.guildwars2.com/wiki/API:Main",
+      "Description": "Guild Wars 2 Game Information",
+      "Auth": "apiKey",
+      "HTTPS": "Yes",
+      "CORS": "Unknown"
+    },
+    {
+      "API": "GW2Spidy",
+      "URL": "https://github.com/rubensayshi/gw2spidy/wiki",
+      "Description": "GW2Spidy API, Items data on the Guild Wars 2 Trade Market",
+      "Auth": "No",
+      "HTTPS": "Yes",
+      "CORS": "Unknown"
+    },
+    {
+      "API": "Halo",
+      "URL": "https://developer.haloapi.com/",
+      "Description": "Halo 5 and Halo Wars 2 Information",
+      "Auth": "apiKey",
+      "HTTPS": "Yes",
+      "CORS": "Unknown"
+    },
+    {
+      "API": "Hearthstone",
+      "URL": "http://hearthstoneapi.com/",
+      "Description": "Hearthstone Cards Information",
+      "Auth": "X-Mashape-Key",
+      "HTTPS": "Yes",
+      "CORS": "Unknown"
+    },
+    {
+      "API": "Humble Bundle",
+      "URL": "https://rapidapi.com/Ziggoto/api/humble-bundle",
+      "Description": "Humble Bundle's current bundles",
+      "Auth": "apiKey",
+      "HTTPS": "Yes",
+      "CORS": "Unknown"
+    },
+    {
+      "API": "Humor",
+      "URL": "https://humorapi.com",
+      "Description": "Humor, Jokes, and Memes",
+      "Auth": "apiKey",
+      "HTTPS": "Yes",
+      "CORS": "Unknown"
+    },
+    {
+      "API": "Hypixel",
+      "URL": "https://api.hypixel.net/",
+      "Description": "Hypixel player stats",
+      "Auth": "apiKey",
+      "HTTPS": "Yes",
+      "CORS": "Unknown"
+    },
+    {
+      "API": "Hyrule Compendium",
+      "URL": "https://github.com/gadhagod/Hyrule-Compendium-API",
+      "Description": "Data on all interactive items from The Legend of Zelda: BOTW",
+      "Auth": "No",
+      "HTTPS": "Yes",
+      "CORS": "Unknown"
+    },
+    {
+      "API": "Hytale",
+      "URL": "https://hytale-api.com/",
+      "Description": "Hytale blog posts and jobs",
+      "Auth": "No",
+      "HTTPS": "Yes",
+      "CORS": "Unknown"
+    },
+    {
+      "API": "IGDB.com",
+      "URL": "https://api-docs.igdb.com",
+      "Description": "Video Game Database",
+      "Auth": "apiKey",
+      "HTTPS": "Yes",
+      "CORS": "Unknown"
+    },
+    {
+      "API": "JokeAPI",
+      "URL": "https://sv443.net/jokeapi/v2/",
+      "Description": "Programming, Miscellaneous and Dark Jokes",
+      "Auth": "No",
+      "HTTPS": "Yes",
+      "CORS": "Yes"
+    },
+    {
+      "API": "Jokes One",
+      "URL": "https://jokes.one/api/joke/",
+      "Description": "Joke of the day and large category of jokes accessible via REST API",
+      "Auth": "apiKey",
+      "HTTPS": "Yes",
+      "CORS": "Yes"
+    },
+    {
+      "API": "Jservice",
+      "URL": "http://jservice.io",
+      "Description": "Jeopardy Question Database",
+      "Auth": "No",
+      "HTTPS": "No",
+      "CORS": "Unknown"
+    },
+    {
+      "API": "Lichess",
+      "URL": "https://lichess.org/api",
+      "Description": "Access to all data of users, games, puzzles and etc on Lichess",
+      "Auth": "OAuth",
+      "HTTPS": "Yes",
+      "CORS": "Unknown"
+    },
+    {
+      "API": "Magic The Gathering",
+      "URL": "http://magicthegathering.io/",
+      "Description": "Magic The Gathering Game Information",
+      "Auth": "No",
+      "HTTPS": "No",
+      "CORS": "Unknown"
+    },
+    {
+      "API": "Mario Kart Tour",
+      "URL": "https://mario-kart-tour-api.herokuapp.com/",
+      "Description": "API for Drivers, Karts, Gliders and Courses",
+      "Auth": "OAuth",
+      "HTTPS": "Yes",
+      "CORS": "Unknown"
+    },
+    {
+      "API": "Marvel",
+      "URL": "https://developer.marvel.com",
+      "Description": "Marvel Comics",
+      "Auth": "apiKey",
+      "HTTPS": "Yes",
+      "CORS": "Unknown"
+    },
+    {
+      "API": "Minecraft Server Status",
+      "URL": "https://api.mcsrvstat.us",
+      "Description": "API to get Information about a Minecraft Server",
+      "Auth": "No",
+      "HTTPS": "Yes",
+      "CORS": "No"
+    },
+    {
+      "API": "MMO Games",
+      "URL": "https://www.mmobomb.com/api",
+      "Description": "MMO Games Database, News and Giveaways",
+      "Auth": "No",
+      "HTTPS": "Yes",
+      "CORS": "No"
+    },
+    {
+      "API": "mod.io",
+      "URL": "https://docs.mod.io",
+      "Description": "Cross Platform Mod API",
+      "Auth": "apiKey",
+      "HTTPS": "Yes",
+      "CORS": "Unknown"
+    },
+    {
+      "API": "Mojang",
+      "URL": "https://wiki.vg/Mojang_API",
+      "Description": "Mojang / Minecraft API",
+      "Auth": "apiKey",
+      "HTTPS": "Yes",
+      "CORS": "Unknown"
+    },
+    {
+      "API": "Monster Hunter World",
+      "URL": "https://docs.mhw-db.com/",
+      "Description": "Monster Hunter World data",
+      "Auth": "No",
+      "HTTPS": "Yes",
+      "CORS": "Yes"
+    },
+    {
+      "API": "Open Trivia",
+      "URL": "https://opentdb.com/api_config.php",
+      "Description": "Trivia Questions",
+      "Auth": "No",
+      "HTTPS": "Yes",
+      "CORS": "Unknown"
+    },
+    {
+      "API": "PandaScore",
+      "URL": "https://developers.pandascore.co/",
+      "Description": "E-sports games and results",
+      "Auth": "apiKey",
+      "HTTPS": "Yes",
+      "CORS": "Unknown"
+    },
+    {
+      "API": "Path of Exile",
+      "URL": "https://www.pathofexile.com/developer/docs",
+      "Description": "Path of Exile Game Information",
+      "Auth": "OAuth",
+      "HTTPS": "Yes",
+      "CORS": "Unknown"
+    },
+    {
+      "API": "PlayerDB",
+      "URL": "https://playerdb.co/",
+      "Description": "Query Minecraft, Steam and XBox Accounts",
+      "Auth": "No",
+      "HTTPS": "Yes",
+      "CORS": "Unknown"
+    },
+    {
+      "API": "Pokéapi",
+      "URL": "https://pokeapi.co",
+      "Description": "Pokémon Information",
+      "Auth": "No",
+      "HTTPS": "Yes",
+      "CORS": "Unknown"
+    },
+    {
+      "API": "PokéAPI (GraphQL)",
+      "URL": "https://github.com/mazipan/graphql-pokeapi",
+      "Description": "The Unofficial GraphQL for PokeAPI",
+      "Auth": "No",
+      "HTTPS": "Yes",
+      "CORS": "Yes"
+    },
+    {
+      "API": "Pokémon TCG",
+      "URL": "https://pokemontcg.io",
+      "Description": "Pokémon TCG Information",
+      "Auth": "No",
+      "HTTPS": "Yes",
+      "CORS": "Unknown"
+    },
+    {
+      "API": "Psychonauts",
+      "URL": "https://psychonauts-api.netlify.app/",
+      "Description": "Psychonauts World Characters Information and PSI Powers",
+      "Auth": "No",
+      "HTTPS": "Yes",
+      "CORS": "Yes"
+    },
+    {
+      "API": "PUBG",
+      "URL": "https://developer.pubg.com/",
+      "Description": "Access in-game PUBG data",
+      "Auth": "apiKey",
+      "HTTPS": "Yes",
+      "CORS": "Yes"
+    },
+    {
+      "API": "Puyo Nexus",
+      "URL": "https://github.com/deltadex7/puyodb-api-deno",
+      "Description": "Puyo Puyo information from Puyo Nexus Wiki",
+      "Auth": "No",
+      "HTTPS": "Yes",
+      "CORS": "Yes"
+    },
+    {
+      "API": "quizapi.io",
+      "URL": "https://quizapi.io/",
+      "Description": "Access to various kind of quiz questions",
+      "Auth": "apiKey",
+      "HTTPS": "Yes",
+      "CORS": "Yes"
+    },
+    {
+      "API": "Raider",
+      "URL": "https://raider.io/api",
+      "Description": "Provides detailed character and guild rankings for Raiding and Mythic+ content in World of Warcraft",
+      "Auth": "No",
+      "HTTPS": "Yes",
+      "CORS": "Unknown"
+    },
+    {
+      "API": "RAWG.io",
+      "URL": "https://rawg.io/apidocs",
+      "Description": "500,000+ games for 50 platforms including mobiles",
+      "Auth": "apiKey",
+      "HTTPS": "Yes",
+      "CORS": "Unknown"
+    },
+    {
+      "API": "Rick and Morty",
+      "URL": "https://rickandmortyapi.com",
+      "Description": "All the Rick and Morty information, including images",
+      "Auth": "No",
+      "HTTPS": "Yes",
+      "CORS": "Yes"
+    },
+    {
+      "API": "Riot Games",
+      "URL": "https://developer.riotgames.com/",
+      "Description": "League of Legends Game Information",
+      "Auth": "apiKey",
+      "HTTPS": "Yes",
+      "CORS": "Unknown"
+    },
+    {
+      "API": "RPS 101",
+      "URL": "https://rps101.pythonanywhere.com/api",
+      "Description": "Rock, Paper, Scissors with 101 objects",
+      "Auth": "No",
+      "HTTPS": "Yes",
+      "CORS": "Yes"
+    },
+    {
+      "API": "RuneScape",
+      "URL": "https://runescape.wiki/w/Application_programming_interface",
+      "Description": "RuneScape and OSRS RPGs information",
+      "Auth": "No",
+      "HTTPS": "Yes",
+      "CORS": "No"
+    },
+    {
+      "API": "Sakura CardCaptor",
+      "URL": "https://github.com/JessVel/sakura-card-captor-api",
+      "Description": "Sakura CardCaptor Cards Information",
+      "Auth": "No",
+      "HTTPS": "Yes",
+      "CORS": "Unknown"
+    },
+    {
+      "API": "Scryfall",
+      "URL": "https://scryfall.com/docs/api",
+      "Description": "Magic: The Gathering database",
+      "Auth": "No",
+      "HTTPS": "Yes",
+      "CORS": "Yes"
+    },
+    {
+      "API": "SpaceTradersAPI",
+      "URL": "https://spacetraders.io?rel=pub-apis",
+      "Description": "A playable inter-galactic space trading MMOAPI",
+      "Auth": "OAuth",
+      "HTTPS": "Yes",
+      "CORS": "Yes"
+    },
+    {
+      "API": "Steam",
+      "URL": "https://steamapi.xpaw.me/",
+      "Description": "Steam Web API documentation",
+      "Auth": "apiKey",
+      "HTTPS": "Yes",
+      "CORS": "No"
+    },
+    {
+      "API": "Steam (Internal)",
+      "URL": "https://github.com/Revadike/InternalSteamWebAPI/wiki",
+      "Description": "Internal Steam Web API documentation",
+      "Auth": "No",
+      "HTTPS": "Yes",
+      "CORS": "No"
+    },
+    {
+      "API": "SuperHeroes",
+      "URL": "https://superheroapi.com",
+      "Description": "All SuperHeroes and Villains data from all universes under a single API",
+      "Auth": "apiKey",
+      "HTTPS": "Yes",
+      "CORS": "Unknown"
+    },
+    {
+      "API": "TCGdex",
+      "URL": "https://www.tcgdex.net/docs",
+      "Description": "Multi languages Pokémon TCG Information",
+      "Auth": "No",
+      "HTTPS": "Yes",
+      "CORS": "Yes"
+    },
+    {
+      "API": "Tebex",
+      "URL": "https://docs.tebex.io/plugin/",
+      "Description": "Tebex API for information about game purchases",
+      "Auth": "X-Mashape-Key",
+      "HTTPS": "Yes",
+      "CORS": "No"
+    },
+    {
+      "API": "TETR.IO",
+      "URL": "https://tetr.io/about/api/",
+      "Description": "TETR.IO Tetra Channel API",
+      "Auth": "No",
+      "HTTPS": "Yes",
+      "CORS": "Unknown"
+    },
+    {
+      "API": "Tronald Dump",
+      "URL": "https://www.tronalddump.io/",
+      "Description": "The dumbest things Donald Trump has ever said",
+      "Auth": "No",
+      "HTTPS": "Yes",
+      "CORS": "Unknown"
+    },
+    {
+      "API": "Universalis",
+      "URL": "https://universalis.app/docs/index.html",
+      "Description": "Final Fantasy XIV market board data",
+      "Auth": "No",
+      "HTTPS": "Yes",
+      "CORS": "Yes"
+    },
+    {
+      "API": "Valorant (non-official)",
+      "URL": "https://valorant-api.com",
+      "Description": "An extensive API containing data of most Valorant in-game items, assets and more",
+      "Auth": "No",
+      "HTTPS": "Yes",
+      "CORS": "Unknown"
+    },
+    {
+      "API": "Warface (non-official)",
+      "URL": "https://api.wfstats.cf",
+      "Description": "Official API proxy with better data structure and more features",
+      "Auth": "No",
+      "HTTPS": "Yes",
+      "CORS": "No"
+    },
+    {
+      "API": "Wargaming.net",
+      "URL": "https://developers.wargaming.net/",
+      "Description": "Wargaming.net info and stats",
+      "Auth": "apiKey",
+      "HTTPS": "Yes",
+      "CORS": "No"
+    },
+    {
+      "API": "When is next MCU film",
+      "URL": "https://github.com/DiljotSG/MCU-Countdown/blob/develop/docs/API.md",
+      "Description": "Upcoming MCU film information",
+      "Auth": "No",
+      "HTTPS": "Yes",
+      "CORS": "Unknown"
+    },
+    {
+      "API": "xkcd",
+      "URL": "https://xkcd.com/json.html",
+      "Description": "Retrieve xkcd comics as JSON",
+      "Auth": "No",
+      "HTTPS": "Yes",
+      "CORS": "No"
+    },
+    {
+      "API": "Yu-Gi-Oh!",
+      "URL": "https://db.ygoprodeck.com/api-guide/",
+      "Description": "Yu-Gi-Oh! TCG Information",
+      "Auth": "No",
+      "HTTPS": "Yes",
+      "CORS": "Unknown"
+    }
+  ],
+
+  "Geocoding": [
+    {
+      "API": "IP Geolocation",
+      "Description": "Geolocate website visitors from their IPs",
+      "Auth": "apiKey",
+      "HTTPS": true,
+      "CORS": true
+    },
+    {
+      "API": "Actinia Grass GIS",
+      "Description": "Actinia is an open source REST API for geographical data that uses GRASS GIS",
+      "Auth": "apiKey",
+      "HTTPS": true,
+      "CORS": "Unknown"
+    },
+    {
+      "API": "administrative-divisons-db",
+      "Description": "Get all administrative divisions of a country",
+      "Auth": "No",
+      "HTTPS": true,
+      "CORS": true
+    },
+    {
+      "API": "adresse.data.gouv.fr",
+      "Description": "Address database of France, geocoding and reverse",
+      "Auth": "No",
+      "HTTPS": true,
+      "CORS": "Unknown"
+    },
+    {
+      "API": "Airtel IP",
+      "Description": "IP Geolocation API. Collecting data from multiple sources",
+      "Auth": "No",
+      "HTTPS": true,
+      "CORS": "Unknown"
+    },
+    {
+      "API": "Apiip",
+      "Description": "Get location information by IP address",
+      "Auth": "apiKey",
+      "HTTPS": true,
+      "CORS": true
+    },
+    {
+      "API": "apilayer ipstack",
+      "Description": "Locate and identify website visitors by IP address",
+      "Auth": "apiKey",
+      "HTTPS": true,
+      "CORS": "Unknown"
+    },
+    {
+      "API": "Battuta",
+      "Description": "A (country/region/city) in-cascade location API",
+      "Auth": "apiKey",
+      "HTTPS": false,
+      "CORS": "Unknown"
+    },
+    {
+      "API": "BigDataCloud",
+      "Description": "Provides fast and accurate IP geolocation APIs along with security checks and confidence area",
+      "Auth": "apiKey",
+      "HTTPS": true,
+      "CORS": "Unknown"
+    },
+    {
+      "API": "Bing Maps",
+      "Description": "Create/customize digital maps based on Bing Maps data",
+      "Auth": "apiKey",
+      "HTTPS": true,
+      "CORS": "Unknown"
+    },
+    {
+      "API": "bng2latlong",
+      "Description": "Convert British OSGB36 easting and northing (British National Grid) to WGS84 latitude and longitude",
+      "Auth": "No",
+      "HTTPS": true,
+      "CORS": true
+    },
+    {
+      "API": "Cartes.io",
+      "Description": "Create maps and markers for anything",
+      "Auth": "No",
+      "HTTPS": true,
+      "CORS": "Unknown"
+    },
+    {
+      "API": "Cep.la",
+      "Description": "Brazil RESTful API to find information about streets, zip codes, neighborhoods, cities and states",
+      "Auth": "No",
+      "HTTPS": false,
+      "CORS": "Unknown"
+    },
+    {
+      "API": "CitySDK",
+      "Description": "Open APIs for select European cities",
+      "Auth": "No",
+      "HTTPS": true,
+      "CORS": "Unknown"
+    },
+    {
+      "API": "Country",
+      "Description": "Get your visitor's country from their IP",
+      "Auth": "No",
+      "HTTPS": true,
+      "CORS": true
+    },
+    {
+      "API": "CountryStateCity",
+      "Description": "World countries, states, regions, provinces, cities & towns in JSON, SQL, XML, YAML, & CSV format",
+      "Auth": "apiKey",
+      "HTTPS": true,
+      "CORS": true
+    },
+    {
+      "API": "Ducks Unlimited",
+      "Description": "API explorer that gives a query URL with a JSON response of locations and cities",
+      "Auth": "No",
+      "HTTPS": true,
+      "CORS": false
+    },
+    {
+      "API": "GeoApi",
+      "Description": "French geographical data",
+      "Auth": "No",
+      "HTTPS": true,
+      "CORS": "Unknown"
+    },
+    {
+      "API": "Geoapify",
+      "Description": "Forward and reverse geocoding, address autocomplete",
+      "Auth": "apiKey",
+      "HTTPS": true,
+      "CORS": true
+    },
+    {
+      "API": "Geocod.io",
+      "Description": "Address geocoding / reverse geocoding in bulk",
+      "Auth": "apiKey",
+      "HTTPS": true,
+      "CORS": "Unknown"
+    }
+  ],
+  "Government": [
+    {
+      "API": "Bank Negara Malaysia Open Data",
+      "Description": "Malaysia Central Bank Open Data",
+      "Auth": "No",
+      "HTTPS": true,
+      "CORS": "Unknown"
+    },
+    {
+      "API": "BCLaws",
+      "Description": "Access to the laws of British Columbia",
+      "Auth": "No",
+      "HTTPS": false,
+      "CORS": "Unknown"
+    },
+    {
+      "API": "Brazil",
+      "Description": "Community driven API for Brazil Public Data",
+      "Auth": "No",
+      "HTTPS": true,
+      "CORS": true
+    },
+    {
+      "API": "Brazil Central Bank Open Data",
+      "Description": "Brazil Central Bank Open Data",
+      "Auth": "No",
+      "HTTPS": true,
+      "CORS": "Unknown"
+    },
+    {
+      "API": "Brazil Receita WS",
+      "Description": "Consult companies by CNPJ for Brazilian companies",
+      "Auth": "No",
+      "HTTPS": true,
+      "CORS": "Unknown"
+    },
+    {
+      "API": "Brazilian Chamber of Deputies Open Data",
+      "Description": "Provides legislative information in Apis XML and JSON, as well as files in various formats",
+      "Auth": "No",
+      "HTTPS": true,
+      "CORS": false
+    },
+    {
+      "API": "Census.gov",
+      "Description": "The US Census Bureau provides various APIs and data sets on demographics and businesses",
+      "Auth": "No",
+      "HTTPS": true,
+      "CORS": "Unknown"
+    },
+    {
+      "API": "City, Berlin",
+      "Description": "Berlin(DE) City Open Data",
+      "Auth": "No",
+      "HTTPS": true,
+      "CORS": "Unknown"
+    },
+    {
+      "API": "City, Gdańsk",
+      "Description": "Gdańsk (PL) City Open Data",
+      "Auth": "No",
+      "HTTPS": true,
+      "CORS": "Unknown"
+    },
+    {
+      "API": "City, Gdynia",
+      "Description": "Gdynia (PL) City Open Data",
+      "Auth": "No",
+      "HTTPS": false,
+      "CORS": "Unknown"
+    },
+    {
+      "API": "City, Helsinki",
+      "Description": "Helsinki(FI) City Open Data",
+      "Auth": "No",
+      "HTTPS": true,
+      "CORS": "Unknown"
+    },
+    {
+      "API": "City, Lviv",
+      "Description": "Lviv(UA) City Open Data",
+      "Auth": "No",
+      "HTTPS": true,
+      "CORS": "Unknown"
+    },
+    {
+      "API": "City, Nantes Open Data",
+      "Description": "Nantes(FR) City Open Data",
+      "Auth": "apiKey",
+      "HTTPS": true,
+      "CORS": "Unknown"
+    },
+    {
+      "API": "City, New York Open Data",
+      "Description": "New York (US) City Open Data",
+      "Auth": "No",
+      "HTTPS": true,
+      "CORS": "Unknown"
+    },
+    {
+      "API": "City, Prague Open Data",
+      "Description": "Prague(CZ) City Open Data",
+      "Auth": "No",
+      "HTTPS": false,
+      "CORS": "Unknown"
+    },
+    {
+      "API": "City, Toronto Open Data",
+      "Description": "Toronto (CA) City Open Data",
+      "Auth": "No",
+      "HTTPS": true,
+      "CORS": true
+    },
+    {
+      "API": "Code.gov",
+      "Description": "The primary platform for Open Source and code sharing for the U.S. Federal Government",
+      "Auth": "apiKey",
+      "HTTPS": true,
+      "CORS": "Unknown"
+    },
+    {
+      "API": "Colorado Information Marketplace",
+      "Description": "Colorado State Government Open Data",
+      "Auth": "No",
+      "HTTPS": true,
+      "CORS": "Unknown"
+    },
+    {
+      "API": "Data USA",
+      "Description": "US Public Data",
+      "Auth": "No",
+      "HTTPS": true,
+      "CORS": "Unknown"
+    },
+    {
+      "API": "Data.gov",
+      "Description": "US Government Data",
+      "Auth": "apiKey",
+      "HTTPS": true,
+      "CORS": "Unknown"
+    }
+  ],
+  "Health": [
+    {
+      "API": "CMS.gov",
+      "Description": "Access to the data from the CMS - medicare.gov",
+      "Auth": "apiKey",
+      "HTTPS": true,
+      "CORS": "Unknown"
+    },
+    {
+      "API": "Coronavirus",
+      "Description": "HTTP API for Latest Covid-19 Data",
+      "Auth": "No",
+      "HTTPS": true,
+      "CORS": "Unknown"
+    },
+    {
+      "API": "Coronavirus in the UK",
+      "Description": "UK Government coronavirus data, including deaths and cases by region",
+      "Auth": "No",
+      "HTTPS": true,
+      "CORS": "Unknown"
+    },
+    {
+      "API": "Covid Tracking Project",
+      "Description": "Covid-19 data for the US",
+      "Auth": "No",
+      "HTTPS": true,
+      "CORS": "No"
+    },
+    {
+      "API": "Covid-19",
+      "Description": "Covid 19 spread, infection and recovery",
+      "Auth": "No",
+      "HTTPS": true,
+      "CORS": "Yes"
+    },
+    {
+      "API": "Covid-19",
+      "Description": "Covid 19 cases, deaths and recovery per country",
+      "Auth": "No",
+      "HTTPS": true,
+      "CORS": "Yes"
+    },
+    {
+      "API": "Covid-19 Datenhub",
+      "Description": "Maps, datasets, applications and more in the context of COVID-19",
+      "Auth": "No",
+      "HTTPS": true,
+      "CORS": "Unknown"
+    },
+    {
+      "API": "Covid-19 Government Response",
+      "Description": "Government measures tracker to fight against the Covid-19 pandemic",
+      "Auth": "No",
+      "HTTPS": true,
+      "CORS": "Yes"
+    },
+    {
+      "API": "Covid-19 India",
+      "Description": "Covid 19 statistics state and district wise about cases, vaccinations, recovery within India",
+      "Auth": "No",
+      "HTTPS": true,
+      "CORS": "Unknown"
+    },
+    {
+      "API": "Covid-19 JHU CSSE",
+      "Description": "Open-source API for exploring Covid19 cases based on JHU CSSE",
+      "Auth": "No",
+      "HTTPS": true,
+      "CORS": "Yes"
+    },
+    {
+      "API": "Covid-19 Live Data",
+      "Description": "Global and countrywise data of Covid 19 daily Summary, confirmed cases, recovered and deaths",
+      "Auth": "No",
+      "HTTPS": true,
+      "CORS": "Yes"
+    },
+    {
+      "API": "Covid-19 Philippines",
+      "Description": "Unofficial Covid-19 Web API for Philippines from data collected by DOH",
+      "Auth": "No",
+      "HTTPS": true,
+      "CORS": "Yes"
+    },
+    {
+      "API": "COVID-19 Tracker Canada",
+      "Description": "Details on Covid-19 cases across Canada",
+      "Auth": "No",
+      "HTTPS": true,
+      "CORS": "Unknown"
+    },
+    {
+      "API": "COVID-19 Tracker Sri Lanka",
+      "Description": "Provides situation of the COVID-19 patients reported in Sri Lanka",
+      "Auth": "No",
+      "HTTPS": true,
+      "CORS": "Unknown"
+    },
+    {
+      "API": "COVID-ID",
+      "Description": "Indonesian government Covid data per province",
+      "Auth": "No",
+      "HTTPS": true,
+      "CORS": "Yes"
+    },
+    {
+      "API": "Dataflow Kit COVID-19",
+      "Description": "COVID-19 live statistics into sites per hour",
+      "Auth": "No",
+      "HTTPS": true,
+      "CORS": "Unknown"
+    },
+    {
+      "API": "FoodData Central",
+      "Description": "National Nutrient Database for Standard Reference",
+      "Auth": "apiKey",
+      "HTTPS": true,
+      "CORS": "Unknown"
+    },
+    {
+      "API": "Healthcare.gov",
+      "Description": "Educational content about the US Health Insurance Marketplace",
+      "Auth": "No",
+      "HTTPS": true,
+      "CORS": "Unknown"
+    },
+    {
+      "API": "Humanitarian Data Exchange",
+      "Description": "Humanitarian Data Exchange (HDX) is open platform for sharing data across crises and organisations",
+      "Auth": "No",
+      "HTTPS": true,
+      "CORS": "Unknown"
+    },
+    {
+      "API": "Infermedica",
+      "Description": "NLP based symptom checker and patient triage API for health diagnosis from text",
+      "Auth": "apiKey",
+      "HTTPS": true,
+      "CORS": "Yes"
+    },
+    {
+      "API": "LAPIS",
+      "Description": "SARS-CoV-2 genomic sequences from public sources",
+      "Auth": "No",
+      "HTTPS": true,
+      "CORS": "Yes"
+    },
+    {
+      "API": "Lexigram",
+      "Description": "NLP that extracts mentions of clinical concepts from text, gives access to clinical ontology",
+      "Auth": "apiKey",
+      "HTTPS": true,
+      "CORS": "Unknown"
+    },
+    {
+      "API": "Makeup",
+      "Description": "Makeup Information",
+      "Auth": "No",
+      "HTTPS": false,
+      "CORS": "Unknown"
+    },
+    {
+      "API": "MyVaccination",
+      "Description": "Vaccination data for Malaysia",
+      "Auth": "No",
+      "HTTPS": true,
+      "CORS": "Unknown"
+    },
+    {
+      "API": "NPPES",
+      "Description": "National Plan & Provider Enumeration System, info on healthcare providers registered in US",
+      "Auth": "No",
+      "HTTPS": true,
+      "CORS": "Unknown"
+    },
+    {
+      "API": "Nutritionix",
+      "Description": "Worlds largest verified nutrition database",
+      "Auth": "apiKey",
+      "HTTPS": true,
+      "CORS": "Unknown"
+    },
+    {
+      "API": "Open Data NHS Scotland",
+      "Description": "Medical reference data and statistics by Public Health Scotland",
+      "Auth": "No",
+      "HTTPS": true,
+      "CORS": "Unknown"
+    },
+    {
+      "API": "Open Disease",
+      "Description": "API for Current cases and more stuff about COVID-19 and Influenza",
+      "Auth": "No",
+      "HTTPS": true,
+      "CORS": "Yes"
+    },
+    {
+      "API": "openFDA",
+      "Description": "Public FDA data about drugs, devices and foods",
+      "Auth": "apiKey",
+      "HTTPS": true,
+      "CORS": "Unknown"
+    },
+    {
+      "API": "Orion Health",
+      "Description": "Medical platform which allows the development of applications for different healthcare scenarios",
+      "Auth": "OAuth",
+      "HTTPS": true,
+      "CORS": "Unknown"
+    },
+    {
+      "API": "Quarantine",
+      "Description": "Coronavirus API with free COVID-19 live updates",
+      "Auth": "No",
+      "HTTPS": true,
+      "CORS": "Yes"
+    }
+  ]
+}

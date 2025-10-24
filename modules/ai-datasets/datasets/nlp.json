@@ -1,0 +1,50 @@
+{
+  "datasets": [
+    {
+      "name": "GLUE",
+      "description": "A collection of nine natural language understanding tasks.",
+      "source": "https://gluebenchmark.com/",
+      "statistics": {
+        "number_of_tasks": 9,
+        "total_samples": 150000
+      }
+    },
+    {
+      "name": "SQuAD",
+      "description": "Stanford Question Answering Dataset, a reading comprehension dataset.",
+      "source": "https://rajpurkar.github.io/SQuAD-explorer/",
+      "statistics": {
+        "number_of_questions": 100000,
+        "average_length": 20
+      }
+    },
+    {
+      "name": "CoNLL-2003",
+      "description": "Named Entity Recognition dataset for English.",
+      "source": "https://www.clips.uantwerpen.be/conll03/ner/",
+      "statistics": {
+        "number_of_sentences": 14041,
+        "total_entities": 30000
+      }
+    },
+    {
+      "name": "TREC",
+      "description": "Text Retrieval Conference dataset for question classification.",
+      "source": "http://cogcomp.seas.upenn.edu/page/datasets/view/58",
+      "statistics": {
+        "number_of_questions": 5500,
+        "categories": 6
+      }
+    },
+    {
+      "name": "IMDb Reviews",
+      "description": "Dataset for sentiment analysis of movie reviews.",
+      "source": "https://ai.stanford.edu/~amaas/data/sentiment/",
+      "statistics": {
+        "number_of_reviews": 50000,
+        "positive_reviews": 25000,
+        "negative_reviews": 25000
+      }
+    }
+  ]
+}

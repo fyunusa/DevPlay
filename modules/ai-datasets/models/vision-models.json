@@ -1,0 +1,54 @@
+{
+  "models": [
+    {
+      "name": "ResNet",
+      "description": "A deep residual learning framework for image classification.",
+      "architecture": "Convolutional Neural Network",
+      "performance": {
+        "top_1_accuracy": "76.0%",
+        "top_5_accuracy": "93.3%"
+      },
+      "source": "https://github.com/KaimingHe/deep-residual-networks"
+    },
+    {
+      "name": "YOLOv3",
+      "description": "A real-time object detection system that can detect multiple objects in images.",
+      "architecture": "You Only Look Once (YOLO)",
+      "performance": {
+        "mAP": "57.9%",
+        "FPS": "30"
+      },
+      "source": "https://github.com/pjreddie/darknet"
+    },
+    {
+      "name": "EfficientNet",
+      "description": "A family of models that scale up in a compound manner, achieving state-of-the-art accuracy.",
+      "architecture": "Convolutional Neural Network",
+      "performance": {
+        "top_1_accuracy": "84.3%",
+        "top_5_accuracy": "97.1%"
+      },
+      "source": "https://github.com/google/automl/tree/master/efficientnet"
+    },
+    {
+      "name": "VGG16",
+      "description": "A convolutional neural network model that is 16 layers deep, known for its simplicity and effectiveness.",
+      "architecture": "Convolutional Neural Network",
+      "performance": {
+        "top_1_accuracy": "71.3%",
+        "top_5_accuracy": "89.8%"
+      },
+      "source": "https://github.com/oxford-vgg/vgg16"
+    },
+    {
+      "name": "InceptionV3",
+      "description": "A deep learning model that uses inception modules to improve performance.",
+      "architecture": "Convolutional Neural Network",
+      "performance": {
+        "top_1_accuracy": "77.9%",
+        "top_5_accuracy": "93.7%"
+      },
+      "source": "https://github.com/google/imagenet"
+    }
+  ]
+}

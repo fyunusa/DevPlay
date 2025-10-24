@@ -1,0 +1,333 @@
+{
+  "apis": [
+    {
+      "API": "GitHub",
+      "Description": "A platform for version control and collaboration. Access repositories, user data, and more.",
+      "Auth": "OAuth",
+      "Category": "Development",
+      "Link": "https://api.github.com/"
+    },
+    {
+      "API": "OpenWeatherMap",
+      "Description": "Weather data for any location in the world. Get current weather, forecasts, and historical data.",
+      "Auth": "API key",
+      "Category": "Weather",
+      "Link": "https://openweathermap.org/api"
+    },
+    {
+      "API": "REST Countries",
+      "Description": "Information about countries, capitals, currencies, and more. Perfect for geography apps.",
+      "Auth": "No",
+      "Category": "Geography",
+      "Link": "https://restcountries.com/"
+    },
+    {
+      "API": "The Cat API",
+      "Description": "Random pictures of cats. Because everyone needs more cats in their life!",
+      "Auth": "No",
+      "Category": "Animals",
+      "Link": "https://thecatapi.com/"
+    },
+    {
+      "API": "JokeAPI",
+      "Description": "A programming joke API. Get random jokes, categories, and more.",
+      "Auth": "No",
+      "Category": "Humor",
+      "Link": "https://jokeapi.dev/"
+    },
+    {
+      "API": "CoinGecko",
+      "Description": "Cryptocurrency price data, market stats, and historical information.",
+      "Auth": "No",
+      "Category": "Cryptocurrency",
+      "Link": "https://www.coingecko.com/en/api"
+    },
+    {
+      "API": "News API",
+      "Description": "Access to news articles from various sources worldwide.",
+      "Auth": "API key",
+      "Category": "News",
+      "Link": "https://newsapi.org/"
+    },
+    {
+      "API": "NASA",
+      "Description": "Access to NASA's data and images. Explore space from your app!",
+      "Auth": "No",
+      "Category": "Space",
+      "Link": "https://api.nasa.gov/"
+    },
+    {
+      "API": "IP Geolocation API",
+      "Description": "Get geolocation data based on IP address. Perfect for location-based features.",
+      "Auth": "API key",
+      "Category": "Geolocation",
+      "Link": "https://ipgeolocation.io/"
+    },
+    {
+      "API": "PokeAPI",
+      "Description": "Data about Pokémon. Catch 'em all with this comprehensive API!",
+      "Auth": "No",
+      "Category": "Games",
+      "Link": "https://pokeapi.co/"
+    },
+    {
+      "API": "AdoptAPet",
+      "Description": "Resource to help get pets adopted.",
+      "Auth": "apiKey",
+      "Category": "Animals",
+      "Link": "https://www.adoptapet.com/public/apis/pet_list.html"
+    },
+    {
+      "API": "Axolotl",
+      "Description": "Collection of axolotl pictures and facts.",
+      "Auth": "No",
+      "Category": "Animals",
+      "Link": "https://theaxolotlapi.netlify.app/"
+    },
+    {
+      "API": "Cat Facts",
+      "Description": "Daily cat facts.",
+      "Auth": "No",
+      "Category": "Animals",
+      "Link": "https://alexwohlbruck.github.io/cat-facts/"
+    },
+    {
+      "API": "AniAPI",
+      "Description": "Anime discovery, streaming & syncing with trackers.",
+      "Auth": "OAuth",
+      "Category": "Anime",
+      "Link": "https://aniapi.com/docs/"
+    },
+    {
+      "API": "AbuseIPDB",
+      "Description": "IP/domain/URL reputation.",
+      "Auth": "apiKey",
+      "Category": "Anti-Malware",
+      "Link": "https://docs.abuseipdb.com/"
+    },
+    {
+      "API": "Art Institute of Chicago",
+      "Description": "Art.",
+      "Auth": "No",
+      "Category": "Art & Design",
+      "Link": "https://api.artic.edu/docs/"
+    },
+    {
+      "API": "Auth0",
+      "Description": "Easy to implement, adaptable authentication and authorization platform.",
+      "Auth": "apiKey",
+      "Category": "Authentication & Authorization",
+      "Link": "https://auth0.com"
+    },
+    {
+      "API": "Bitquery",
+      "Description": "Onchain GraphQL APIs & DEX APIs.",
+      "Auth": "apiKey",
+      "Category": "Blockchain",
+      "Link": "https://graphql.bitquery.io/ide"
+    },
+    {
+      "API": "A Bíblia Digital",
+      "Description": "Do not worry about managing the multiple versions of the Bible.",
+      "Auth": "apiKey",
+      "Category": "Books",
+      "Link": "https://www.abibliadigital.com.br/en"
+    },
+    {
+      "API": "Apache Superset",
+      "Description": "API to manage your BI dashboards and data sources on Superset.",
+      "Auth": "apiKey",
+      "Category": "Business",
+      "Link": "https://superset.apache.org/docs/api"
+    },
+    {
+      "API": "Public Holidays",
+      "Description": "Data on national, regional, and religious holidays via API.",
+      "Auth": "apiKey",
+      "Category": "Calendar",
+      "Link": "https://www.abstractapi.com/holidays-api"
+    },
+    {
+      "API": "AnonFiles",
+      "Description": "Upload and share your files anonymously.",
+      "Auth": "No",
+      "Category": "Cloud Storage & File Sharing",
+      "Link": "https://anonfiles.com/docs/api"
+    },
+    {
+      "API": "Bitrise",
+      "Description": "Build tool and processes integrations to create efficient development pipelines.",
+      "Auth": "apiKey",
+      "Category": "Continuous Integration",
+      "Link": "https://api-docs.bitrise.io/"
+    },
+    {
+      "API": "0x",
+      "Description": "API for querying token and pool stats across various liquidity pools.",
+      "Auth": "No",
+      "Category": "Cryptocurrency",
+      "Link": "https://0x.org/api"
+    },
+    {
+      "API": "1Forge",
+      "Description": "Forex currency market data.",
+      "Auth": "apiKey",
+      "Category": "Currency Exchange",
+      "Link": "https://1forge.com/forex-data-api/api-documentation"
+    },
+    {
+      "API": "Lob.com",
+      "Description": "US Address Verification.",
+      "Auth": "apiKey",
+      "Category": "Data Validation",
+      "Link": "https://lob.com/"
+    },
+    {
+      "API": "Agify.io",
+      "Description": "Estimates the age from a first name.",
+      "Auth": "No",
+      "Category": "Development",
+      "Link": "https://agify.io"
+    },
+    {
+      "API": "Free Dictionary",
+      "Description": "Definitions, phonetics, pronounciations, parts of speech, examples, synonyms.",
+      "Auth": "No",
+      "Category": "Dictionaries",
+      "Link": "https://dictionaryapi.dev/"
+    },
+    {
+      "API": "Airtable",
+      "Description": "Integrate with Airtable.",
+      "Auth": "apiKey",
+      "Category": "Documents & Productivity",
+      "Link": "https://airtable.com/api"
+    },
+    {
+      "API": "apilayer mailboxlayer",
+      "Description": "Email address validation.",
+      "Auth": "apiKey",
+      "Category": "Email",
+      "Link": "https://mailboxlayer.com"
+    },
+    {
+      "API": "chucknorris.io",
+      "Description": "JSON API for hand curated Chuck Norris jokes.",
+      "Auth": "No",
+      "Category": "Entertainment",
+      "Link": "https://api.chucknorris.io"
+    },
+    {
+      "API": "BreezoMeter Pollen",
+      "Description": "Daily Forecast pollen conditions data for a specific location.",
+      "Auth": "apiKey",
+      "Category": "Environment",
+      "Link": "https://docs.breezometer.com/api-documentation/pollen-api/v2/"
+    },
+    {
+      "API": "Eventbrite",
+      "Description": "Find events.",
+      "Auth": "OAuth",
+      "Category": "Events",
+      "Link": "https://www.eventbrite.com/platform/api/"
+    },
+    {
+      "API": "VAT Validation",
+      "Description": "Validate VAT numbers and calculate VAT rates.",
+      "Auth": "apiKey",
+      "Category": "Finance",
+      "Link": "https://www.abstractapi.com/vat-validation-rates-api"
+    },
+    {
+      "API": "BaconMockup",
+      "Description": "Resizable bacon placeholder images.",
+      "Auth": "No",
+      "Category": "Food & Drink",
+      "Link": "https://baconmockup.com/"
+    },
+    {
+      "API": "Age of Empires II",
+      "Description": "Get information about Age of Empires II resources.",
+      "Auth": "No",
+      "Category": "Games & Comics",
+      "Link": "https://age-of-empires-2-api.herokuapp.com"
+    },
+    {
+      "API": "IP Geolocation",
+      "Description": "Geolocate website visitors from their IPs.",
+      "Auth": "apiKey",
+      "Category": "Geocoding",
+      "Link": "https://www.abstractapi.com/ip-geolocation-api"
+    },
+    {
+      "API": "Bank Negara Malaysia Open Data",
+      "Description": "Malaysia Central Bank Open Data.",
+      "Auth": "No",
+      "Category": "Government",
+      "Link": "https://apikijangportal.bnm.gov.my/"
+    },
+    {
+      "API": "CMS.gov",
+      "Description": "Access to the data from the CMS - medicare.gov.",
+      "Auth": "apiKey",
+      "Category": "Health",
+      "Link": "https://data.cms.gov/provider-data/"
+    },
+    {
+      "API": "Adzuna",
+      "Description": "Job board aggregator.",
+      "Auth": "apiKey",
+      "Category": "Jobs",
+      "Link": "https://developer.adzuna.com/overview"
+    },
+    {
+      "API": "AI For Thai",
+      "Description": "Free Various Thai AI API.",
+      "Auth": "apiKey",
+      "Category": "Machine Learning",
+      "Link": "https://aiforthai.in.th/index.php"
+    },
+    {
+      "API": "7digital",
+      "Description": "Api of Music store 7digital.",
+      "Auth": "OAuth",
+      "Category": "Music",
+      "Link": "https://docs.7digital.com/reference"
+    },
+    {
+      "API": "apilayer mediastack",
+      "Description": "Free, Simple REST API for Live News & Blog Articles.",
+      "Auth": "apiKey",
+      "Category": "News",
+      "Link": "https://mediastack.com/"
+    },
+    {
+      "API": "18F",
+      "Description": "Unofficial US Federal Government API Development.",
+      "Auth": "No",
+      "Category": "Open Data",
+      "Link": "http://18f.github.io/API-All-the-X/"
+    },
+    {
+      "API": "Countly",
+      "Description": "Countly web analytics.",
+      "Auth": "No",
+      "Category": "Open Source Projects",
+      "Link": "https://api.count.ly/reference"
+    },
+    {
+      "API": "EPO",
+      "Description": "European patent search system api.",
+      "Auth": "OAuth",
+      "Category": "Patent",
+      "Link": "https://developers.epo.org/"
+    },
+    {
+      "API": "Advice Slip",
+      "Description": "Generate random advice slips.",
+      "Auth": "No",
+      "Category": "Personality",
+      "Link": "http://api.adviceslip.com/"
+    }
+  ]
+}

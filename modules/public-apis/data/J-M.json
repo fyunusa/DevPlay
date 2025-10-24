@@ -1,0 +1,647 @@
+{
+    "Jobs": [
+        {
+            "API": "Adzuna",
+            "Description": "Job board aggregator",
+            "Auth": "apiKey",
+            "HTTPS": true,
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Arbeitnow",
+            "Description": "API for Job board aggregator in Europe / Remote",
+            "Auth": "No",
+            "HTTPS": true,
+            "CORS": "Yes"
+        },
+        {
+            "API": "Arbeitsamt",
+            "Description": "API for the 'Arbeitsamt', which is a german Job board aggregator",
+            "Auth": "OAuth",
+            "HTTPS": true,
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Careerjet",
+            "Description": "Job search engine",
+            "Auth": "apiKey",
+            "HTTPS": false,
+            "CORS": "Unknown"
+        },
+        {
+            "API": "DevITjobs UK",
+            "Description": "Jobs with GraphQL",
+            "Auth": "No",
+            "HTTPS": true,
+            "CORS": "Yes"
+        },
+        {
+            "API": "Findwork",
+            "Description": "Job board",
+            "Auth": "apiKey",
+            "HTTPS": true,
+            "CORS": "Unknown"
+        },
+        {
+            "API": "GraphQL Jobs",
+            "Description": "Jobs with GraphQL",
+            "Auth": "No",
+            "HTTPS": true,
+            "CORS": "Yes"
+        },
+        {
+            "API": "Jobs2Careers",
+            "Description": "Job aggregator",
+            "Auth": "apiKey",
+            "HTTPS": true,
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Jooble",
+            "Description": "Job search engine",
+            "Auth": "apiKey",
+            "HTTPS": true,
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Juju",
+            "Description": "Job search engine",
+            "Auth": "apiKey",
+            "HTTPS": false,
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Open Skills",
+            "Description": "Job titles, skills and related jobs data",
+            "Auth": "No",
+            "HTTPS": false,
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Reed",
+            "Description": "Job board aggregator",
+            "Auth": "apiKey",
+            "HTTPS": true,
+            "CORS": "Unknown"
+        },
+        {
+            "API": "The Muse",
+            "Description": "Job board and company profiles",
+            "Auth": "apiKey",
+            "HTTPS": true,
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Upwork",
+            "Description": "Freelance job board and management system",
+            "Auth": "OAuth",
+            "HTTPS": true,
+            "CORS": "Unknown"
+        },
+        {
+            "API": "USAJOBS",
+            "Description": "US government job board",
+            "Auth": "apiKey",
+            "HTTPS": true,
+            "CORS": "Unknown"
+        },
+        {
+            "API": "WhatJobs",
+            "Description": "Job search engine",
+            "Auth": "apiKey",
+            "HTTPS": true,
+            "CORS": "Unknown"
+        },
+        {
+            "API": "ZipRecruiter",
+            "Description": "Job search app and website",
+            "Auth": "apiKey",
+            "HTTPS": true,
+            "CORS": "Unknown"
+        }
+    ],
+    "Machine Learning": [
+        {
+            "API": "AI For Thai",
+            "Description": "Free Various Thai AI API",
+            "Auth": "apiKey",
+            "HTTPS": true,
+            "CORS": true
+        },
+        {
+            "API": "Clarifai",
+            "Description": "Computer Vision",
+            "Auth": "OAuth",
+            "HTTPS": true,
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Cloudmersive",
+            "Description": "Image captioning, face recognition, NSFW classification",
+            "Auth": "apiKey",
+            "HTTPS": true,
+            "CORS": true
+        },
+        {
+            "API": "Deepcode",
+            "Description": "AI for code review",
+            "Auth": "No",
+            "HTTPS": true,
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Dialogflow",
+            "Description": "Natural Language Processing",
+            "Auth": "apiKey",
+            "HTTPS": true,
+            "CORS": "Unknown"
+        },
+        {
+            "API": "EXUDE-API",
+            "Description": "Used for the primary ways for filtering the stopping, stemming words from the text data",
+            "Auth": "No",
+            "HTTPS": true,
+            "CORS": true
+        },
+        {
+            "API": "Hirak FaceAPI",
+            "Description": "Face detection, face recognition with age estimation/gender estimation, accurate, no quota limits",
+            "Auth": "apiKey",
+            "HTTPS": true,
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Imagga",
+            "Description": "Image Recognition Solutions like Tagging, Visual Search, NSFW moderation",
+            "Auth": "apiKey",
+            "HTTPS": true,
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Inferdo",
+            "Description": "Computer Vision services like Facial detection, Image labeling, NSFW classification",
+            "Auth": "apiKey",
+            "HTTPS": true,
+            "CORS": "Unknown"
+        },
+        {
+            "API": "IPS Online",
+            "Description": "Face and License Plate Anonymization",
+            "Auth": "apiKey",
+            "HTTPS": true,
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Irisnet",
+            "Description": "Realtime content moderation API that blocks or blurs unwanted images in real-time",
+            "Auth": "apiKey",
+            "HTTPS": true,
+            "CORS": true
+        },
+        {
+            "API": "Keen IO",
+            "Description": "Data Analytics",
+            "Auth": "apiKey",
+            "HTTPS": true,
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Machinetutors",
+            "Description": "AI Solutions: Video/Image Classification & Tagging, NSFW, Icon/Image/Audio Search, NLP",
+            "Auth": "apiKey",
+            "HTTPS": true,
+            "CORS": true
+        },
+        {
+            "API": "MessengerX.io",
+            "Description": "A FREE API for developers to build and monetize personalized ML based chat apps",
+            "Auth": "apiKey",
+            "HTTPS": true,
+            "CORS": true
+        },
+        {
+            "API": "NLP Cloud",
+            "Description": "NLP API using spaCy and transformers for NER, sentiments, classification, summarization, and more",
+            "Auth": "apiKey",
+            "HTTPS": true,
+            "CORS": "Unknown"
+        },
+        {
+            "API": "OpenVisionAPI",
+            "Description": "Open source computer vision API based on open source models",
+            "Auth": "No",
+            "HTTPS": true,
+            "CORS": true
+        },
+        {
+            "API": "Perspective",
+            "Description": "NLP API to return probability that if text is toxic, obscene, insulting or threatening",
+            "Auth": "apiKey",
+            "HTTPS": true,
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Roboflow Universe",
+            "Description": "Pre-trained computer vision models",
+            "Auth": "apiKey",
+            "HTTPS": true,
+            "CORS": true
+        },
+        {
+            "API": "SkyBiometry",
+            "Description": "Face Detection, Face Recognition and Face Grouping",
+            "Auth": "apiKey",
+            "HTTPS": true,
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Time Door",
+            "Description": "A time series analysis API",
+            "Auth": "apiKey",
+            "HTTPS": true,
+            "CORS": true
+        },
+        {
+            "API": "Unplugg",
+            "Description": "Forecasting API for timeseries data",
+            "Auth": "apiKey",
+            "HTTPS": true,
+            "CORS": "Unknown"
+        },
+        {
+            "API": "WolframAlpha",
+            "Description": "Provides specific answers to questions using data and algorithms",
+            "Auth": "apiKey",
+            "HTTPS": true,
+            "CORS": "Unknown"
+        }
+    ],
+    "Music": [
+        {
+            "API": "7digital",
+            "Description": "Api of Music store 7digital",
+            "Auth": "OAuth",
+            "HTTPS": true,
+            "CORS": "Unknown"
+        },
+        {
+            "API": "AI Mastering",
+            "Description": "Automated Music Mastering",
+            "Auth": "apiKey",
+            "HTTPS": true,
+            "CORS": true
+        },
+        {
+            "API": "Audiomack",
+            "Description": "Api of the streaming music hub Audiomack",
+            "Auth": "OAuth",
+            "HTTPS": true,
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Bandcamp",
+            "Description": "API of Music store Bandcamp",
+            "Auth": "OAuth",
+            "HTTPS": true,
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Bandsintown",
+            "Description": "Music Events",
+            "Auth": "No",
+            "HTTPS": true,
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Deezer",
+            "Description": "Music",
+            "Auth": "OAuth",
+            "HTTPS": true,
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Discogs",
+            "Description": "Music",
+            "Auth": "OAuth",
+            "HTTPS": true,
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Freesound",
+            "Description": "Music Samples",
+            "Auth": "apiKey",
+            "HTTPS": true,
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Gaana",
+            "Description": "API to retrieve song information from Gaana",
+            "Auth": "No",
+            "HTTPS": true,
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Genius",
+            "Description": "Crowdsourced lyrics and music knowledge",
+            "Auth": "OAuth",
+            "HTTPS": true,
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Genrenator",
+            "Description": "Music genre generator",
+            "Auth": "No",
+            "HTTPS": true,
+            "CORS": "Unknown"
+        },
+        {
+            "API": "iTunes Search",
+            "Description": "Software products",
+            "Auth": "No",
+            "HTTPS": true,
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Jamendo",
+            "Description": "Music",
+            "Auth": "OAuth",
+            "HTTPS": true,
+            "CORS": "Unknown"
+        },
+        {
+            "API": "JioSaavn",
+            "Description": "API to retrieve song information, album meta data and many more from JioSaavn",
+            "Auth": "No",
+            "HTTPS": true,
+            "CORS": "Unknown"
+        },
+        {
+            "API": "KKBOX",
+            "Description": "Get music libraries, playlists, charts, and perform out of KKBOX's platform",
+            "Auth": "OAuth",
+            "HTTPS": true,
+            "CORS": "Unknown"
+        },
+        {
+            "API": "KSoft.Si Lyrics",
+            "Description": "API to get lyrics for songs",
+            "Auth": "apiKey",
+            "HTTPS": true,
+            "CORS": "Unknown"
+        },
+        {
+            "API": "LastFm",
+            "Description": "Music",
+            "Auth": "apiKey",
+            "HTTPS": true,
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Lyrics.ovh",
+            "Description": "Simple API to retrieve the lyrics of a song",
+            "Auth": "No",
+            "HTTPS": true,
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Mixcloud",
+            "Description": "Music",
+            "Auth": "OAuth",
+            "HTTPS": true,
+            "CORS": true
+        },
+        {
+            "API": "MusicBrainz",
+            "Description": "Music",
+            "Auth": "No",
+            "HTTPS": true,
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Musixmatch",
+            "Description": "Music",
+            "Auth": "apiKey",
+            "HTTPS": true,
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Napster",
+            "Description": "Music",
+            "Auth": "apiKey",
+            "HTTPS": true,
+            "CORS": true
+        },
+        {
+            "API": "Openwhyd",
+            "Description": "Download curated playlists of streaming tracks (YouTube, SoundCloud, etc...)",
+            "Auth": "No",
+            "HTTPS": true,
+            "CORS": false
+        },
+        {
+            "API": "Phishin",
+            "Description": "A web-based archive of legal live audio recordings of the improvisational rock band Phish",
+            "Auth": "apiKey",
+            "HTTPS": true,
+            "CORS": false
+        },
+        {
+            "API": "Radio Browser",
+            "Description": "List of internet radio stations",
+            "Auth": "No",
+            "HTTPS": true,
+            "CORS": true
+        },
+        {
+            "API": "Songkick",
+            "Description": "Music Events",
+            "Auth": "apiKey",
+            "HTTPS": true,
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Songlink / Odesli",
+            "Description": "Get all the services on which a song is available",
+            "Auth": "apiKey",
+            "HTTPS": true,
+            "CORS": true
+        },
+        {
+            "API": "Songsterr",
+            "Description": "Provides guitar, bass and drums tabs and chords",
+            "Auth": "No",
+            "HTTPS": true,
+            "CORS": "Unknown"
+        },
+        {
+            "API": "SoundCloud",
+            "Description": "With SoundCloud API you can build applications that will give more power to control your content",
+            "Auth": "OAuth",
+            "HTTPS": true,
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Spotify",
+            "Description": "View Spotify music catalog, manage users' libraries, get recommendations and more",
+            "Auth": "OAuth",
+            "HTTPS": true,
+            "CORS": "Unknown"
+        },
+        {
+            "API": "TasteDive",
+            "Description": "Similar artist API (also works for movies and TV shows)",
+            "Auth": "apiKey",
+            "HTTPS": true,
+            "CORS": "Unknown"
+        },
+        {
+            "API": "TheAudioDB",
+            "Description": "Music",
+            "Auth": "apiKey",
+            "HTTPS": true,
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Vagalume",
+            "Description": "Crowdsourced lyrics and music knowledge",
+            "Auth": "apiKey",
+            "HTTPS": true,
+            "CORS": "Unknown"
+        }
+    ],
+    "News": [
+        {
+            "API": "apilayer mediastack",
+            "Description": "Free, Simple REST API for Live News & Blog Articles",
+            "Auth": "apiKey",
+            "HTTPS": true,
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Associated Press",
+            "Description": "Search for news and metadata from Associated Press",
+            "Auth": "apiKey",
+            "HTTPS": true,
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Chronicling America",
+            "Description": "Provides access to millions of pages of historic US newspapers from the Library of Congress",
+            "Auth": "No",
+            "HTTPS": false,
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Currents",
+            "Description": "Latest news published in various news sources, blogs and forums",
+            "Auth": "apiKey",
+            "HTTPS": true,
+            "CORS": true
+        },
+        {
+            "API": "Feedbin",
+            "Description": "RSS reader",
+            "Auth": "OAuth",
+            "HTTPS": true,
+            "CORS": "Unknown"
+        },
+        {
+            "API": "GNews",
+            "Description": "Search for news from various sources",
+            "Auth": "apiKey",
+            "HTTPS": true,
+            "CORS": true
+        },
+        {
+            "API": "Graphs for Coronavirus",
+            "Description": "Each Country separately and Worldwide Graphs for Coronavirus. Daily updates",
+            "Auth": "No",
+            "HTTPS": true,
+            "CORS": true
+        },
+        {
+            "API": "Inshorts News",
+            "Description": "Provides news from inshorts",
+            "Auth": "No",
+            "HTTPS": true,
+            "CORS": "Unknown"
+        },
+        {
+            "API": "MarketAux",
+            "Description": "Live stock market news with tagged tickers + sentiment and stats JSON API",
+            "Auth": "apiKey",
+            "HTTPS": true,
+            "CORS": true
+        },
+        {
+            "API": "New York Times",
+            "Description": "The New York Times Developer Network",
+            "Auth": "apiKey",
+            "HTTPS": true,
+            "CORS": "Unknown"
+        },
+        {
+            "API": "News",
+            "Description": "Headlines currently published on a range of news sources and blogs",
+            "Auth": "apiKey",
+            "HTTPS": true,
+            "CORS": "Unknown"
+        },
+        {
+            "API": "NewsData",
+            "Description": "News data API for live-breaking news and headlines from reputed news sources",
+            "Auth": "apiKey",
+            "HTTPS": true,
+            "CORS": "Unknown"
+        },
+        {
+            "API": "NewsX",
+            "Description": "Get or Search Latest Breaking News with ML Powered Summaries 🤖",
+            "Auth": "apiKey",
+            "HTTPS": true,
+            "CORS": "Unknown"
+        },
+        {
+            "API": "NPR One",
+            "Description": "Personalized news listening experience from NPR",
+            "Auth": "OAuth",
+            "HTTPS": true,
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Spaceflight News",
+            "Description": "Spaceflight related news 🚀",
+            "Auth": "No",
+            "HTTPS": true,
+            "CORS": true
+        },
+        {
+            "API": "The Guardian",
+            "Description": "Access all the content the Guardian creates, categorised by tags and section",
+            "Auth": "apiKey",
+            "HTTPS": true,
+            "CORS": "Unknown"
+        },
+        {
+            "API": "The Old Reader",
+            "Description": "RSS reader",
+            "Auth": "apiKey",
+            "HTTPS": true,
+            "CORS": "Unknown"
+        },
+        {
+            "API": "TheNews",
+            "Description": "Aggregated headlines, top story and live news JSON API",
+            "Auth": "apiKey",
+            "HTTPS": true,
+            "CORS": true
+        },
+        {
+            "API": "Trove",
+            "Description": "Search through the National Library of Australia collection of 1000s of digitised newspapers",
+            "Auth": "apiKey",
+            "HTTPS": true,
+            "CORS": "Unknown"
+        }
+    ]
+}

@@ -1,0 +1,44 @@
+{
+  "datasets": [
+    {
+      "name": "LibriSpeech",
+      "description": "A large corpus of read English speech, suitable for training and evaluating automatic speech recognition systems.",
+      "source": "OpenSLR",
+      "size": "1000 hours",
+      "language": "English",
+      "license": "CC BY 4.0"
+    },
+    {
+      "name": "Common Voice",
+      "description": "A multilingual dataset of voices collected from volunteers, aimed at improving speech recognition systems.",
+      "source": "Mozilla",
+      "size": "4000 hours",
+      "language": "Multiple",
+      "license": "CC BY 4.0"
+    },
+    {
+      "name": "UrbanSound8K",
+      "description": "A dataset containing 8,732 labeled sound excerpts from urban environments, useful for sound classification tasks.",
+      "source": "UrbanSound",
+      "size": "8,732 samples",
+      "language": "N/A",
+      "license": "Creative Commons"
+    },
+    {
+      "name": "VoxCeleb",
+      "description": "A large-scale speaker identification dataset containing speech from thousands of celebrities.",
+      "source": "VoxCeleb",
+      "size": "1,000 hours",
+      "language": "English",
+      "license": "CC BY-NC 4.0"
+    },
+    {
+      "name": "AudioSet",
+      "description": "A large-scale dataset of audio events, containing over 2 million human-labeled 10-second sound clips.",
+      "source": "Google",
+      "size": "2 million clips",
+      "language": "N/A",
+      "license": "CC BY 4.0"
+    }
+  ]
+}

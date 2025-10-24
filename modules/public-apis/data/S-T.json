@@ -1,0 +1,1539 @@
+{
+    "Science & Math": [
+        {
+            "API": "arcsecond.io",
+            "Description": "Multiple astronomy data sources",
+            "Auth": "No",
+            "HTTPS": "Yes",
+            "CORS": "Unknown"
+        },
+        {
+            "API": "arXiv",
+            "Description": "Curated research-sharing platform: physics, mathematics, quantitative finance, and economics",
+            "Auth": "No",
+            "HTTPS": "Yes",
+            "CORS": "Unknown"
+        },
+        {
+            "API": "CORE",
+            "Description": "Access the world's Open Access research papers",
+            "Auth": "apiKey",
+            "HTTPS": "Yes",
+            "CORS": "Unknown"
+        },
+        {
+            "API": "GBIF",
+            "Description": "Global Biodiversity Information Facility",
+            "Auth": "No",
+            "HTTPS": "Yes",
+            "CORS": "Yes"
+        },
+        {
+            "API": "iDigBio",
+            "Description": "Access millions of museum specimens from organizations around the world",
+            "Auth": "No",
+            "HTTPS": "Yes",
+            "CORS": "Unknown"
+        },
+        {
+            "API": "inspirehep.net",
+            "Description": "High Energy Physics info. system",
+            "Auth": "No",
+            "HTTPS": "Yes",
+            "CORS": "Unknown"
+        },
+        {
+            "API": "isEven (humor)",
+            "Description": "Check if a number is even",
+            "Auth": "No",
+            "HTTPS": "Yes",
+            "CORS": "Unknown"
+        },
+        {
+            "API": "ISRO",
+            "Description": "ISRO Space Crafts Information",
+            "Auth": "No",
+            "HTTPS": "Yes",
+            "CORS": "No"
+        },
+        {
+            "API": "ITIS",
+            "Description": "Integrated Taxonomic Information System",
+            "Auth": "No",
+            "HTTPS": "Yes",
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Launch Library 2",
+            "Description": "Spaceflight launches and events database",
+            "Auth": "No",
+            "HTTPS": "Yes",
+            "CORS": "Yes"
+        },
+        {
+            "API": "Materials Platform for Data Science",
+            "Description": "Curated experimental data for materials science",
+            "Auth": "apiKey",
+            "HTTPS": "Yes",
+            "CORS": "No"
+        },
+        {
+            "API": "Minor Planet Center",
+            "Description": "Asterank.com Information",
+            "Auth": "No",
+            "HTTPS": "No",
+            "CORS": "Unknown"
+        },
+        {
+            "API": "NASA",
+            "Description": "NASA data, including imagery",
+            "Auth": "No",
+            "HTTPS": "Yes",
+            "CORS": "No"
+        },
+        {
+            "API": "NASA ADS",
+            "Description": "NASA Astrophysics Data System",
+            "Auth": "OAuth",
+            "HTTPS": "Yes",
+            "CORS": "Yes"
+        },
+        {
+            "API": "Newton",
+            "Description": "Symbolic and Arithmetic Math Calculator",
+            "Auth": "No",
+            "HTTPS": "Yes",
+            "CORS": "No"
+        },
+        {
+            "API": "Noctua",
+            "Description": "REST API used to access NoctuaSky features",
+            "Auth": "No",
+            "HTTPS": "Yes",
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Numbers",
+            "Description": "Number of the day, random number, number facts and anything else you want to do with numbers",
+            "Auth": "apiKey",
+            "HTTPS": "Yes",
+            "CORS": "No"
+        },
+        {
+            "API": "Numbers",
+            "Description": "Facts about numbers",
+            "Auth": "No",
+            "HTTPS": "No",
+            "CORS": "No"
+        },
+        {
+            "API": "Ocean Facts",
+            "Description": "Facts pertaining to the physical science of Oceanography",
+            "Auth": "No",
+            "HTTPS": "Yes",
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Open Notify",
+            "Description": "ISS astronauts, current location, etc",
+            "Auth": "No",
+            "HTTPS": "No",
+            "CORS": "No"
+        },
+        {
+            "API": "Open Science Framework",
+            "Description": "Repository and archive for study designs, research materials, data, manuscripts, etc",
+            "Auth": "No",
+            "HTTPS": "Yes",
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Purple Air",
+            "Description": "Real Time Air Quality Monitoring",
+            "Auth": "No",
+            "HTTPS": "Yes",
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Remote Calc",
+            "Description": "Decodes base64 encoding and parses it to return a solution to the calculation in JSON",
+            "Auth": "No",
+            "HTTPS": "Yes",
+            "CORS": "Yes"
+        },
+        {
+            "API": "SHARE",
+            "Description": "A free, open, dataset about research and scholarly activities",
+            "Auth": "No",
+            "HTTPS": "Yes",
+            "CORS": "No"
+        },
+        {
+            "API": "SpaceX",
+            "Description": "Company, vehicle, launchpad and launch data",
+            "Auth": "No",
+            "HTTPS": "Yes",
+            "CORS": "No"
+        },
+        {
+            "API": "SpaceX",
+            "Description": "GraphQL, Company, Ships, launchpad and launch data",
+            "Auth": "No",
+            "HTTPS": "Yes",
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Sunrise and Sunset",
+            "Description": "Sunset and sunrise times for a given latitude and longitude",
+            "Auth": "No",
+            "HTTPS": "Yes",
+            "CORS": "No"
+        },
+        {
+            "API": "Times Adder",
+            "Description": "With this API you can add each of the times introduced in the array sended",
+            "Auth": "No",
+            "HTTPS": "Yes",
+            "CORS": "No"
+        },
+        {
+            "API": "TLE",
+            "Description": "Satellite information",
+            "Auth": "No",
+            "HTTPS": "Yes",
+            "CORS": "No"
+        },
+        {
+            "API": "USGS Earthquake Hazards Program",
+            "Description": "Earthquakes data real-time",
+            "Auth": "No",
+            "HTTPS": "Yes",
+            "CORS": "No"
+        },
+        {
+            "API": "USGS Water Services",
+            "Description": "Water quality and level info for rivers and lakes",
+            "Auth": "No",
+            "HTTPS": "Yes",
+            "CORS": "No"
+        },
+        {
+            "API": "World Bank",
+            "Description": "World Data",
+            "Auth": "No",
+            "HTTPS": "Yes",
+            "CORS": "No"
+        },
+        {
+            "API": "xMath",
+            "Description": "Random mathematical expressions",
+            "Auth": "No",
+            "HTTPS": "Yes",
+            "CORS": "Yes"
+        }
+    ],
+    "Security": [
+        {
+            "API": "Application Environment Verification",
+            "Description": "Android library and API to verify the safety of user devices, detect rooted devices and other risks",
+            "Auth": "apiKey",
+            "HTTPS": "Yes",
+            "CORS": "Yes"
+        },
+        {
+            "API": "BinaryEdge",
+            "Description": "Provide access to BinaryEdge 40fy scanning platform",
+            "Auth": "apiKey",
+            "HTTPS": "Yes",
+            "CORS": "Yes"
+        },
+        {
+            "API": "BitWarden",
+            "Description": "Best open-source password manager",
+            "Auth": "OAuth",
+            "HTTPS": "Yes",
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Botd",
+            "Description": "Botd is a browser library for JavaScript bot detection",
+            "Auth": "apiKey",
+            "HTTPS": "Yes",
+            "CORS": "Yes"
+        },
+        {
+            "API": "Bugcrowd",
+            "Description": "Bugcrowd API for interacting and tracking the reported issues programmatically",
+            "Auth": "apiKey",
+            "HTTPS": "Yes",
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Censys",
+            "Description": "Search engine for Internet connected host and devices",
+            "Auth": "apiKey",
+            "HTTPS": "Yes",
+            "CORS": "No"
+        },
+        {
+            "API": "Classify",
+            "Description": "Encrypting & decrypting text messages",
+            "Auth": "No",
+            "HTTPS": "Yes",
+            "CORS": "Yes"
+        },
+        {
+            "API": "Complete Criminal Checks",
+            "Description": "Provides data of offenders from all U.S. States and Pureto Rico",
+            "Auth": "apiKey",
+            "HTTPS": "Yes",
+            "CORS": "Yes"
+        },
+        {
+            "API": "CRXcavator",
+            "Description": "Chrome extension risk scoring",
+            "Auth": "apiKey",
+            "HTTPS": "Yes",
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Dehash.lt",
+            "Description": "Hash decryption MD5, SHA1, SHA3, SHA256, SHA384, SHA512",
+            "Auth": "No",
+            "HTTPS": "Yes",
+            "CORS": "Unknown"
+        },
+        {
+            "API": "EmailRep",
+            "Description": "Email address threat and risk prediction",
+            "Auth": "No",
+            "HTTPS": "Yes",
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Escape",
+            "Description": "An API for escaping different kind of queries",
+            "Auth": "No",
+            "HTTPS": "Yes",
+            "CORS": "No"
+        },
+        {
+            "API": "FilterLists",
+            "Description": "Lists of filters for adblockers and firewalls",
+            "Auth": "No",
+            "HTTPS": "Yes",
+            "CORS": "Unknown"
+        },
+        {
+            "API": "FingerprintJS Pro",
+            "Description": "Fraud detection API offering highly accurate browser fingerprinting",
+            "Auth": "apiKey",
+            "HTTPS": "Yes",
+            "CORS": "Yes"
+        },
+        {
+            "API": "FraudLabs Pro",
+            "Description": "Screen order information using AI to detect frauds",
+            "Auth": "apiKey",
+            "HTTPS": "Yes",
+            "CORS": "Unknown"
+        },
+        {
+            "API": "FullHunt",
+            "Description": "Searchable attack surface database of the entire internet",
+            "Auth": "apiKey",
+            "HTTPS": "Yes",
+            "CORS": "Unknown"
+        },
+        {
+            "API": "GitGuardian",
+            "Description": "Scan files for secrets (API Keys, database credentials)",
+            "Auth": "apiKey",
+            "HTTPS": "Yes",
+            "CORS": "No"
+        },
+        {
+            "API": "GreyNoise",
+            "Description": "Query IPs in the GreyNoise dataset and retrieve a subset of the full IP context data",
+            "Auth": "apiKey",
+            "HTTPS": "Yes",
+            "CORS": "Unknown"
+        },
+        {
+            "API": "HackerOne",
+            "Description": "The industry’s first hacker API that helps increase productivity towards creative bug bounty hunting",
+            "Auth": "apiKey",
+            "HTTPS": "Yes",
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Hashable",
+            "Description": "A REST API to access high level cryptographic functions and methods",
+            "Auth": "No",
+            "HTTPS": "Yes",
+            "CORS": "Yes"
+        },
+        {
+            "API": "HaveIBeenPwned",
+            "Description": "Passwords which have previously been exposed in data breaches",
+            "Auth": "apiKey",
+            "HTTPS": "Yes",
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Intelligence X",
+            "Description": "Perform OSINT via Intelligence X",
+            "Auth": "apiKey",
+            "HTTPS": "Yes",
+            "CORS": "Unknown"
+        },
+        {
+            "API": "LoginRadius",
+            "Description": "Managed User Authentication Service",
+            "Auth": "apiKey",
+            "HTTPS": "Yes",
+            "CORS": "Yes"
+        },
+        {
+            "API": "Microsoft Security Response Center (MSRC)",
+            "Description": "Programmatic interfaces to engage with the Microsoft Security Response Center (MSRC)",
+            "Auth": "No",
+            "HTTPS": "Yes",
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Mozilla http scanner",
+            "Description": "Mozilla observatory http scanner",
+            "Auth": "No",
+            "HTTPS": "Yes",
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Mozilla tls scanner",
+            "Description": "Mozilla observatory tls scanner",
+            "Auth": "No",
+            "HTTPS": "Yes",
+            "CORS": "Unknown"
+        },
+        {
+            "API": "National Vulnerability Database",
+            "Description": "U.S. National Vulnerability Database",
+            "Auth": "No",
+            "HTTPS": "Yes",
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Passwordinator",
+            "Description": "Generate random passwords of varying complexities",
+            "Auth": "No",
+            "HTTPS": "Yes",
+            "CORS": "Yes"
+        },
+        {
+            "API": "PhishStats",
+            "Description": "Phishing database",
+            "Auth": "No",
+            "HTTPS": "Yes",
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Privacy.com",
+            "Description": "Generate merchant-specific and one-time use credit card numbers that link back to your bank",
+            "Auth": "apiKey",
+            "HTTPS": "Yes",
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Pulsedive",
+            "Description": "Scan, search and collect threat intelligence data in real-time",
+            "Auth": "apiKey",
+            "HTTPS": "Yes",
+            "CORS": "Unknown"
+        },
+        {
+            "API": "SecurityTrails",
+            "Description": "Domain and IP related information such as current and historical WHOIS and DNS records",
+            "Auth": "apiKey",
+            "HTTPS": "Yes",
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Shodan",
+            "Description": "Search engine for Internet connected devices",
+            "Auth": "apiKey",
+            "HTTPS": "Yes",
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Spyse",
+            "Description": "Access data on all Internet assets and build powerful attack surface management applications",
+            "Auth": "apiKey",
+            "HTTPS": "Yes",
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Threat Jammer",
+            "Description": "Risk scoring service from curated threat intelligence data",
+            "Auth": "apiKey",
+            "HTTPS": "Yes",
+            "CORS": "Unknown"
+        },
+        {
+            "API": "UK Police",
+            "Description": "UK Police data",
+            "Auth": "No",
+            "HTTPS": "Yes",
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Virushee",
+            "Description": "Virushee file/data scanning",
+            "Auth": "No",
+            "HTTPS": "Yes",
+            "CORS": "Yes"
+        },
+        {
+            "API": "VulDB",
+            "Description": "VulDB API allows to initiate queries for one or more items along with transactional bots",
+            "Auth": "apiKey",
+            "HTTPS": "Yes",
+            "CORS": "Unknown"
+        }
+    ],
+    "Shopping": [
+        {
+            "API": "Best Buy",
+            "Description": "Products, Buying Options, Categories, Recommendations, Stores and Commerce",
+            "Auth": "apiKey",
+            "HTTPS": "Yes",
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Digi-Key",
+            "Description": "Retrieve price and inventory of electronic components as well as place orders",
+            "Auth": "OAuth",
+            "HTTPS": "Yes",
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Dummy Products",
+            "Description": "An api to fetch dummy e-commerce products JSON data with placeholder images",
+            "Auth": "apiKey",
+            "HTTPS": "Yes",
+            "CORS": "Yes"
+        },
+        {
+            "API": "eBay",
+            "Description": "Sell and Buy on eBay",
+            "Auth": "OAuth",
+            "HTTPS": "Yes",
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Etsy",
+            "Description": "Manage shop and interact with listings",
+            "Auth": "OAuth",
+            "HTTPS": "Yes",
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Flipkart Marketplace",
+            "Description": "Product listing management, Order Fulfilment in the Flipkart Marketplace",
+            "Auth": "OAuth",
+            "HTTPS": "Yes",
+            "CORS": "Yes"
+        },
+        {
+            "API": "Lazada",
+            "Description": "Retrieve product ratings and seller performance metrics",
+            "Auth": "apiKey",
+            "HTTPS": "Yes",
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Mercadolibre",
+            "Description": "Manage sales, ads, products, services and Shops",
+            "Auth": "apiKey",
+            "HTTPS": "Yes",
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Octopart",
+            "Description": "Electronic part data for manufacturing, design, and sourcing",
+            "Auth": "apiKey",
+            "HTTPS": "Yes",
+            "CORS": "Unknown"
+        },
+        {
+            "API": "OLX Poland",
+            "Description": "Integrate with local sites by posting, managing adverts and communicating with OLX users",
+            "Auth": "apiKey",
+            "HTTPS": "Yes",
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Rappi",
+            "Description": "Manage orders from Rappi's app",
+            "Auth": "OAuth",
+            "HTTPS": "Yes",
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Shopee",
+            "Description": "Shopee's official API for integration of various services from Shopee",
+            "Auth": "apiKey",
+            "HTTPS": "Yes",
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Tokopedia",
+            "Description": "Tokopedia's Official API for integration of various services from Tokopedia",
+            "Auth": "OAuth",
+            "HTTPS": "Yes",
+            "CORS": "Unknown"
+        },
+        {
+            "API": "WooCommerce",
+            "Description": "WooCommerce REST APIS to create, read, update, and delete data on wordpress website in JSON format",
+            "Auth": "apiKey",
+            "HTTPS": "Yes",
+            "CORS": "Yes"
+        }
+    ],
+    "Social": [
+        {
+            "API": "4chan",
+            "Description": "Simple image-based bulletin board dedicated to a variety of topics",
+            "Auth": "No",
+            "HTTPS": "Yes",
+            "CORS": "Yes"
+        },
+        {
+            "API": "Ayrshare",
+            "Description": "Social media APIs to post, get analytics, and manage multiple users social media accounts",
+            "Auth": "apiKey",
+            "HTTPS": "Yes",
+            "CORS": "Yes"
+        },
+        {
+            "API": "aztro",
+            "Description": "Daily horoscope info for yesterday, today, and tomorrow",
+            "Auth": "No",
+            "HTTPS": "Yes",
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Blogger",
+            "Description": "The Blogger APIs allows client applications to view and update Blogger content",
+            "Auth": "OAuth",
+            "HTTPS": "Yes",
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Cisco Spark",
+            "Description": "Team Collaboration Software",
+            "Auth": "OAuth",
+            "HTTPS": "Yes",
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Dangerous Discord Database",
+            "Description": "Database of malicious Discord accounts",
+            "Auth": "apiKey",
+            "HTTPS": "Yes",
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Discord",
+            "Description": "Make bots for Discord, integrate Discord onto an external platform",
+            "Auth": "OAuth",
+            "HTTPS": "Yes",
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Disqus",
+            "Description": "Communicate with Disqus data",
+            "Auth": "OAuth",
+            "HTTPS": "Yes",
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Doge-Meme",
+            "Description": "Top meme posts from r/dogecoin which include 'Meme' flair",
+            "Auth": "No",
+            "HTTPS": "Yes",
+            "CORS": "Yes"
+        },
+        {
+            "API": "Facebook",
+            "Description": "Facebook Login, Share on FB, Social Plugins, Analytics and more",
+            "Auth": "OAuth",
+            "HTTPS": "Yes",
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Foursquare",
+            "Description": "Interact with Foursquare users and places (geolocation-based checkins, photos, tips, events, etc)",
+            "Auth": "OAuth",
+            "HTTPS": "Yes",
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Fuck Off as a Service",
+            "Description": "Asks someone to fuck off",
+            "Auth": "No",
+            "HTTPS": "Yes",
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Full Contact",
+            "Description": "Get Social Media profiles and contact Information",
+            "Auth": "OAuth",
+            "HTTPS": "Yes",
+            "CORS": "Unknown"
+        },
+        {
+            "API": "HackerNews",
+            "Description": "Social news for CS and entrepreneurship",
+            "Auth": "No",
+            "HTTPS": "Yes",
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Hashnode",
+            "Description": "A blogging platform built for developers",
+            "Auth": "No",
+            "HTTPS": "Yes",
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Instagram",
+            "Description": "Instagram Login, Share on Instagram, Social Plugins and more",
+            "Auth": "OAuth",
+            "HTTPS": "Yes",
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Kakao",
+            "Description": "Kakao Login, Share on KakaoTalk, Social Plugins and more",
+            "Auth": "OAuth",
+            "HTTPS": "Yes",
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Lanyard",
+            "Description": "Retrieve your presence on Discord through an HTTP REST API or WebSocket",
+            "Auth": "No",
+            "HTTPS": "Yes",
+            "CORS": "Yes"
+        },
+        {
+            "API": "Line",
+            "Description": "Line Login, Share on Line, Social Plugins and more",
+            "Auth": "OAuth",
+            "HTTPS": "Yes",
+            "CORS": "Unknown"
+        },
+        {
+            "API": "LinkedIn",
+            "Description": "The foundation of all digital integrations with LinkedIn",
+            "Auth": "OAuth",
+            "HTTPS": "Yes",
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Meetup.com",
+            "Description": "Data about Meetups from Meetup.com",
+            "Auth": "apiKey",
+            "HTTPS": "Yes",
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Microsoft Graph",
+            "Description": "Access the data and intelligence in Microsoft 365, Windows 10, and Enterprise Mobility",
+            "Auth": "OAuth",
+            "HTTPS": "Yes",
+            "CORS": "Unknown"
+        },
+        {
+            "API": "NAVER",
+            "Description": "NAVER Login, Share on NAVER, Social Plugins and more",
+            "Auth": "OAuth",
+            "HTTPS": "Yes",
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Open Collective",
+            "Description": "Get Open Collective data",
+            "Auth": "No",
+            "HTTPS": "Yes",
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Pinterest",
+            "Description": "The world's catalog of ideas",
+            "Auth": "OAuth",
+            "HTTPS": "Yes",
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Product Hunt",
+            "Description": "The best new products in tech",
+            "Auth": "OAuth",
+            "HTTPS": "Yes",
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Reddit",
+            "Description": "Homepage of the internet",
+            "Auth": "OAuth",
+            "HTTPS": "Yes",
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Revolt",
+            "Description": "Revolt open source Discord alternative",
+            "Auth": "apiKey",
+            "HTTPS": "Yes",
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Saidit",
+            "Description": "Open Source Reddit Clone",
+            "Auth": "OAuth",
+            "HTTPS": "Yes",
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Slack",
+            "Description": "Team Instant Messaging",
+            "Auth": "OAuth",
+            "HTTPS": "Yes",
+            "CORS": "Unknown"
+        },
+        {
+            "API": "TamTam",
+            "Description": "Bot API to interact with TamTam",
+            "Auth": "apiKey",
+            "HTTPS": "Yes",
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Telegram Bot",
+            "Description": "Simplified HTTP version of the MTProto API for bots",
+            "Auth": "apiKey",
+            "HTTPS": "Yes",
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Telegram MTProto",
+            "Description": "Read and write Telegram data",
+            "Auth": "OAuth",
+            "HTTPS": "Yes",
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Telegraph",
+            "Description": "Create attractive blogs easily, to share",
+            "Auth": "apiKey",
+            "HTTPS": "Yes",
+            "CORS": "Unknown"
+        },
+        {
+            "API": "TikTok",
+            "Description": "Fetches user info and user's video posts on TikTok platform",
+            "Auth": "OAuth",
+            "HTTPS": "Yes",
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Trash Nothing",
+            "Description": "A freecycling community with thousands of free items posted every day",
+            "Auth": "OAuth",
+            "HTTPS": "Yes",
+            "CORS": "Yes"
+        },
+        {
+            "API": "Tumblr",
+            "Description": "Read and write Tumblr Data",
+            "Auth": "OAuth",
+            "HTTPS": "Yes",
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Twitch",
+            "Description": "Game Streaming API",
+            "Auth": "OAuth",
+            "HTTPS": "Yes",
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Twitter",
+            "Description": "Read and write Twitter data",
+            "Auth": "OAuth",
+            "HTTPS": "Yes",
+            "CORS": "No"
+        },
+        {
+            "API": "vk",
+            "Description": "Read and write vk data",
+            "Auth": "OAuth",
+            "HTTPS": "Yes",
+            "CORS": "Unknown"
+        }
+    ],
+    "Sports & Fitness": [
+        {
+            "API": "API-FOOTBALL",
+            "Description": "Get information about Football Leagues & Cups",
+            "Auth": "apiKey",
+            "HTTPS": "Yes",
+            "CORS": "Yes"
+        },
+        {
+            "API": "ApiMedic",
+            "Description": "ApiMedic offers a medical symptom checker API primarily for patients",
+            "Auth": "apiKey",
+            "HTTPS": "Yes",
+            "CORS": "Unknown"
+        },
+        {
+            "API": "balldontlie",
+            "Description": "Balldontlie provides access to stats data from the NBA",
+            "Auth": "No",
+            "HTTPS": "Yes",
+            "CORS": "Yes"
+        },
+        {
+            "API": "Canadian Football League (CFL)",
+            "Description": "Official JSON API providing real-time league, team and player statistics about the CFL",
+            "Auth": "apiKey",
+            "HTTPS": "Yes",
+            "CORS": "No"
+        },
+        {
+            "API": "City Bikes",
+            "Description": "City Bikes around the world",
+            "Auth": "No",
+            "HTTPS": "Yes",
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Cloudbet",
+            "Description": "Official Cloudbet API provides real-time sports odds and betting API to place bets programmatically",
+            "Auth": "apiKey",
+            "HTTPS": "Yes",
+            "CORS": "Yes"
+        },
+        {
+            "API": "CollegeFootballData.com",
+            "Description": "Unofficial detailed American college football statistics, records, and results API",
+            "Auth": "apiKey",
+            "HTTPS": "Yes",
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Ergast F1",
+            "Description": "F1 data from the beginning of the world championships in 1950",
+            "Auth": "No",
+            "HTTPS": "Yes",
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Fitbit",
+            "Description": "Fitbit Information",
+            "Auth": "OAuth",
+            "HTTPS": "Yes",
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Football",
+            "Description": "A simple Open Source Football API to get squads’ stats, best scorers and more",
+            "Auth": "X-Mashape-Key",
+            "HTTPS": "Yes",
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Football (Soccer) Videos",
+            "Description": "Embed codes for goals and highlights from Premier League, Bundesliga, Serie A and many more",
+            "Auth": "No",
+            "HTTPS": "Yes",
+            "CORS": "Yes"
+        },
+        {
+            "API": "Football Standings",
+            "Description": "Display football standings e.g epl, la liga, serie a etc. The data is based on espn site",
+            "Auth": "No",
+            "HTTPS": "Yes",
+            "CORS": "Yes"
+        },
+        {
+            "API": "Football-Data",
+            "Description": "Football data with matches info, players, teams, and competitions",
+            "Auth": "X-Mashape-Key",
+            "HTTPS": "Yes",
+            "CORS": "Unknown"
+        },
+        {
+            "API": "JCDecaux Bike",
+            "Description": "JCDecaux's self-service bicycles",
+            "Auth": "apiKey",
+            "HTTPS": "Yes",
+            "CORS": "Unknown"
+        },
+        {
+            "API": "MLB Records and Stats",
+            "Description": "Current and historical MLB statistics",
+            "Auth": "No",
+            "HTTPS": "No",
+            "CORS": "Unknown"
+        },
+        {
+            "API": "NBA Data",
+            "Description": "All NBA Stats DATA, Games, Livescore, Standings, Statistics",
+            "Auth": "apiKey",
+            "HTTPS": "Yes",
+            "CORS": "Unknown"
+        },
+        {
+            "API": "NBA Stats",
+            "Description": "Current and historical NBA Statistics",
+            "Auth": "No",
+            "HTTPS": "Yes",
+            "CORS": "Unknown"
+        },
+        {
+            "API": "NHL Records and Stats",
+            "Description": "NHL historical data and statistics",
+            "Auth": "No",
+            "HTTPS": "Yes",
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Oddsmagnet",
+            "Description": "Odds history from multiple UK bookmakers",
+            "Auth": "No",
+            "HTTPS": "Yes",
+            "CORS": "Yes"
+        },
+        {
+            "API": "OpenLigaDB",
+            "Description": "Crowd sourced sports league results",
+            "Auth": "No",
+            "HTTPS": "Yes",
+            "CORS": "Yes"
+        },
+        {
+            "API": "Premier League Standings",
+            "Description": "All Current Premier League Standings and Statistics",
+            "Auth": "apiKey",
+            "HTTPS": "Yes",
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Sport Data",
+            "Description": "Get sports data from all over the world",
+            "Auth": "apiKey",
+            "HTTPS": "Yes",
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Sport List & Data",
+            "Description": "List of and resources related to sports",
+            "Auth": "No",
+            "HTTPS": "Yes",
+            "CORS": "Yes"
+        },
+        {
+            "API": "Sport Places",
+            "Description": "Crowd-source sports places around the world",
+            "Auth": "No",
+            "HTTPS": "Yes",
+            "CORS": "No"
+        },
+        {
+            "API": "Sport Vision",
+            "Description": "Identify sport, brands and gear in an image. Also does image sports captioning",
+            "Auth": "apiKey",
+            "HTTPS": "Yes",
+            "CORS": "Yes"
+        },
+        {
+            "API": "Sportmonks Cricket",
+            "Description": "Live cricket score, player statistics and fantasy API",
+            "Auth": "apiKey",
+            "HTTPS": "Yes",
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Sportmonks Football",
+            "Description": "Football score/schedule, news api, tv channels, stats, history, display standing e.g. epl, la liga",
+            "Auth": "apiKey",
+            "HTTPS": "Yes",
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Squiggle",
+            "Description": "Fixtures, results and predictions for Australian Football League matches",
+            "Auth": "No",
+            "HTTPS": "Yes",
+            "CORS": "Yes"
+        },
+        {
+            "API": "Strava",
+            "Description": "Connect with athletes, activities and more",
+            "Auth": "OAuth",
+            "HTTPS": "Yes",
+            "CORS": "Unknown"
+        },
+        {
+            "API": "SuredBits",
+            "Description": "Query sports data, including teams, players, games, scores and statistics",
+            "Auth": "No",
+            "HTTPS": "No",
+            "CORS": "No"
+        },
+        {
+            "API": "TheSportsDB",
+            "Description": "Crowd-Sourced Sports Data and Artwork",
+            "Auth": "apiKey",
+            "HTTPS": "Yes",
+            "CORS": "Yes"
+        },
+        {
+            "API": "Tredict",
+            "Description": "Get and set activities, health data and more",
+            "Auth": "OAuth",
+            "HTTPS": "Yes",
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Wger",
+            "Description": "Workout manager data as exercises, muscles or equipment",
+            "Auth": "apiKey",
+            "HTTPS": "Yes",
+            "CORS": "Unknown"
+        }
+    ],
+    "Test Data": [
+        {
+            "API": "Bacon Ipsum",
+            "Description": "A Meatier Lorem Ipsum Generator",
+            "Auth": "No",
+            "HTTPS": true,
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Dicebear Avatars",
+            "Description": "Generate random pixel-art avatars",
+            "Auth": "No",
+            "HTTPS": true,
+            "CORS": "No"
+        },
+        {
+            "API": "English Random Words",
+            "Description": "Generate English Random Words with Pronunciation",
+            "Auth": "No",
+            "HTTPS": true,
+            "CORS": "No"
+        },
+        {
+            "API": "FakeJSON",
+            "Description": "Service to generate test and fake data",
+            "Auth": "apiKey",
+            "HTTPS": true,
+            "CORS": "Yes"
+        },
+        {
+            "API": "FakerAPI",
+            "Description": "APIs collection to get fake data",
+            "Auth": "No",
+            "HTTPS": true,
+            "CORS": "Yes"
+        },
+        {
+            "API": "FakeStoreAPI",
+            "Description": "Fake store rest API for your e-commerce or shopping website prototype",
+            "Auth": "No",
+            "HTTPS": true,
+            "CORS": "Unknown"
+        },
+        {
+            "API": "GeneradorDNI",
+            "Description": "Data generator API. Profiles, vehicles, banks and cards, etc",
+            "Auth": "apiKey",
+            "HTTPS": true,
+            "CORS": "Unknown"
+        },
+        {
+            "API": "ItsThisForThat",
+            "Description": "Generate Random startup ideas",
+            "Auth": "No",
+            "HTTPS": true,
+            "CORS": "No"
+        },
+        {
+            "API": "JSONPlaceholder",
+            "Description": "Fake data for testing and prototyping",
+            "Auth": "No",
+            "HTTPS": false,
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Loripsum",
+            "Description": "The 'lorem ipsum' generator that doesn't suck",
+            "Auth": "No",
+            "HTTPS": false,
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Mailsac",
+            "Description": "Disposable Email",
+            "Auth": "apiKey",
+            "HTTPS": true,
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Metaphorsum",
+            "Description": "Generate demo paragraphs giving number of words and sentences",
+            "Auth": "No",
+            "HTTPS": false,
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Mockaroo",
+            "Description": "Generate fake data to JSON, CSV, TXT, SQL and XML",
+            "Auth": "apiKey",
+            "HTTPS": true,
+            "CORS": "Unknown"
+        },
+        {
+            "API": "QuickMocker",
+            "Description": "API mocking tool to generate contextual, fake or random data",
+            "Auth": "No",
+            "HTTPS": true,
+            "CORS": "Yes"
+        },
+        {
+            "API": "Random Data",
+            "Description": "Random data generator",
+            "Auth": "No",
+            "HTTPS": true,
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Randommer",
+            "Description": "Random data generator",
+            "Auth": "apiKey",
+            "HTTPS": true,
+            "CORS": "Yes"
+        },
+        {
+            "API": "RandomUser",
+            "Description": "Generates and list user data",
+            "Auth": "No",
+            "HTTPS": true,
+            "CORS": "Unknown"
+        },
+        {
+            "API": "RoboHash",
+            "Description": "Generate random robot/alien avatars",
+            "Auth": "No",
+            "HTTPS": true,
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Spanish random names",
+            "Description": "Generate spanish names (with gender) randomly",
+            "Auth": "No",
+            "HTTPS": true,
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Spanish random words",
+            "Description": "Generate spanish words randomly",
+            "Auth": "No",
+            "HTTPS": true,
+            "CORS": "Unknown"
+        },
+        {
+            "API": "This Person Does not Exist",
+            "Description": "Generates real-life faces of people who do not exist",
+            "Auth": "No",
+            "HTTPS": true,
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Toolcarton",
+            "Description": "Generate random testimonial data",
+            "Auth": "No",
+            "HTTPS": true,
+            "CORS": "Unknown"
+        },
+        {
+            "API": "UUID Generator",
+            "Description": "Generate UUIDs",
+            "Auth": "No",
+            "HTTPS": true,
+            "CORS": "No"
+        },
+        {
+            "API": "What The Commit",
+            "Description": "Random commit message generator",
+            "Auth": "No",
+            "HTTPS": false,
+            "CORS": "Yes"
+        },
+        {
+            "API": "Yes No",
+            "Description": "Generate yes or no randomly",
+            "Auth": "No",
+            "HTTPS": true,
+            "CORS": "Unknown"
+        }
+    ],
+    "Text Analysis": [
+        {
+            "API": "Code Detection API",
+            "Description": "Detect, label, format and enrich the code in your app or in your data pipeline",
+            "Auth": "OAuth",
+            "HTTPS": true,
+            "CORS": "Unknown"
+        },
+        {
+            "API": "apilayer languagelayer",
+            "Description": "Language Detection JSON API supporting 173 languages",
+            "Auth": "OAuth",
+            "HTTPS": true,
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Aylien Text Analysis",
+            "Description": "A collection of information retrieval and natural language APIs",
+            "Auth": "apiKey",
+            "HTTPS": true,
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Cloudmersive Natural Language Processing",
+            "Description": "Natural language processing and text analysis",
+            "Auth": "apiKey",
+            "HTTPS": true,
+            "CORS": "Yes"
+        },
+        {
+            "API": "Detect Language",
+            "Description": "Detects text language",
+            "Auth": "apiKey",
+            "HTTPS": true,
+            "CORS": "Unknown"
+        },
+        {
+            "API": "ELI",
+            "Description": "Natural Language Processing Tools for Thai Language",
+            "Auth": "apiKey",
+            "HTTPS": true,
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Google Cloud Natural",
+            "Description": "Natural language understanding technology, including sentiment, entity and syntax analysis",
+            "Auth": "apiKey",
+            "HTTPS": true,
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Hirak OCR",
+            "Description": "Image to text -text recognition- from image more than 100 language, accurate, unlimited requests",
+            "Auth": "apiKey",
+            "HTTPS": true,
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Hirak Translation",
+            "Description": "Translate between 21 of most used languages, accurate, unlimited requests",
+            "Auth": "apiKey",
+            "HTTPS": true,
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Lecto Translation",
+            "Description": "Translation API with free tier and reasonable prices",
+            "Auth": "apiKey",
+            "HTTPS": true,
+            "CORS": "Yes"
+        },
+        {
+            "API": "LibreTranslate",
+            "Description": "Translation tool with 17 available languages",
+            "Auth": "No",
+            "HTTPS": true,
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Semantria",
+            "Description": "Text Analytics with sentiment analysis, categorization & named entity extraction",
+            "Auth": "OAuth",
+            "HTTPS": true,
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Sentiment Analysis",
+            "Description": "Multilingual sentiment analysis of texts from different sources",
+            "Auth": "apiKey",
+            "HTTPS": true,
+            "CORS": "Yes"
+        },
+        {
+            "API": "Tisane",
+            "Description": "Text Analytics with focus on detection of abusive content and law enforcement applications",
+            "Auth": "OAuth",
+            "HTTPS": true,
+            "CORS": "Yes"
+        },
+        {
+            "API": "Watson Natural Language Understanding",
+            "Description": "Natural language processing for advanced text analysis",
+            "Auth": "OAuth",
+            "HTTPS": true,
+            "CORS": "Unknown"
+        }
+    ],
+    "Tracking": [
+        {
+            "API": "Aftership",
+            "Description": "API to update, manage and track shipment efficiently",
+            "Auth": "apiKey",
+            "HTTPS": true,
+            "CORS": "Yes"
+        },
+        {
+            "API": "Correios",
+            "Description": "Integration to provide information and prepare shipments using Correio's services",
+            "Auth": "apiKey",
+            "HTTPS": true,
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Pixela",
+            "Description": "API for recording and tracking habits or effort, routines",
+            "Auth": "X-Mashape-Key",
+            "HTTPS": true,
+            "CORS": "Yes"
+        },
+        {
+            "API": "PostalPinCode",
+            "Description": "API for getting Pincode details in India",
+            "Auth": "No",
+            "HTTPS": true,
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Postmon",
+            "Description": "An API to query Brazilian ZIP codes and orders easily, quickly and free",
+            "Auth": "No",
+            "HTTPS": false,
+            "CORS": "Unknown"
+        },
+        {
+            "API": "PostNord",
+            "Description": "Provides information about parcels in transport for Sweden and Denmark",
+            "Auth": "apiKey",
+            "HTTPS": false,
+            "CORS": "Unknown"
+        },
+        {
+            "API": "UPS",
+            "Description": "Shipment and Address information",
+            "Auth": "apiKey",
+            "HTTPS": true,
+            "CORS": "Unknown"
+        },
+        {
+            "API": "WeCanTrack",
+            "Description": "Automatically place subids in affiliate links to attribute affiliate conversions to click data",
+            "Auth": "apiKey",
+            "HTTPS": true,
+            "CORS": "Yes"
+        },
+        {
+            "API": "WhatPulse",
+            "Description": "Small application that measures your keyboard/mouse usage",
+            "Auth": "No",
+            "HTTPS": true,
+            "CORS": "Unknown"
+        }
+    ],
+    "Transportation": [
+        {
+            "API": "ADS-B Exchange",
+            "Description": "Access real-time and historical data of any and all airborne aircraft",
+            "Auth": "No",
+            "HTTPS": true,
+            "CORS": "Unknown"
+        },
+        {
+            "API": "airportsapi",
+            "Description": "Get name and website-URL for airports by ICAO code",
+            "Auth": "No",
+            "HTTPS": true,
+            "CORS": "Unknown"
+        },
+        {
+            "API": "AIS Hub",
+            "Description": "Real-time data of any marine and inland vessel equipped with AIS tracking system",
+            "Auth": "apiKey",
+            "HTTPS": false,
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Amadeus for Developers",
+            "Description": "Travel Search - Limited usage",
+            "Auth": "OAuth",
+            "HTTPS": true,
+            "CORS": "Unknown"
+        },
+        {
+            "API": "apilayer aviationstack",
+            "Description": "Real-time Flight Status & Global Aviation Data API",
+            "Auth": "OAuth",
+            "HTTPS": true,
+            "CORS": "Unknown"
+        },
+        {
+            "API": "AviationAPI",
+            "Description": "FAA Aeronautical Charts and Publications, Airport Information, and Airport Weather",
+            "Auth": "No",
+            "HTTPS": true,
+            "CORS": "No"
+        },
+        {
+            "API": "AZ511",
+            "Description": "Access traffic data from the ADOT API",
+            "Auth": "apiKey",
+            "HTTPS": true,
+            "CORS": "Unknown"
+        },
+        {
+            "API": "Bay Area Rapid Transit",
+            "Description": "Stations and predicted arrivals for BART",
+            "Auth": "apiKey",
+            "HTTPS": false,
+            "CORS": "Unknown"
+        },
+        {
+            "API": "BC Ferries",
+            "Description": "Sailing times and capacities for BC Ferries",
+            "Auth": "No",
+            "HTTPS": true,
+            "CORS": "Yes"
+        },
+        {
+            "API": "BIC-Boxtech",
+            "Description": "Container technical detail for the global container fleet",
+            "Auth": "OAuth",
+            "HTTPS": true,
+            "CORS": "Unknown"
+        }
+    ]
+}

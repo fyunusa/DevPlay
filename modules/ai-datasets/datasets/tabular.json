@@ -1,0 +1,44 @@
+{
+  "datasets": [
+    {
+      "name": "UCI Adult Income Dataset",
+      "description": "Predict whether an individual earns more than $50,000 per year based on demographic information.",
+      "source": "UCI Machine Learning Repository",
+      "url": "https://archive.ics.uci.edu/ml/datasets/adult",
+      "features": 14,
+      "instances": 48842
+    },
+    {
+      "name": "Titanic Dataset",
+      "description": "Predict survival on the Titanic based on passenger information.",
+      "source": "Kaggle",
+      "url": "https://www.kaggle.com/c/titanic",
+      "features": 12,
+      "instances": 887
+    },
+    {
+      "name": "Iris Dataset",
+      "description": "Classify iris flowers into three species based on sepal and petal measurements.",
+      "source": "UCI Machine Learning Repository",
+      "url": "https://archive.ics.uci.edu/ml/datasets/iris",
+      "features": 4,
+      "instances": 150
+    },
+    {
+      "name": "Wine Quality Dataset",
+      "description": "Predict wine quality based on physicochemical tests.",
+      "source": "UCI Machine Learning Repository",
+      "url": "https://archive.ics.uci.edu/ml/datasets/wine+quality",
+      "features": 11,
+      "instances": 6497
+    },
+    {
+      "name": "Heart Disease UCI",
+      "description": "Predict the presence of heart disease based on various health metrics.",
+      "source": "UCI Machine Learning Repository",
+      "url": "https://archive.ics.uci.edu/ml/datasets/heart+Disease",
+      "features": 13,
+      "instances": 303
+    }
+  ]
+}

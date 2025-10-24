@@ -1,0 +1,400 @@
+{
+  "URL Shorteners": [
+    {
+      "API": "1pt",
+      "Description": "A simple URL shortener",
+      "Auth": "No",
+      "HTTPS": true,
+      "CORS": "Yes"
+    },
+    {
+      "API": "Bitly",
+      "Description": "URL shortener and link management",
+      "Auth": "OAuth",
+      "HTTPS": true,
+      "CORS": "Unknown"
+    },
+    {
+      "API": "CleanURI",
+      "Description": "URL shortener service",
+      "Auth": "No",
+      "HTTPS": true,
+      "CORS": "Yes"
+    },
+    {
+      "API": "ClickMeter",
+      "Description": "Monitor, compare and optimize your marketing links",
+      "Auth": "apiKey",
+      "HTTPS": true,
+      "CORS": "Unknown"
+    },
+    {
+      "API": "Clico",
+      "Description": "URL shortener service",
+      "Auth": "apiKey",
+      "HTTPS": true,
+      "CORS": "Unknown"
+    },
+    {
+      "API": "Cutt.ly",
+      "Description": "URL shortener service",
+      "Auth": "apiKey",
+      "HTTPS": true,
+      "CORS": "Unknown"
+    },
+    {
+      "API": "Drivet URL Shortener",
+      "Description": "Shorten a long URL easily and fast",
+      "Auth": "No",
+      "HTTPS": true,
+      "CORS": "Unknown"
+    },
+    {
+      "API": "Free Url Shortener",
+      "Description": "Free URL Shortener offers a powerful API to interact with other sites",
+      "Auth": "No",
+      "HTTPS": true,
+      "CORS": "Unknown"
+    },
+    {
+      "API": "Git.io",
+      "Description": "Git.io URL shortener",
+      "Auth": "No",
+      "HTTPS": true,
+      "CORS": "Unknown"
+    },
+    {
+      "API": "GoTiny",
+      "Description": "A lightweight URL shortener, focused on ease-of-use for the developer and end-user",
+      "Auth": "No",
+      "HTTPS": true,
+      "CORS": "Yes"
+    },
+    {
+      "API": "Kutt",
+      "Description": "Free Modern URL Shortener",
+      "Auth": "apiKey",
+      "HTTPS": true,
+      "CORS": "Yes"
+    },
+    {
+      "API": "Mgnet.me",
+      "Description": "Torrent URL shorten API",
+      "Auth": "No",
+      "HTTPS": true,
+      "CORS": "No"
+    },
+    {
+      "API": "owo",
+      "Description": "A simple link obfuscator/shortener",
+      "Auth": "No",
+      "HTTPS": true,
+      "CORS": "Unknown"
+    },
+    {
+      "API": "Rebrandly",
+      "Description": "Custom URL shortener for sharing branded links",
+      "Auth": "apiKey",
+      "HTTPS": true,
+      "CORS": "Unknown"
+    },
+    {
+      "API": "Short Link",
+      "Description": "Short URLs support so many domains",
+      "Auth": "No",
+      "HTTPS": true,
+      "CORS": "Unknown"
+    },
+    {
+      "API": "Shrtcode",
+      "Description": "URL Shortener with multiple Domains",
+      "Auth": "No",
+      "HTTPS": true,
+      "CORS": "Yes"
+    },
+    {
+      "API": "Shrtlnk",
+      "Description": "Simple and efficient short link creation",
+      "Auth": "apiKey",
+      "HTTPS": true,
+      "CORS": "Yes"
+    },
+    {
+      "API": "TinyURL",
+      "Description": "Shorten long URLs",
+      "Auth": "apiKey",
+      "HTTPS": true,
+      "CORS": "No"
+    },
+    {
+      "API": "UrlBae",
+      "Description": "Simple and efficient short link creation",
+      "Auth": "apiKey",
+      "HTTPS": true,
+      "CORS": "Yes"
+    }
+  ],
+  "Vehicle": [
+    {
+      "API": "Brazilian Vehicles and Prices",
+      "Description": "Vehicles information from Fundação Instituto de Pesquisas Econômicas - Fipe",
+      "Auth": "No",
+      "HTTPS": true,
+      "CORS": "No"
+    },
+    {
+      "API": "Helipaddy sites",
+      "Description": "Helicopter and passenger drone landing site directory, Helipaddy data and much more",
+      "Auth": "apiKey",
+      "HTTPS": true,
+      "CORS": "Unknown"
+    },
+    {
+      "API": "Kelley Blue Book",
+      "Description": "Vehicle info, pricing, configuration, plus much more",
+      "Auth": "apiKey",
+      "HTTPS": true,
+      "CORS": "No"
+    },
+    {
+      "API": "Mercedes-Benz",
+      "Description": "Telematics data, remotely access vehicle functions, car configurator, locate service dealers",
+      "Auth": "apiKey",
+      "HTTPS": true,
+      "CORS": "No"
+    },
+    {
+      "API": "NHTSA",
+      "Description": "NHTSA Product Information Catalog and Vehicle Listing",
+      "Auth": "No",
+      "HTTPS": true,
+      "CORS": "Unknown"
+    },
+    {
+      "API": "Smartcar",
+      "Description": "Lock and unlock vehicles and get data like odometer reading and location. Works on most new cars",
+      "Auth": "OAuth",
+      "HTTPS": true,
+      "CORS": "Yes"
+    }
+  ],
+  "Weather": [
+    {
+      "API": "7Timer!",
+      "Description": "Weather, especially for Astroweather",
+      "Auth": "No",
+      "HTTPS": false,
+      "CORS": "Unknown"
+    },
+    {
+      "API": "AccuWeather",
+      "Description": "Weather and forecast data",
+      "Auth": "apiKey",
+      "HTTPS": false,
+      "CORS": "Unknown"
+    },
+    {
+      "API": "Aemet",
+      "Description": "Weather and forecast data from Spain",
+      "Auth": "apiKey",
+      "HTTPS": true,
+      "CORS": "Unknown"
+    },
+    {
+      "API": "apilayer weatherstack",
+      "Description": "Real-Time & Historical World Weather Data API",
+      "Auth": "apiKey",
+      "HTTPS": true,
+      "CORS": "Unknown"
+    },
+    {
+      "API": "APIXU",
+      "Description": "Weather",
+      "Auth": "apiKey",
+      "HTTPS": true,
+      "CORS": "Unknown"
+    },
+    {
+      "API": "AQICN",
+      "Description": "Air Quality Index Data for over 1000 cities",
+      "Auth": "apiKey",
+      "HTTPS": true,
+      "CORS": "Unknown"
+    },
+    {
+      "API": "AviationWeather",
+      "Description": "NOAA aviation weather forecasts and observations",
+      "Auth": "No",
+      "HTTPS": true,
+      "CORS": "Unknown"
+    },
+    {
+      "API": "ColorfulClouds",
+      "Description": "Weather",
+      "Auth": "apiKey",
+      "HTTPS": true,
+      "CORS": "Yes"
+    },
+    {
+      "API": "Euskalmet",
+      "Description": "Meteorological data of the Basque Country",
+      "Auth": "apiKey",
+      "HTTPS": true,
+      "CORS": "Unknown"
+    },
+    {
+      "API": "Foreca",
+      "Description": "Weather",
+      "Auth": "OAuth",
+      "HTTPS": true,
+      "CORS": "Unknown"
+    },
+    {
+      "API": "HG Weather",
+      "Description": "Provides weather forecast data for cities in Brazil",
+      "Auth": "apiKey",
+      "HTTPS": true,
+      "CORS": "Yes"
+    },
+    {
+      "API": "Hong Kong Obervatory",
+      "Description": "Provide weather information, earthquake information, and climate data",
+      "Auth": "No",
+      "HTTPS": true,
+      "CORS": "Unknown"
+    },
+    {
+      "API": "MetaWeather",
+      "Description": "Weather",
+      "Auth": "No",
+      "HTTPS": true,
+      "CORS": "No"
+    },
+    {
+      "API": "Meteorologisk Institutt",
+      "Description": "Weather and climate data",
+      "Auth": "User-Agent",
+      "HTTPS": true,
+      "CORS": "Unknown"
+    },
+    {
+      "API": "Micro Weather",
+      "Description": "Real time weather forecasts and historic data",
+      "Auth": "apiKey",
+      "HTTPS": true,
+      "CORS": "Unknown"
+    },
+    {
+      "API": "ODWeather",
+      "Description": "Weather and weather webcams",
+      "Auth": "No",
+      "HTTPS": false,
+      "CORS": "Unknown"
+    },
+    {
+      "API": "Oikolab",
+      "Description": "70+ years of global, hourly historical and forecast weather data from NOAA and ECMWF",
+      "Auth": "apiKey",
+      "HTTPS": true,
+      "CORS": "Yes"
+    },
+    {
+      "API": "Open-Meteo",
+      "Description": "Global weather forecast API for non-commercial use",
+      "Auth": "No",
+      "HTTPS": true,
+      "CORS": "Yes"
+    },
+    {
+      "API": "openSenseMap",
+      "Description": "Data from Personal Weather Stations called senseBoxes",
+      "Auth": "No",
+      "HTTPS": true,
+      "CORS": "Yes"
+    },
+    {
+      "API": "OpenUV",
+      "Description": "Real-time UV Index Forecast",
+      "Auth": "apiKey",
+      "HTTPS": true,
+      "CORS": "Unknown"
+    },
+    {
+      "API": "OpenWeatherMap",
+      "Description": "Weather",
+      "Auth": "apiKey",
+      "HTTPS": true,
+      "CORS": "Unknown"
+    },
+    {
+      "API": "QWeather",
+      "Description": "Location-based weather data",
+      "Auth": "apiKey",
+      "HTTPS": true,
+      "CORS": "Yes"
+    },
+    {
+      "API": "RainViewer",
+      "Description": "Radar data collected from different websites across the Internet",
+      "Auth": "No",
+      "HTTPS": true,
+      "CORS": "Unknown"
+    },
+    {
+      "API": "Storm Glass",
+      "Description": "Global marine weather from multiple sources",
+      "Auth": "apiKey",
+      "HTTPS": true,
+      "CORS": "Yes"
+    },
+    {
+      "API": "Tomorrow",
+      "Description": "Weather API Powered by Proprietary Technology",
+      "Auth": "apiKey",
+      "HTTPS": true,
+      "CORS": "Unknown"
+    },
+    {
+      "API": "US Weather",
+      "Description": "US National Weather Service",
+      "Auth": "No",
+      "HTTPS": true,
+      "CORS": "Yes"
+    },
+    {
+      "API": "Visual Crossing",
+      "Description": "Global historical and weather forecast data",
+      "Auth": "apiKey",
+      "HTTPS": true,
+      "CORS": "Yes"
+    },
+    {
+      "API": "weather-api",
+      "Description": "A RESTful free API to check the weather",
+      "Auth": "No",
+      "HTTPS": true,
+      "CORS": "No"
+    },
+    {
+      "API": "WeatherAPI",
+      "Description": "Weather API with other stuff like Astronomy and Geolocation API",
+      "Auth": "apiKey",
+      "HTTPS": true,
+      "CORS": "Yes"
+    },
+    {
+      "API": "Weatherbit",
+      "Description": "Weather",
+      "Auth": "apiKey",
+      "HTTPS": true,
+      "CORS": "Unknown"
+    },
+    {
+      "API": "Yandex.Weather",
+      "Description": "Assesses weather condition in specific locations",
+      "Auth": "apiKey",
+      "HTTPS": true,
+      "CORS": "No"
+    }
+  ]
+}

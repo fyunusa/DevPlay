@@ -1,0 +1,44 @@
+{
+  "models": [
+    {
+      "name": "BERT",
+      "description": "Bidirectional Encoder Representations from Transformers, a transformer-based model designed for NLP tasks.",
+      "performance": {
+        "accuracy": "94.6%",
+        "f1_score": "93.7%"
+      }
+    },
+    {
+      "name": "GPT-3",
+      "description": "Generative Pre-trained Transformer 3, a state-of-the-art language model capable of generating human-like text.",
+      "performance": {
+        "accuracy": "N/A",
+        "f1_score": "N/A"
+      }
+    },
+    {
+      "name": "RoBERTa",
+      "description": "A robustly optimized BERT pretraining approach, improving on BERT's training methodology.",
+      "performance": {
+        "accuracy": "94.9%",
+        "f1_score": "94.0%"
+      }
+    },
+    {
+      "name": "XLNet",
+      "description": "A generalized autoregressive pretraining model that outperforms BERT on several NLP benchmarks.",
+      "performance": {
+        "accuracy": "94.5%",
+        "f1_score": "93.7%"
+      }
+    },
+    {
+      "name": "T5",
+      "description": "Text-to-Text Transfer Transformer, a model that converts all NLP tasks into a text-to-text format.",
+      "performance": {
+        "accuracy": "94.0%",
+        "f1_score": "93.5%"
+      }
+    }
+  ]
+}

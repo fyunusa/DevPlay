@@ -1,0 +1,73 @@
+{
+  "instructional": [
+    {
+      "id": "instr1",
+      "name": "Educational Explainer",
+      "description": "Clear explanation of complex topics for students",
+      "content": "You are an expert educator with a talent for making complex topics easy to understand.\n\nExplain [TOPIC] in simple terms that a [AUDIENCE] would understand.\n\nInclude:\n- A simple analogy to help grasp the concept\n- Key points broken down step-by-step\n- Real-world examples to illustrate the concept\n- Common misconceptions to avoid"
+    },
+    {
+      "id": "instr2",
+      "name": "How-To Guide",
+      "description": "Step-by-step instructions for any process",
+      "content": "Create a comprehensive how-to guide for [TASK/PROCESS].\n\nYour guide should include:\n1. Required materials/prerequisites\n2. Step-by-step instructions with clear numbering\n3. Tips for success at each critical step\n4. Troubleshooting advice for common issues\n5. A conclusion with next steps or advanced techniques\n\nFormat the guide with clear headings, bullet points where appropriate, and emphasis on key information."
+    }
+  ],
+  "creative": [
+    {
+      "id": "creative1",
+      "name": "Story Generator",
+      "description": "Generate creative short stories",
+      "content": "You are a creative fiction writer. Write an engaging short story with the following parameters:\n\nGenre: [GENRE]\nMain character: [CHARACTER DESCRIPTION]\nSetting: [SETTING]\nTheme: [THEME]\n\nThe story should have a clear beginning, middle, and end with an interesting plot twist. Use vivid descriptions and dialogue to bring the story to life. Keep the story between 500-800 words."
+    },
+    {
+      "id": "creative2",
+      "name": "Brainstorming Session",
+      "description": "Generate creative ideas for any project",
+      "content": "Act as a creative consultant helping me brainstorm ideas for [PROJECT TYPE].\n\nThe project has these parameters:\n- Target audience: [AUDIENCE]\n- Key goals: [GOALS]\n- Constraints: [CONSTRAINTS]\n\nGenerate 7-10 unique and creative ideas. For each idea, provide:\n- A catchy name/title\n- A 2-3 sentence description\n- One key advantage of this approach\n- One potential challenge to consider"
+    }
+  ],
+  "analytical": [
+    {
+      "id": "analytical1",
+      "name": "Pros and Cons Analysis",
+      "description": "Balanced analysis of options",
+      "content": "Provide a thorough pros and cons analysis of [TOPIC/DECISION].\n\nFirst, summarize the situation and why this analysis is needed.\n\nThen create a comprehensive analysis with these sections:\n\nPros:\n- [At least 5-7 benefits, advantages, or positive aspects]\n\nCons:\n- [At least 5-7 drawbacks, disadvantages, or risks]\n\nKey Considerations:\n- [3-4 important factors to keep in mind when evaluating]\n\nEnd with a balanced conclusion that weighs the most significant factors."
+    },
+    {
+      "id": "analytical2",
+      "name": "Data Interpretation",
+      "description": "Explain patterns and insights from data",
+      "content": "You are a data analyst who excels at interpreting information and explaining insights in clear language.\n\nAnalyze the following data/information about [TOPIC/DATASET]:\n\n[INSERT DATA DESCRIPTION OR ACTUAL DATA]\n\nProvide:\n1. A summary of the key patterns or trends you observe\n2. Three significant insights that can be derived\n3. Potential explanations for these patterns\n4. Recommendations based on the data\n5. Limitations of the analysis/data and what additional information would be useful"
+    }
+  ],
+  "conversational": [
+    {
+      "id": "conv1",
+      "name": "Customer Support Agent",
+      "description": "Professional and helpful support responses",
+      "content": "You are a customer support specialist for [COMPANY/PRODUCT], known for being helpful, patient, and solutions-oriented.\n\nRespond to the following customer inquiry:\n\n[CUSTOMER MESSAGE]\n\nYour response should:\n- Start with a friendly greeting and acknowledgment of their issue\n- Show empathy for their situation\n- Provide clear, step-by-step solutions when possible\n- Offer alternatives if the direct solution isn't available\n- End with a reassurance and invitation for follow-up questions\n\nMaintain a professional but warm tone throughout."
+    },
+    {
+      "id": "conv2",
+      "name": "Interview Simulator",
+      "description": "Realistic interview questions and responses",
+      "content": "Act as an interviewer for a [JOB TITLE] position at a [COMPANY TYPE].\n\nConduct a realistic job interview simulation with me as the candidate. Ask me challenging but fair questions about:\n- My relevant experience and skills for this role\n- How I would handle specific scenarios related to the position\n- My knowledge of [RELEVANT FIELD/INDUSTRY]\n- My working style and preferences\n\nRespond to my answers as an interviewer would, with follow-up questions when appropriate. Provide constructive feedback on my responses after asking 5-6 questions."
+    }
+  ],
+  "coding": [
+    {
+      "id": "code1",
+      "name": "Code Explanation",
+      "description": "Clear explanations of code snippets",
+      "content": "You are an expert programmer with a talent for explaining code clearly to others.\n\nExplain the following code snippet in detail:\n\n```\n[PASTE CODE HERE]\n```\n\nYour explanation should include:\n1. A high-level overview of what the code does\n2. A line-by-line or section-by-section breakdown\n3. Explanation of key functions, methods, or algorithms used\n4. Any potential issues, edge cases, or optimization opportunities\n5. How this code might be used in a larger application context\n\nUse simple language that a [BEGINNER/INTERMEDIATE/ADVANCED] programmer would understand."
+    },
+    {
+      "id": "code2",
+      "name": "Code Generator",
+      "description": "Generate code based on requirements",
+      "content": "You are a skilled programmer. I need you to write code that accomplishes the following:\n\nLanguage/Framework: [LANGUAGE/FRAMEWORK]\n\nRequirements:\n- [REQUIREMENT 1]\n- [REQUIREMENT 2]\n- [REQUIREMENT 3]\n\nAdditional specifications:\n- [SPEC 1]\n- [SPEC 2]\n\nPlease provide:\n1. Complete, working code that fulfills these requirements\n2. Comments explaining the key parts of your implementation\n3. A brief explanation of how the code works\n4. Instructions for how to use/integrate this code\n\nThe code should follow best practices for [LANGUAGE] including proper error handling, naming conventions, and performance considerations."
+    }
+  ],
+  "custom": []
+}

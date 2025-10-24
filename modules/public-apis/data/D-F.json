@@ -1,0 +1,2236 @@
+{
+    "Development": [
+      {
+        "name": "24 Pull Requests",
+        "url": "https://24pullrequests.com/api",
+        "description": "Project to promote open source collaboration during December",
+        "auth": "None",
+        "https": true,
+        "cors": true
+      },
+      {
+        "name": "Screenshot",
+        "url": "https://www.abstractapi.com/website-screenshot-api",
+        "description": "Take programmatic screenshots of web pages from any website",
+        "auth": "apiKey",
+        "https": true,
+        "cors": true
+      },
+      {
+        "name": "Agify.io",
+        "url": "https://agify.io",
+        "description": "Estimates the age from a first name",
+        "auth": "None",
+        "https": true,
+        "cors": true
+      },
+      {
+        "name": "API Grátis",
+        "url": "https://apigratis.com.br/",
+        "description": "Multiples services and public APIs",
+        "auth": "None",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "ApicAgent",
+        "url": "https://www.apicagent.com",
+        "description": "Extract device details from user-agent string",
+        "auth": "None",
+        "https": true,
+        "cors": true
+      },
+      {
+        "name": "ApiFlash",
+        "url": "https://apiflash.com/",
+        "description": "Chrome based screenshot API for developers",
+        "auth": "apiKey",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "apilayer userstack",
+        "url": "https://userstack.com/",
+        "description": "Secure User-Agent String Lookup JSON API",
+        "auth": "OAuth",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "APIs.guru",
+        "url": "https://apis.guru/api-doc/",
+        "description": "Wikipedia for Web APIs, OpenAPI/Swagger specs for public APIs",
+        "auth": "None",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "Azure DevOps",
+        "url": "https://docs.microsoft.com/en-us/rest/api/azure/devops",
+        "description": "The Azure DevOps basic components of a REST API request/response pair",
+        "auth": "apiKey",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "Base",
+        "url": "https://www.base-api.io/",
+        "description": "Building quick backends",
+        "auth": "apiKey",
+        "https": true,
+        "cors": true
+      },
+      {
+        "name": "Beeceptor",
+        "url": "https://beeceptor.com/",
+        "description": "Build a mock Rest API endpoint in seconds",
+        "auth": "None",
+        "https": true,
+        "cors": true
+      },
+      {
+        "name": "Bitbucket",
+        "url": "https://developer.atlassian.com/bitbucket/api/2/reference/",
+        "description": "Bitbucket API",
+        "auth": "OAuth",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "Blague.xyz",
+        "url": "https://blague.xyz/",
+        "description": "La plus grande API de Blagues FR/The biggest FR jokes API",
+        "auth": "apiKey",
+        "https": true,
+        "cors": true
+      },
+      {
+        "name": "Blitapp",
+        "url": "https://blitapp.com/api/",
+        "description": "Schedule screenshots of web pages and sync them to your cloud",
+        "auth": "apiKey",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "Blynk-Cloud",
+        "url": "https://blynkapi.docs.apiary.io/#",
+        "description": "Control IoT Devices from Blynk IoT Cloud",
+        "auth": "apiKey",
+        "https": false,
+        "cors": "Unknown"
+      },
+      {
+        "name": "Bored",
+        "url": "https://www.boredapi.com/",
+        "description": "Find random activities to fight boredom",
+        "auth": "None",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "Brainshop.ai",
+        "url": "https://brainshop.ai/",
+        "description": "Make A Free A.I Brain",
+        "auth": "apiKey",
+        "https": true,
+        "cors": true
+      },
+      {
+        "name": "Browshot",
+        "url": "https://browshot.com/api/documentation",
+        "description": "Easily make screenshots of web pages in any screen size, as any device",
+        "auth": "apiKey",
+        "https": true,
+        "cors": true
+      },
+      {
+        "name": "CDNJS",
+        "url": "https://api.cdnjs.com/libraries/jquery",
+        "description": "Library info on CDNJS",
+        "auth": "None",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "Changelogs.md",
+        "url": "https://changelogs.md",
+        "description": "Structured changelog metadata from open source projects",
+        "auth": "None",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "Ciprand",
+        "url": "https://github.com/polarspetroll/ciprand",
+        "description": "Secure random string generator",
+        "auth": "None",
+        "https": true,
+        "cors": false
+      },
+      {
+        "name": "Cloudflare Trace",
+        "url": "https://github.com/fawazahmed0/cloudflare-trace-api",
+        "description": "Get IP Address, Timestamp, User Agent, Country Code, IATA, HTTP Version, TLS/SSL Version & More",
+        "auth": "None",
+        "https": true,
+        "cors": true
+      },
+      {
+        "name": "Codex",
+        "url": "https://github.com/Jaagrav/CodeX",
+        "description": "Online Compiler for Various Languages",
+        "auth": "None",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "Contentful Images",
+        "url": "https://www.contentful.com/developers/docs/references/images-api/",
+        "description": "Used to retrieve and apply transformations to images",
+        "auth": "apiKey",
+        "https": true,
+        "cors": true
+      },
+      {
+        "name": "CORS Proxy",
+        "url": "https://github.com/burhanuday/cors-proxy",
+        "description": "Get around the dreaded CORS error by using this proxy as a middle man",
+        "auth": "None",
+        "https": true,
+        "cors": true
+      },
+      {
+        "name": "CountAPI",
+        "url": "https://countapi.xyz",
+        "description": "Free and simple counting service. You can use it to track page hits and specific events",
+        "auth": "None",
+        "https": true,
+        "cors": true
+      },
+      {
+        "name": "Databricks",
+        "url": "https://docs.databricks.com/dev-tools/api/latest/index.html",
+        "description": "Service to manage your databricks account,clusters, notebooks, jobs and workspaces",
+        "auth": "apiKey",
+        "https": true,
+        "cors": true
+      },
+      {
+        "name": "DigitalOcean Status",
+        "url": "https://status.digitalocean.com/api",
+        "description": "Status of all DigitalOcean services",
+        "auth": "None",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "Docker Hub",
+        "url": "https://docs.docker.com/docker-hub/api/latest/",
+        "description": "Interact with Docker Hub",
+        "auth": "apiKey",
+        "https": true,
+        "cors": true
+      },
+      {
+        "name": "DomainDb Info",
+        "url": "https://api.domainsdb.info/",
+        "description": "Domain name search to find all domains containing particular words/phrases/etc",
+        "auth": "None",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "ExtendsClass JSON Storage",
+        "url": "https://extendsclass.com/json-storage.html",
+        "description": "A simple JSON store API",
+        "auth": "None",
+        "https": true,
+        "cors": true
+      },
+      {
+        "name": "GeekFlare",
+        "url": "https://apidocs.geekflare.com/docs/geekflare-api",
+        "description": "Provide numerous capabilities for important testing and monitoring methods for websites",
+        "auth": "apiKey",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "Genderize.io",
+        "url": "https://genderize.io",
+        "description": "Estimates a gender from a first name",
+        "auth": "None",
+        "https": true,
+        "cors": true
+      },
+      {
+        "name": "GETPing",
+        "url": "https://www.getping.info",
+        "description": "Trigger an email notification with a simple GET request",
+        "auth": "apiKey",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "Ghost",
+        "url": "https://ghost.org/",
+        "description": "Get Published content into your Website, App or other embedded media",
+        "auth": "apiKey",
+        "https": true,
+        "cors": true
+      },
+      {
+        "name": "GitHub",
+        "url": "https://docs.github.com/en/free-pro-team@latest/rest",
+        "description": "Make use of GitHub repositories, code and user info programmatically",
+        "auth": "OAuth",
+        "https": true,
+        "cors": true
+      },
+      {
+        "name": "Gitlab",
+        "url": "https://docs.gitlab.com/ee/api/",
+        "description": "Automate GitLab interaction programmatically",
+        "auth": "OAuth",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "Gitter",
+        "url": "https://developer.gitter.im/docs/welcome",
+        "description": "Chat for Developers",
+        "auth": "OAuth",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "Glitterly",
+        "url": "https://developers.glitterly.app",
+        "description": "Image generation API",
+        "auth": "apiKey",
+        "https": true,
+        "cors": true
+      },
+      {
+        "name": "Google Docs",
+        "url": "https://developers.google.com/docs/api/reference/rest",
+        "description": "API to read, write, and format Google Docs documents",
+        "auth": "OAuth",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "Google Firebase",
+        "url": "https://firebase.google.com/docs",
+        "description": "Google's mobile application development platform that helps build, improve, and grow app",
+        "auth": "apiKey",
+        "https": true,
+        "cors": true
+      },
+      {
+        "name": "Google Fonts",
+        "url": "https://developers.google.com/fonts/docs/developer_api",
+        "description": "Metadata for all families served by Google Fonts",
+        "auth": "apiKey",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "Google Keep",
+        "url": "https://developers.google.com/keep/api/reference/rest",
+        "description": "API to read, write, and format Google Keep notes",
+        "auth": "OAuth",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "Google Sheets",
+        "url": "https://developers.google.com/sheets/api/reference/rest",
+        "description": "API to read, write, and format Google Sheets data",
+        "auth": "OAuth",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "Google Slides",
+        "url": "https://developers.google.com/slides/api/reference/rest",
+        "description": "API to read, write, and format Google Slides presentations",
+        "auth": "OAuth",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "Gorest",
+        "url": "https://gorest.co.in/",
+        "description": "Online REST API for Testing and Prototyping",
+        "auth": "OAuth",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "Hasura",
+        "url": "https://hasura.io/opensource/",
+        "description": "GraphQL and REST API Engine with built in Authorization",
+        "auth": "apiKey",
+        "https": true,
+        "cors": true
+      },
+      {
+        "name": "Heroku",
+        "url": "https://devcenter.heroku.com/articles/platform-api-reference/",
+        "description": "REST API to programmatically create apps, provision add-ons and perform other task on Heroku",
+        "auth": "OAuth",
+        "https": true,
+        "cors": true
+      },
+      {
+        "name": "host-t.com",
+        "url": "https://host-t.com",
+        "description": "Basic DNS query via HTTP GET request",
+        "auth": "None",
+        "https": true,
+        "cors": false
+      },
+      {
+        "name": "Host.io",
+        "url": "https://host.io",
+        "description": "Domains Data API for Developers",
+        "auth": "apiKey",
+        "https": true,
+        "cors": true
+      },
+      {
+        "name": "HTTP2.Pro",
+        "url": "https://http2.pro/doc/api",
+        "description": "Test endpoints for client and server HTTP/2 protocol support",
+        "auth": "None",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "Httpbin",
+        "url": "https://httpbin.org/",
+        "description": "A Simple HTTP Request & Response Service",
+        "auth": "None",
+        "https": true,
+        "cors": true
+      },
+      {
+        "name": "Httpbin Cloudflare",
+        "url": "https://cloudflare-quic.com/b/",
+        "description": "A Simple HTTP Request & Response Service with HTTP/3 Support by Cloudflare",
+        "auth": "None",
+        "https": true,
+        "cors": true
+      },
+      {
+        "name": "Hunter",
+        "url": "https://hunter.io/api",
+        "description": "API for domain search, professional email finder, author finder and email verifier",
+        "auth": "apiKey",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "IBM Text to Speech",
+        "url": "https://cloud.ibm.com/docs/text-to-speech/getting-started.html",
+        "description": "Convert text to speech",
+        "auth": "apiKey",
+        "https": true,
+        "cors": true
+      },
+      {
+        "name": "Icanhazepoch",
+        "url": "https://icanhazepoch.com",
+        "description": "Get Epoch time",
+        "auth": "None",
+        "https": true,
+        "cors": true
+      },
+      {
+        "name": "Icanhazip",
+        "url": "https://major.io/icanhazip-com-faq/",
+        "description": "IP Address API",
+        "auth": "None",
+        "https": true,
+        "cors": true
+      },
+      {
+        "name": "IFTTT",
+        "url": "https://platform.ifttt.com/docs/connect_api",
+        "description": "IFTTT Connect API",
+        "auth": "None",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "Image-Charts",
+        "url": "https://documentation.image-charts.com/",
+        "description": "Generate charts, QR codes and graph images",
+        "auth": "None",
+        "https": true,
+        "cors": true
+      },
+      {
+        "name": "import.io",
+        "url": "http://api.docs.import.io/",
+        "description": "Retrieve structured data from a website or RSS feed",
+        "auth": "apiKey",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "ip-fast.com",
+        "url": "https://ip-fast.com/docs/",
+        "description": "IP address, country and city",
+        "auth": "None",
+        "https": true,
+        "cors": true
+      },
+      {
+        "name": "IP2WHOIS Information Lookup",
+        "url": "https://www.ip2whois.com/",
+        "description": "WHOIS domain name lookup",
+        "auth": "apiKey",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "ipfind.io",
+        "url": "https://ipfind.io",
+        "description": "Geographic location of an IP address or any domain name along with some other useful information",
+        "auth": "apiKey",
+        "https": true,
+        "cors": true
+      },
+      {
+        "name": "IPify",
+        "url": "https://www.ipify.org/",
+        "description": "A simple IP Address API",
+        "auth": "None",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "IPinfo",
+        "url": "https://ipinfo.io/developers",
+        "description": "Another simple IP Address API",
+        "auth": "None",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "jsDelivr",
+        "url": "https://github.com/jsdelivr/data.jsdelivr.com",
+        "description": "Package info and download stats on jsDelivr CDN",
+        "auth": "None",
+        "https": true,
+        "cors": true
+      },
+      {
+        "name": "JSON 2 JSONP",
+        "url": "https://json2jsonp.com/",
+        "description": "Convert JSON to JSONP (on-the-fly) for easy cross-domain data requests using client-side JavaScript",
+        "auth": "None",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "JSONbin.io",
+        "url": "https://jsonbin.io",
+        "description": "Free JSON storage service. Ideal for small scale Web apps, Websites and Mobile apps",
+        "auth": "apiKey",
+        "https": true,
+        "cors": true
+      },
+      {
+        "name": "Kroki",
+        "url": "https://kroki.io",
+        "description": "Creates diagrams from textual descriptions",
+        "auth": "None",
+        "https": true,
+        "cors": true
+      },
+      {
+        "name": "License-API",
+        "url": "https://github.com/cmccandless/license-api/blob/master/README.md",
+        "description": "Unofficial REST API for choosealicense.com",
+        "auth": "None",
+        "https": true,
+        "cors": false
+      },
+      {
+        "name": "Logs.to",
+        "url": "https://logs.to/",
+        "description": "Generate logs",
+        "auth": "apiKey",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "Lua Decompiler",
+        "url": "https://lua-decompiler.ferib.dev/",
+        "description": "Online Lua 5.1 Decompiler",
+        "auth": "None",
+        "https": true,
+        "cors": true
+      },
+      {
+        "name": "MAC address vendor lookup",
+        "url": "https://macaddress.io/api",
+        "description": "Retrieve vendor details and other information regarding a given MAC address or an OUI",
+        "auth": "apiKey",
+        "https": true,
+        "cors": true
+      },
+      {
+        "name": "Micro DB",
+        "url": "https://m3o.com/db",
+        "description": "Simple database service",
+        "auth": "apiKey",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "MicroENV",
+        "url": "https://microenv.com/",
+        "description": "Fake Rest API for developers",
+        "auth": "None",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "Mocky",
+        "url": "https://designer.mocky.io/",
+        "description": "Mock user defined test JSON for REST API endpoints",
+        "auth": "None",
+        "https": true,
+        "cors": true
+      },
+      {
+        "name": "MY IP",
+        "url": "https://www.myip.com/api-docs/",
+        "description": "Get IP address information",
+        "auth": "None",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "Nationalize.io",
+        "url": "https://nationalize.io",
+        "description": "Estimate the nationality of a first name",
+        "auth": "None",
+        "https": true,
+        "cors": true
+      },
+      {
+        "name": "Netlify",
+        "url": "https://docs.netlify.com/api/get-started/",
+        "description": "Netlify is a hosting service for the programmable web",
+        "auth": "OAuth",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "NetworkCalc",
+        "url": "https://networkcalc.com/api/docs",
+        "description": "Network calculators, including subnets, DNS, binary, and security tools",
+        "auth": "None",
+        "https": true,
+        "cors": true
+      },
+      {
+        "name": "npm Registry",
+        "url": "https://github.com/npm/registry/blob/master/docs/REGISTRY-API.md",
+        "description": "Query information about your favorite Node.js libraries programatically",
+        "auth": "None",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "OneSignal",
+        "url": "https://documentation.onesignal.com/docs/onesignal-api",
+        "description": "Self-serve customer engagement solution for Push Notifications, Email, SMS & In-App",
+        "auth": "apiKey",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "Open Page Rank",
+        "url": "https://www.domcop.com/openpagerank/",
+        "description": "API for calculating and comparing metrics of different websites using Page Rank algorithm",
+        "auth": "apiKey",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "OpenAPIHub",
+        "url": "https://hub.openapihub.com/",
+        "description": "The All-in-one API Platform",
+        "auth": "X-Mashape-Key",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "OpenGraphr",
+        "url": "https://opengraphr.com/docs/1.0/overview",
+        "description": "Really simple API to retrieve Open Graph data from an URL",
+        "auth": "apiKey",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "oyyi",
+        "url": "https://oyyi.xyz/docs/1.0",
+        "description": "API for Fake Data, image/video conversion, optimization, pdf optimization and thumbnail generation",
+        "auth": "None",
+        "https": true,
+        "cors": true
+      },
+      {
+        "name": "PageCDN",
+        "url": "https://pagecdn.com/docs/public-api",
+        "description": "Public API for javascript, css and font libraries on PageCDN",
+        "auth": "apiKey",
+        "https": true,
+        "cors": true
+      },
+      {
+        "name": "Postman",
+        "url": "https://www.postman.com/postman/workspace/postman-public-workspace/documentation/12959542-c8142d51-e97c-46b6-bd77-52bb66712c9a",
+        "description": "Tool for testing APIs",
+        "auth": "apiKey",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "ProxyCrawl",
+        "url": "https://proxycrawl.com",
+        "description": "Scraping and crawling anticaptcha service",
+        "auth": "apiKey",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "ProxyKingdom",
+        "url": "https://proxykingdom.com",
+        "description": "Rotating Proxy API that produces a working proxy on every request",
+        "auth": "apiKey",
+        "https": true,
+        "cors": true
+      },
+      {
+        "name": "Pusher Beams",
+        "url": "https://pusher.com/beams",
+        "description": "Push notifications for Android & iOS",
+        "auth": "apiKey",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "QR code",
+        "url": "https://www.qrtag.net/api/",
+        "description": "Create an easy to read QR code and URL shortener",
+        "auth": "None",
+        "https": true,
+        "cors": true
+      },
+      {
+        "name": "QR code",
+        "url": "http://goqr.me/api/",
+        "description": "Generate and decode / read QR code graphics",
+        "auth": "None",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "Qrcode Monkey",
+        "url": "https://www.qrcode-monkey.com/qr-code-api-with-logo/",
+        "description": "Integrate custom and unique looking QR codes into your system or workflow",
+        "auth": "None",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "QuickChart",
+        "url": "https://quickchart.io/",
+        "description": "Generate chart and graph images",
+        "auth": "None",
+        "https": true,
+        "cors": true
+      },
+      {
+        "name": "Random Stuff",
+        "url": "https://api-docs.pgamerx.com/",
+        "description": "Can be used to get AI Response, jokes, memes, and much more at lightning-fast speed",
+        "auth": "apiKey",
+        "https": true,
+        "cors": true
+      },
+      {
+        "name": "Rejax",
+        "url": "https://rejax.io/",
+        "description": "Reverse AJAX service to notify clients",
+        "auth": "apiKey",
+        "https": true,
+        "cors": false
+      },
+      {
+        "name": "ReqRes",
+        "url": "https://reqres.in/",
+        "description": "A hosted REST-API ready to respond to your AJAX requests",
+        "auth": "None",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "RSS feed to JSON",
+        "url": "https://rss-to-json-serverless-api.vercel.app",
+        "description": "Returns RSS feed in JSON format using feed URL",
+        "auth": "None",
+        "https": true,
+        "cors": true
+      },
+      {
+        "name": "SavePage.io",
+        "url": "https://www.savepage.io",
+        "description": "A free, RESTful API used to screenshot any desktop, or mobile website",
+        "auth": "apiKey",
+        "https": true,
+        "cors": true
+      },
+      {
+        "name": "ScrapeNinja",
+        "url": "https://scrapeninja.net",
+        "description": "Scraping API with Chrome fingerprint and residential proxies",
+        "auth": "apiKey",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "ScraperApi",
+        "url": "https://www.scraperapi.com",
+        "description": "Easily build scalable web scrapers",
+        "auth": "apiKey",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "scraperBox",
+        "url": "https://scraperbox.com/",
+        "description": "Undetectable web scraping API",
+        "auth": "apiKey",
+        "https": true,
+        "cors": true
+      },
+      {
+        "name": "scrapestack",
+        "url": "https://scrapestack.com/",
+        "description": "Real-time, Scalable Proxy & Web Scraping REST API",
+        "auth": "apiKey",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "ScrapingAnt",
+        "url": "https://scrapingant.com",
+        "description": "Headless Chrome scraping with a simple API",
+        "auth": "apiKey",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "ScrapingDog",
+        "url": "https://www.scrapingdog.com/",
+        "description": "Proxy API for Web scraping",
+        "auth": "apiKey",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "ScreenshotAPI.net",
+        "url": "https://screenshotapi.net/",
+        "description": "Create pixel-perfect website screenshots",
+        "auth": "apiKey",
+        "https": true,
+        "cors": true
+      },
+      {
+        "name": "Serialif Color",
+        "url": "https://color.serialif.com/",
+        "description": "Color conversion, complementary, grayscale and contrasted text",
+        "auth": "None",
+        "https": true,
+        "cors": false
+      },
+      {
+        "name": "serpstack",
+        "url": "https://serpstack.com/",
+        "description": "Real-Time & Accurate Google Search Results API",
+        "auth": "apiKey",
+        "https": true,
+        "cors": true
+      },
+      {
+        "name": "Sheetsu",
+        "url": "https://sheetsu.com/",
+        "description": "Easy google sheets integration",
+        "auth": "apiKey",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "SHOUTCLOUD",
+        "url": "http://shoutcloud.io/",
+        "description": "ALL-CAPS AS A SERVICE",
+        "auth": "None",
+        "https": false,
+        "cors": "Unknown"
+      },
+      {
+        "name": "Sonar",
+        "url": "https://github.com/Cgboal/SonarSearch",
+        "description": "Project Sonar DNS Enumeration API",
+        "auth": "None",
+        "https": true,
+        "cors": true
+      },
+      {
+        "name": "SonarQube",
+        "url": "https://sonarcloud.io/web_api",
+        "description": "SonarQube REST APIs to detect bugs, code smells & security vulnerabilities",
+        "auth": "OAuth",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "StackExchange",
+        "url": "https://api.stackexchange.com/",
+        "description": "Q&A forum for developers",
+        "auth": "OAuth",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "Statically",
+        "url": "https://statically.io/",
+        "description": "A free CDN for developers",
+        "auth": "None",
+        "https": true,
+        "cors": true
+      },
+      {
+        "name": "Supportivekoala",
+        "url": "https://developers.supportivekoala.com/",
+        "description": "Autogenerate images with template",
+        "auth": "apiKey",
+        "https": true,
+        "cors": true
+      },
+      {
+        "name": "Tyk",
+        "url": "https://tyk.io/open-source/",
+        "description": "Api and service management platform",
+        "auth": "apiKey",
+        "https": true,
+        "cors": true
+      },
+      {
+        "name": "Wandbox",
+        "url": "https://github.com/melpon/wandbox/blob/master/kennel2/API.rst",
+        "description": "Code compiler supporting 35+ languages mentioned at wandbox.org",
+        "auth": "None",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "WebScraping.AI",
+        "url": "https://webscraping.ai/",
+        "description": "Web Scraping API with built-in proxies and JS rendering",
+        "auth": "apiKey",
+        "https": true,
+        "cors": true
+      },
+      {
+        "name": "ZenRows",
+        "url": "https://www.zenrows.com/",
+        "description": "Web Scraping API that bypasses anti-bot solutions while offering JS rendering, and rotating proxies",
+        "auth": "apiKey",
+        "https": true,
+        "cors": "Unknown"
+      }
+    ],
+    "Dictionaries": [
+      {
+        "name": "Chinese Character Web",
+        "url": "http://ccdb.hemiola.com/",
+        "description": "Chinese character definitions and pronunciations",
+        "auth": "None",
+        "https": false,
+        "cors": false
+      },
+      {
+        "name": "Chinese Text Project",
+        "url": "https://ctext.org/tools/api",
+        "description": "Online open-access digital library for pre-modern Chinese texts",
+        "auth": "None",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "Collins",
+        "url": "https://api.collinsdictionary.com/api/v1/documentation/html/",
+        "description": "Bilingual Dictionary and Thesaurus Data",
+        "auth": "apiKey",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "Free Dictionary",
+        "url": "https://dictionaryapi.dev/",
+        "description": "Definitions, phonetics, pronounciations, parts of speech, examples, synonyms",
+        "auth": "None",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "Indonesia Dictionary",
+        "url": "https://new-kbbi-api.herokuapp.com/",
+        "description": "Indonesia dictionary many words",
+        "auth": "None",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "Lingua Robot",
+        "url": "https://www.linguarobot.io",
+        "description": "Word definitions, pronunciations, synonyms, antonyms and others",
+        "auth": "apiKey",
+        "https": true,
+        "cors": true
+      },
+      {
+        "name": "Merriam-Webster",
+        "url": "https://dictionaryapi.com/",
+        "description": "Dictionary and Thesaurus Data",
+        "auth": "apiKey",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "OwlBot",
+        "url": "https://owlbot.info/",
+        "description": "Definitions with example sentence and photo if available",
+        "auth": "apiKey",
+        "https": true,
+        "cors": true
+      },
+      {
+        "name": "Oxford",
+        "url": "https://developer.oxforddictionaries.com/",
+        "description": "Dictionary Data",
+        "auth": "apiKey",
+        "https": true,
+        "cors": false
+      },
+      {
+        "name": "Synonyms",
+        "url": "https://www.synonyms.com/synonyms_api.php",
+        "description": "Synonyms, thesaurus and antonyms information for any given word",
+        "auth": "apiKey",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "Wiktionary",
+        "url": "https://en.wiktionary.org/w/api.php",
+        "description": "Collaborative dictionary data",
+        "auth": "None",
+        "https": true,
+        "cors": true
+      },
+      {
+        "name": "Wordnik",
+        "url": "https://developer.wordnik.com",
+        "description": "Dictionary Data",
+        "auth": "apiKey",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "Words",
+        "url": "https://www.wordsapi.com/docs/",
+        "description": "Definitions and synonyms for more than 150,000 words",
+        "auth": "apiKey",
+        "https": true,
+        "cors": "Unknown"
+      }
+    ],
+    "Documents & Productivity": [
+      {
+        "name": "Airtable",
+        "url": "https://airtable.com/api",
+        "description": "Integrate with Airtable",
+        "auth": "apiKey",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "Api2Convert",
+        "url": "https://www.api2convert.com/",
+        "description": "Online File Conversion API",
+        "auth": "apiKey",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "apilayer pdflayer",
+        "url": "https://pdflayer.com",
+        "description": "HTML/URL to PDF",
+        "auth": "apiKey",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "Asana",
+        "url": "https://developers.asana.com/docs",
+        "description": "Programmatic access to all data in your asana system",
+        "auth": "apiKey",
+        "https": true,
+        "cors": true
+      },
+      {
+        "name": "ClickUp",
+        "url": "https://clickup.com/api",
+        "description": "ClickUp is a robust, cloud-based project management tool for boosting productivity",
+        "auth": "OAuth",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "Clockify",
+        "url": "https://clockify.me/developers-api",
+        "description": "Clockify's REST-based API can be used to push/pull data to/from it & integrate it with other systems",
+        "auth": "apiKey",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "CloudConvert",
+        "url": "https://cloudconvert.com/api/v2",
+        "description": "Online file converter for audio, video, document, ebook, archive, image, spreadsheet, presentation",
+        "auth": "apiKey",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "Cloudmersive Document and Data Conversion",
+        "url": "https://cloudmersive.com/convert-api",
+        "description": "HTML/URL to PDF/PNG, Office documents to PDF, image conversion",
+        "auth": "apiKey",
+        "https": true,
+        "cors": true
+      },
+      {
+        "name": "Code::Stats",
+        "url": "https://codestats.net/api-docs",
+        "description": "Automatic time tracking for programmers",
+        "auth": "apiKey",
+        "https": true,
+        "cors": false
+      },
+      {
+        "name": "CraftMyPDF",
+        "url": "https://craftmypdf.com",
+        "description": "Generate PDF documents from templates with a drop-and-drop editor and a simple API",
+        "auth": "apiKey",
+        "https": true,
+        "cors": false
+      },
+      {
+        "name": "Flowdash",
+        "url": "https://docs.flowdash.com/docs/api-introduction",
+        "description": "Automate business workflows",
+        "auth": "apiKey",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "Html2PDF",
+        "url": "https://html2pdf.app/",
+        "description": "HTML/URL to PDF",
+        "auth": "apiKey",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "iLovePDF",
+        "url": "https://developer.ilovepdf.com/",
+        "description": "Convert, merge, split, extract text and add page numbers for PDFs. Free for 250 documents/month",
+        "auth": "apiKey",
+        "https": true,
+        "cors": true
+      },
+      {
+        "name": "JIRA",
+        "url": "https://developer.atlassian.com/server/jira/platform/rest-apis/",
+        "description": "JIRA is a proprietary issue tracking product that allows bug tracking and agile project management",
+        "auth": "OAuth",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "Mattermost",
+        "url": "https://api.mattermost.com/",
+        "description": "An open source platform for developer collaboration",
+        "auth": "OAuth",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "Mercury",
+        "url": "https://mercury.postlight.com/web-parser/",
+        "description": "Web parser",
+        "auth": "apiKey",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "Monday",
+        "url": "https://api.developer.monday.com/docs",
+        "description": "Programmatically access and update data inside a monday.com account",
+        "auth": "apiKey",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "Notion",
+        "url": "https://developers.notion.com/docs/getting-started",
+        "description": "Integrate with Notion",
+        "auth": "OAuth",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "PandaDoc",
+        "url": "https://developers.pandadoc.com",
+        "description": "DocGen and eSignatures API",
+        "auth": "apiKey",
+        "https": true,
+        "cors": false
+      },
+      {
+        "name": "Pocket",
+        "url": "https://getpocket.com/developer/",
+        "description": "Bookmarking service",
+        "auth": "OAuth",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "Podio",
+        "url": "https://developers.podio.com",
+        "description": "File sharing and productivity",
+        "auth": "OAuth",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "PrexView",
+        "url": "https://prexview.com",
+        "description": "Data from XML or JSON to PDF, HTML or Image",
+        "auth": "apiKey",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "Restpack",
+        "url": "https://restpack.io/",
+        "description": "Provides screenshot, HTML to PDF and content extraction APIs",
+        "auth": "apiKey",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "Todoist",
+        "url": "https://developer.todoist.com",
+        "description": "Todo Lists",
+        "auth": "OAuth",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "Smart Image Enhancement API",
+        "url": "https://apilayer.com/marketplace/image_enhancement-api",
+        "description": "Performs image upscaling by adding detail to images through multiple super-resolution algorithms",
+        "auth": "apiKey",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "Vector Express v2.0",
+        "url": "https://vector.express",
+        "description": "Free vector file converting API",
+        "auth": "None",
+        "https": true,
+        "cors": false
+      },
+      {
+        "name": "WakaTime",
+        "url": "https://wakatime.com/developers",
+        "description": "Automated time tracking leaderboards for programmers",
+        "auth": "None",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "Zube",
+        "url": "https://zube.io/docs/api",
+        "description": "Full stack project management",
+        "auth": "OAuth",
+        "https": true,
+        "cors": "Unknown"
+      }
+    ],
+    "Email": [
+      {
+        "name": "apilayer mailboxlayer",
+        "url": "https://mailboxlayer.com",
+        "description": "Email address validation",
+        "auth": "apiKey",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "Email Validation",
+        "url": "https://www.abstractapi.com/email-verification-validation-api",
+        "description": "Validate email addresses for deliverability and spam",
+        "auth": "apiKey",
+        "https": true,
+        "cors": true
+      },
+      {
+        "name": "Cloudmersive Validate",
+        "url": "https://cloudmersive.com/validate-api",
+        "description": "Validate email addresses, phone numbers, VAT numbers and domain names",
+        "auth": "apiKey",
+        "https": true,
+        "cors": true
+      },
+      {
+        "name": "Disify",
+        "url": "https://www.disify.com/",
+        "description": "Validate and detect disposable and temporary email addresses",
+        "auth": "None",
+        "https": true,
+        "cors": true
+      },
+      {
+        "name": "DropMail",
+        "url": "https://dropmail.me/api/#live-demo",
+        "description": "GraphQL API for creating and managing ephemeral e-mail inboxes",
+        "auth": "None",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "EVA",
+        "url": "https://eva.pingutil.com/",
+        "description": "Validate email addresses",
+        "auth": "None",
+        "https": true,
+        "cors": true
+      },
+      {
+        "name": "Guerrilla Mail",
+        "url": "https://www.guerrillamail.com/GuerrillaMailAPI.html",
+        "description": "Disposable temporary Email addresses",
+        "auth": "None",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "ImprovMX",
+        "url": "https://improvmx.com/api",
+        "description": "API for free email forwarding service",
+        "auth": "apiKey",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "Kickbox",
+        "url": "https://open.kickbox.com/",
+        "description": "Email verification API",
+        "auth": "None",
+        "https": true,
+        "cors": true
+      },
+      {
+        "name": "mail.gw",
+        "url": "https://docs.mail.gw",
+        "description": "10 Minute Mail",
+        "auth": "None",
+        "https": true,
+        "cors": true
+      },
+      {
+        "name": "mail.tm",
+        "url": "https://docs.mail.tm",
+        "description": "Temporary Email Service",
+        "auth": "None",
+        "https": true,
+        "cors": true
+      },
+      {
+        "name": "MailboxValidator",
+        "url": "https://www.mailboxvalidator.com/api-email-free",
+        "description": "Validate email address to improve deliverability",
+        "auth": "apiKey",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "MailCheck.ai",
+        "url": "https://www.mailcheck.ai/#documentation",
+        "description": "Prevent users to sign up with temporary email addresses",
+        "auth": "None",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "Mailtrap",
+        "url": "https://mailtrap.docs.apiary.io/#",
+        "description": "A service for the safe testing of emails sent from the development and staging environments",
+        "auth": "apiKey",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "Sendgrid",
+        "url": "https://docs.sendgrid.com/api-reference/",
+        "description": "A cloud-based SMTP provider that allows you to send emails without having to maintain email servers",
+        "auth": "apiKey",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "Sendinblue",
+        "url": "https://developers.sendinblue.com/docs",
+        "description": "A service that provides solutions relating to marketing and/or transactional email and/or SMS",
+        "auth": "apiKey",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "Verifier",
+        "url": "https://verifier.meetchopra.com/docs#/",
+        "description": "Verifies that a given email is real",
+        "auth": "apiKey",
+        "https": true,
+        "cors": true
+      }
+    ],
+    "Entertainment": [
+      {
+        "name": "chucknorris.io",
+        "url": "https://api.chucknorris.io",
+        "description": "JSON API for hand curated Chuck Norris jokes",
+        "auth": "None",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "Corporate Buzz Words",
+        "url": "https://github.com/sameerkumar18/corporate-bs-generator-api",
+        "description": "REST API for Corporate Buzz Words",
+        "auth": "None",
+        "https": true,
+        "cors": true
+      },
+      {
+        "name": "Excuser",
+        "url": "https://excuser.herokuapp.com/",
+        "description": "Get random excuses for various situations",
+        "auth": "None",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "Fun Fact",
+        "url": "https://api.aakhilv.me",
+        "description": "A simple HTTPS api that can randomly select and return a fact from the FFA database",
+        "auth": "None",
+        "https": true,
+        "cors": true
+      },
+      {
+        "name": "Imgflip",
+        "url": "https://imgflip.com/api",
+        "description": "Gets an array of popular memes",
+        "auth": "None",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "Meme Maker",
+        "url": "https://mememaker.github.io/API/",
+        "description": "REST API for create your own meme",
+        "auth": "None",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "NaMoMemes",
+        "url": "https://github.com/theIYD/NaMoMemes",
+        "description": "Memes on Narendra Modi",
+        "auth": "None",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "Random Useless Facts",
+        "url": "https://uselessfacts.jsph.pl/",
+        "description": "Get useless, but true facts",
+        "auth": "None",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "Techy",
+        "url": "https://techy-api.vercel.app/",
+        "description": "JSON and Plaintext API for tech-savvy sounding phrases",
+        "auth": "None",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "Yo Momma Jokes",
+        "url": "https://github.com/beanboi7/yomomma-apiv2",
+        "description": "REST API for Yo Momma Jokes",
+        "auth": "None",
+        "https": true,
+        "cors": "Unknown"
+      }
+    ],
+    "Environment": [
+      {
+        "name": "BreezoMeter Pollen",
+        "url": "https://docs.breezometer.com/api-documentation/pollen-api/v2/",
+        "description": "Daily Forecast pollen conditions data for a specific location",
+        "auth": "apiKey",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "Carbon Interface",
+        "url": "https://docs.carboninterface.com/",
+        "description": "API to calculate carbon (C02) emissions estimates for common C02 emitting activities",
+        "auth": "apiKey",
+        "https": true,
+        "cors": true
+      },
+      {
+        "name": "Climatiq",
+        "url": "https://docs.climatiq.io",
+        "description": "Calculate the environmental footprint created by a broad range of emission-generating activities",
+        "auth": "apiKey",
+        "https": true,
+        "cors": true
+      },
+      {
+        "name": "Cloverly",
+        "url": "https://www.cloverly.com/carbon-offset-documentation",
+        "description": "API calculates the impact of common carbon-intensive activities in real time",
+        "auth": "apiKey",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "CO2 Offset",
+        "url": "https://co2offset.io/api.html",
+        "description": "API calculates and validates the carbon footprint",
+        "auth": "None",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "Danish data service Energi",
+        "url": "https://www.energidataservice.dk/",
+        "description": "Open energy data from Energinet to society",
+        "auth": "None",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "GrünstromIndex",
+        "url": "https://gruenstromindex.de/",
+        "description": "Green Power Index for Germany (Grünstromindex/GSI)",
+        "auth": "None",
+        "https": false,
+        "cors": true
+      },
+      {
+        "name": "IQAir",
+        "url": "https://www.iqair.com/air-pollution-data-api",
+        "description": "Air quality and weather data",
+        "auth": "apiKey",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "Luchtmeetnet",
+        "url": "https://api-docs.luchtmeetnet.nl/",
+        "description": "Predicted and actual air quality components for The Netherlands (RIVM)",
+        "auth": "None",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "National Grid ESO",
+        "url": "https://data.nationalgrideso.com/",
+        "description": "Open data from Great Britain’s Electricity System Operator",
+        "auth": "None",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "OpenAQ",
+        "url": "https://docs.openaq.org/",
+        "description": "Open air quality data",
+        "auth": "apiKey",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "PM2.5 Open Data Portal",
+        "url": "https://pm25.lass-net.org/#apis",
+        "description": "Open low-cost PM2.5 sensor data",
+        "auth": "None",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "PM25.in",
+        "url": "http://www.pm25.in/api_doc",
+        "description": "Air quality of China",
+        "auth": "apiKey",
+        "https": false,
+        "cors": "Unknown"
+      },
+      {
+        "name": "PVWatts",
+        "url": "https://developer.nrel.gov/docs/solar/pvwatts/v6/",
+        "description": "Energy production photovoltaic (PV) energy systems",
+        "auth": "apiKey",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "Srp Energy",
+        "url": "https://srpenergy-api-client-python.readthedocs.io/en/latest/api.html",
+        "description": "Hourly usage energy report for Srp customers",
+        "auth": "apiKey",
+        "https": true,
+        "cors": false
+      },
+      {
+        "name": "UK Carbon Intensity",
+        "url": "https://carbon-intensity.github.io/api-definitions/#carbon-intensity-api-v1-0-0",
+        "description": "The Official Carbon Intensity API for Great Britain developed by National Grid",
+        "auth": "None",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "Website Carbon",
+        "url": "https://api.websitecarbon.com/",
+        "description": "API to estimate the carbon footprint of loading web pages",
+        "auth": "None",
+        "https": true,
+        "cors": "Unknown"
+      }
+    ],
+    "Events": [
+      {
+        "name": "Eventbrite",
+        "url": "https://www.eventbrite.com/platform/api/",
+        "description": "Find events",
+        "auth": "OAuth",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "SeatGeek",
+        "url": "https://platform.seatgeek.com/",
+        "description": "Search events, venues and performers",
+        "auth": "apiKey",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "Ticketmaster",
+        "url": "http://developer.ticketmaster.com/products-and-docs/apis/getting-started/",
+        "description": "Search events, attractions, or venues",
+        "auth": "apiKey",
+        "https": true,
+        "cors": "Unknown"
+      }
+    ],
+    "Finance": [
+      {
+        "name": "VAT Validation",
+        "url": "https://www.abstractapi.com/vat-validation-rates-api",
+        "description": "Validate VAT numbers and calculate VAT rates",
+        "auth": "apiKey",
+        "https": true,
+        "cors": "Yes"
+      },
+      {
+        "name": "Aletheia",
+        "url": "https://aletheiaapi.com/",
+        "description": "Insider trading data, earnings call analysis, financial statements, and more",
+        "auth": "apiKey",
+        "https": true,
+        "cors": "Yes"
+      },
+      {
+        "name": "Alpaca",
+        "url": "https://alpaca.markets/docs/api-documentation/api-v2/market-data/alpaca-data-api-v2/",
+        "description": "Realtime and historical market data on all US equities and ETFs",
+        "auth": "apiKey",
+        "https": true,
+        "cors": "Yes"
+      },
+      {
+        "name": "Alpha Vantage",
+        "url": "https://www.alphavantage.co/",
+        "description": "Realtime and historical stock data",
+        "auth": "apiKey",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "apilayer marketstack",
+        "url": "https://marketstack.com/",
+        "description": "Real-Time, Intraday & Historical Market Data API",
+        "auth": "apiKey",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "Banco do Brasil",
+        "url": "https://developers.bb.com.br/home",
+        "description": "All Banco do Brasil financial transaction APIs",
+        "auth": "OAuth",
+        "https": true,
+        "cors": "Yes"
+      },
+      {
+        "name": "Bank Data API",
+        "url": "https://apilayer.com/marketplace/bank_data-api",
+        "description": "Instant IBAN and SWIFT number validation across the globe",
+        "auth": "apiKey",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "Billplz",
+        "url": "https://www.billplz.com/api",
+        "description": "Payment platform",
+        "auth": "apiKey",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "Binlist",
+        "url": "https://binlist.net/",
+        "description": "Public access to a database of IIN/BIN information",
+        "auth": "None",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "Boleto.Cloud",
+        "url": "https://boleto.cloud/",
+        "description": "A api to generate boletos in Brazil",
+        "auth": "apiKey",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "Citi",
+        "url": "https://sandbox.developerhub.citi.com/api-catalog-list",
+        "description": "All Citigroup account and statement data APIs",
+        "auth": "apiKey",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "Econdb",
+        "url": "https://www.econdb.com/api/",
+        "description": "Global macroeconomic data",
+        "auth": "None",
+        "https": true,
+        "cors": "Yes"
+      },
+      {
+        "name": "Fed Treasury",
+        "url": "https://fiscaldata.treasury.gov/api-documentation/",
+        "description": "U.S. Department of the Treasury Data",
+        "auth": "None",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "Finage",
+        "url": "https://finage.co.uk",
+        "description": "Finage is a stock, currency, cryptocurrency, indices, and ETFs real-time & historical data provider",
+        "auth": "apiKey",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "Financial Modeling Prep",
+        "url": "https://site.financialmodelingprep.com/developer/docs",
+        "description": "Realtime and historical stock data",
+        "auth": "apiKey",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "Finnhub",
+        "url": "https://finnhub.io/docs/api",
+        "description": "Real-Time RESTful APIs and Websocket for Stocks, Currencies, and Crypto",
+        "auth": "apiKey",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "FRED",
+        "url": "https://fred.stlouisfed.org/docs/api/fred/",
+        "description": "Economic data from the Federal Reserve Bank of St. Louis",
+        "auth": "apiKey",
+        "https": true,
+        "cors": "Yes"
+      },
+      {
+        "name": "Front Accounting APIs",
+        "url": "https://frontaccounting.com/fawiki/index.php?n=Devel.SimpleAPIModule",
+        "description": "Front accounting is multilingual and multicurrency software for small businesses",
+        "auth": "OAuth",
+        "https": true,
+        "cors": "Yes"
+      },
+      {
+        "name": "Hotstoks",
+        "url": "https://hotstoks.com?utm_source=public-apis",
+        "description": "Stock market data powered by SQL",
+        "auth": "apiKey",
+        "https": true,
+        "cors": "Yes"
+      },
+      {
+        "name": "IEX Cloud",
+        "url": "https://iexcloud.io/docs/api/",
+        "description": "Realtime & Historical Stock and Market Data",
+        "auth": "apiKey",
+        "https": true,
+        "cors": "Yes"
+      },
+      {
+        "name": "IG",
+        "url": "https://labs.ig.com/gettingstarted",
+        "description": "Spreadbetting and CFD Market Data",
+        "auth": "apiKey",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "Indian Mutual Fund",
+        "url": "https://www.mfapi.in/",
+        "description": "Get complete history of India Mutual Funds Data",
+        "auth": "None",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "Intrinio",
+        "url": "https://intrinio.com/",
+        "description": "A wide selection of financial data feeds",
+        "auth": "apiKey",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "Klarna",
+        "url": "https://docs.klarna.com/klarna-payments/api/payments-api/",
+        "description": "Klarna payment and shopping service",
+        "auth": "apiKey",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "MercadoPago",
+        "url": "https://www.mercadopago.com.br/developers/es/reference",
+        "description": "Mercado Pago API reference - all the information you need to develop your integrations",
+        "auth": "apiKey",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "Mono",
+        "url": "https://mono.co/",
+        "description": "Connect with users’ bank accounts and access transaction data in Africa",
+        "auth": "apiKey",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "Moov",
+        "url": "https://docs.moov.io/api/",
+        "description": "The Moov API makes it simple for platforms to send, receive, and store money",
+        "auth": "apiKey",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "Nordigen",
+        "url": "https://nordigen.com/en/account_information_documenation/integration/quickstart_guide/",
+        "description": "Connect to bank accounts using official bank APIs and get raw transaction data",
+        "auth": "apiKey",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "OpenFIGI",
+        "url": "https://www.openfigi.com/api",
+        "description": "Equity, index, futures, options symbology from Bloomberg LP",
+        "auth": "apiKey",
+        "https": true,
+        "cors": "Yes"
+      },
+      {
+        "name": "Plaid",
+        "url": "https://www.plaid.com/docs",
+        "description": "Connect with user's bank accounts and access transaction data",
+        "auth": "apiKey",
+        "https": true,
+        "cors": ""
+      },
+      {
+        "name": "Polygon",
+        "url": "https://polygon.io/",
+        "description": "Historical stock market data",
+        "auth": "apiKey",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "Portfolio Optimizer",
+        "url": "https://portfoliooptimizer.io/",
+        "description": "Portfolio analysis and optimization",
+        "auth": "None",
+        "https": true,
+        "cors": "Yes"
+      },
+      {
+        "name": "Razorpay IFSC",
+        "url": "https://razorpay.com/docs/",
+        "description": "Indian Financial Systems Code (Bank Branch Codes)",
+        "auth": "None",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "Real Time Finance",
+        "url": "https://github.com/Real-time-finance/finance-websocket-API/",
+        "description": "Websocket API to access realtime stock data",
+        "auth": "apiKey",
+        "https": false,
+        "cors": "Unknown"
+      },
+      {
+        "name": "SEC EDGAR Data",
+        "url": "https://www.sec.gov/edgar/sec-api-documentation",
+        "description": "API to access annual reports of public US companies",
+        "auth": "None",
+        "https": true,
+        "cors": "Yes"
+      },
+      {
+        "name": "SmartAPI",
+        "url": "https://smartapi.angelbroking.com/",
+        "description": "Gain access to set of <SmartAPI> and create end-to-end broking services",
+        "auth": "apiKey",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "StockData",
+        "url": "https://www.StockData.org",
+        "description": "Real-Time, Intraday & Historical Market Data, News and Sentiment API",
+        "auth": "apiKey",
+        "https": true,
+        "cors": "Yes"
+      },
+      {
+        "name": "Styvio",
+        "url": "https://www.Styvio.com",
+        "description": "Realtime and historical stock data and current stock sentiment",
+        "auth": "apiKey",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "Tax Data API",
+        "url": "https://apilayer.com/marketplace/tax_data-api",
+        "description": "Instant VAT number and tax validation across the globe",
+        "auth": "apiKey",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "Tradier",
+        "url": "https://developer.tradier.com",
+        "description": "US equity/option market data (delayed, intraday, historical)",
+        "auth": "OAuth",
+        "https": true,
+        "cors": "Yes"
+      },
+      {
+        "name": "Twelve Data",
+        "url": "https://twelvedata.com/",
+        "description": "Stock market data (real-time & historical)",
+        "auth": "apiKey",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "WallstreetBets",
+        "url": "https://dashboard.nbshare.io/apps/reddit/api/",
+        "description": "WallstreetBets Stock Comments Sentiment Analysis",
+        "auth": "None",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "Yahoo Finance",
+        "url": "https://www.yahoofinanceapi.com/",
+        "description": "Real time low latency Yahoo Finance API for stock market, crypto currencies, and currency exchange",
+        "auth": "apiKey",
+        "https": true,
+        "cors": "Yes"
+      },
+      {
+        "name": "YNAB",
+        "url": "https://api.youneedabudget.com/",
+        "description": "Budgeting & Planning",
+        "auth": "OAuth",
+        "https": true,
+        "cors": "Yes"
+      },
+      {
+        "name": "Zoho Books",
+        "url": "https://www.zoho.com/books/api/v3/",
+        "description": "Online accounting software, built for your business",
+        "auth": "OAuth",
+        "https": true,
+        "cors": "Unknown"
+      }
+    ],
+    "Food & Drink": [
+      {
+        "name": "BaconMockup",
+        "url": "https://baconmockup.com/",
+        "description": "Resizable bacon placeholder images",
+        "auth": "None",
+        "https": true,
+        "cors": "Yes"
+      },
+      {
+        "name": "Chomp",
+        "url": "https://chompthis.com/api/",
+        "description": "Data about various grocery products and foods",
+        "auth": "apiKey",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "Coffee",
+        "url": "https://coffee.alexflipnote.dev/",
+        "description": "Random pictures of coffee",
+        "auth": "None",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "Edamam nutrition",
+        "url": "https://developer.edamam.com/edamam-docs-nutrition-api",
+        "description": "Nutrition Analysis",
+        "auth": "apiKey",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "Edamam recipes",
+        "url": "https://developer.edamam.com/edamam-docs-recipe-api",
+        "description": "Recipe Search",
+        "auth": "apiKey",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "Foodish",
+        "url": "https://github.com/surhud004/Foodish#readme",
+        "description": "Random pictures of food dishes",
+        "auth": "None",
+        "https": true,
+        "cors": "Yes"
+      },
+      {
+        "name": "Fruityvice",
+        "url": "https://www.fruityvice.com",
+        "description": "Data about all kinds of fruit",
+        "auth": "None",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "Kroger",
+        "url": "https://developer.kroger.com/reference",
+        "description": "Supermarket Data",
+        "auth": "apiKey",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "LCBO",
+        "url": "https://lcboapi.com/",
+        "description": "Alcohol",
+        "auth": "apiKey",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "Open Brewery DB",
+        "url": "https://www.openbrewerydb.org",
+        "description": "Breweries, Cideries and Craft Beer Bottle Shops",
+        "auth": "None",
+        "https": true,
+        "cors": "Yes"
+      },
+      {
+        "name": "Open Food Facts",
+        "url": "https://world.openfoodfacts.org/data",
+        "description": "Food Products Database",
+        "auth": "None",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "PunkAPI",
+        "url": "https://punkapi.com/",
+        "description": "Brewdog Beer Recipes",
+        "auth": "None",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "Rustybeer",
+        "url": "https://rustybeer.herokuapp.com/",
+        "description": "Beer brewing tools",
+        "auth": "None",
+        "https": true,
+        "cors": "No"
+      },
+      {
+        "name": "Spoonacular",
+        "url": "https://spoonacular.com/food-api",
+        "description": "Recipes, Food Products, and Meal Planning",
+        "auth": "apiKey",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "Systembolaget",
+        "url": "https://api-portal.systembolaget.se",
+        "description": "Govornment owned liqour store in Sweden",
+        "auth": "apiKey",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "TacoFancy",
+        "url": "https://github.com/evz/tacofancy-api",
+        "description": "Community-driven taco database",
+        "auth": "None",
+        "https": false,
+        "cors": "Unknown"
+      },
+      {
+        "name": "Tasty",
+        "url": "https://rapidapi.com/apidojo/api/tasty/",
+        "description": "API to query data about recipe, plan, ingredients",
+        "auth": "apiKey",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "The Report of the Week",
+        "url": "https://github.com/andyklimczak/TheReportOfTheWeek-API",
+        "description": "Food & Drink Reviews",
+        "auth": "None",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "TheCocktailDB",
+        "url": "https://www.thecocktaildb.com/api.php",
+        "description": "Cocktail Recipes",
+        "auth": "apiKey",
+        "https": true,
+        "cors": "Yes"
+      },
+      {
+        "name": "TheMealDB",
+        "url": "https://www.themealdb.com/api.php",
+        "description": "Meal Recipes",
+        "auth": "apiKey",
+        "https": true,
+        "cors": "Yes"
+      },
+      {
+        "name": "Untappd",
+        "url": "https://untappd.com/api/docs",
+        "description": "Social beer sharing",
+        "auth": "OAuth",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "What's on the menu?",
+        "url": "http://nypl.github.io/menus-api/",
+        "description": "NYPL human-transcribed historical menu collection",
+        "auth": "apiKey",
+        "https": false,
+        "cors": "Unknown"
+      },
+      {
+        "name": "WhiskyHunter",
+        "url": "https://whiskyhunter.net/api/",
+        "description": "Past online whisky auctions statistical data",
+        "auth": "None",
+        "https": true,
+        "cors": "Unknown"
+      },
+      {
+        "name": "Zestful",
+        "url": "https://zestfuldata.com/",
+        "description": "Parse recipe ingredients",
+        "auth": "apiKey",
+        "https": true,
+        "cors": "Yes"
+      }
+    ]
+  }
