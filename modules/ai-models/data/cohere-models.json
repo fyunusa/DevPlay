@@ -1,0 +1,50 @@
+[
+    {
+        "model_name": "Command",
+        "description": "Advanced instruction-following model optimized for enterprise use cases with exceptional quality and reliability.",
+        "task": "Text Generation, Instruction Following",
+        "features": "Enterprise-grade, Reliable, High Quality",
+        "license": "Cohere API",
+        "url": "https://cohere.com/models/command"
+    },
+    {
+        "model_name": "Embed English",
+        "description": "High-performance embedding model optimized for English text with excellent semantic understanding.",
+        "task": "Text Embeddings",
+        "features": "High-dimensional, Multilingual Support",
+        "license": "Cohere API",
+        "url": "https://cohere.com/embed"
+    },
+    {
+        "model_name": "Rerank",
+        "description": "Specialized model for reranking search results to improve relevance and accuracy of information retrieval.",
+        "task": "Search Reranking",
+        "features": "High Accuracy, Fast, Scalable",
+        "license": "Cohere API",
+        "url": "https://cohere.com/rerank"
+    },
+    {
+        "model_name": "Classify",
+        "description": "Zero-shot classification model that can categorize text without training on specific labels.",
+        "task": "Text Classification",
+        "features": "Zero-shot, Multi-label, Custom Labels",
+        "license": "Cohere API",
+        "url": "https://cohere.com/classify"
+    },
+    {
+        "model_name": "Summarize",
+        "description": "Advanced summarization model that creates concise, accurate summaries of long documents.",
+        "task": "Text Summarization",
+        "features": "Extractive, Abstractive, Custom Length",
+        "license": "Cohere API",
+        "url": "https://cohere.com/summarize"
+    },
+    {
+        "model_name": "Generate",
+        "description": "Flexible text generation model perfect for chatbots, creative writing, and content creation.",
+        "task": "Text Generation, Chat",
+        "features": "Long Context, Controlled Generation",
+        "license": "Cohere API",
+        "url": "https://cohere.com/generate"
+    }
+]

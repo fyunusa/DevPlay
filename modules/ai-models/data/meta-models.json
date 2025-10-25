@@ -1,0 +1,50 @@
+[
+    {
+        "model_name": "Llama 3",
+        "description": "Latest generation open-source large language model with improved reasoning and coding capabilities.",
+        "task": "Text Generation, Code, Reasoning",
+        "features": "Open Source, Multilingual, High Quality",
+        "license": "Open Source (Llama 3)",
+        "url": "https://ai.meta.com/llama/"
+    },
+    {
+        "model_name": "Segment Anything",
+        "description": "Revolutionary image segmentation model that can segment any object in images with high accuracy.",
+        "task": "Image Segmentation",
+        "features": "Zero-shot, High Accuracy, Real-time",
+        "license": "Apache 2.0",
+        "url": "https://segment-anything.com/"
+    },
+    {
+        "model_name": "DINOv2",
+        "description": "Self-supervised vision transformer that learns powerful visual representations without labels.",
+        "task": "Visual Representations, Image Understanding",
+        "features": "Self-supervised, No Labels Required",
+        "license": "Apache 2.0",
+        "url": "https://github.com/facebookresearch/dinov2"
+    },
+    {
+        "model_name": "Code Llama",
+        "description": "Specialized Llama model for code completion, generation, and understanding across languages.",
+        "task": "Code Generation, Code Completion",
+        "features": "Multi-language, Code-specific",
+        "license": "Llama Community",
+        "url": "https://ai.meta.com/llama/code-llama/"
+    },
+    {
+        "model_name": "Animated Drawings",
+        "description": "AI system that brings children's drawings to life with realistic motion and animation.",
+        "task": "2D Animation, Drawing Animation",
+        "features": "Realistic Motion, Easy to Use",
+        "license": "Research / Demo",
+        "url": "https://sketch.metademolab.com/"
+    },
+    {
+        "model_name": "SpeechT5",
+        "description": "Text-to-speech and speech-to-text model with natural voice synthesis capabilities.",
+        "task": "Text-to-Speech, Speech Recognition",
+        "features": "High Quality, Multilingual",
+        "license": "MIT",
+        "url": "https://github.com/microsoft/SpeechT5"
+    }
+]

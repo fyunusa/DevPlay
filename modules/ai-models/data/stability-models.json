@@ -1,0 +1,50 @@
+[
+    {
+        "model_name": "Stable Diffusion XL",
+        "description": "Most advanced Stable Diffusion model with exceptional image quality and detail generation.",
+        "task": "Image Generation",
+        "features": "High Resolution, Fast, High Quality",
+        "license": "Open Source / API",
+        "url": "https://stability.ai/stable-diffusion"
+    },
+    {
+        "model_name": "Stable Diffusion 2.1",
+        "description": "Improved version with better text understanding and image coherence capabilities.",
+        "task": "Image Generation, Text-to-Image",
+        "features": "Better Prompts, Improved Quality",
+        "license": "Open Source",
+        "url": "https://stability.ai/stable-diffusion"
+    },
+    {
+        "model_name": "Stable LM",
+        "description": "Open-source language model suite for text generation and conversational applications.",
+        "task": "Text Generation, Chat",
+        "features": "Open Source, Multiple Sizes",
+        "license": "Open Source (Apache 2.0)",
+        "url": "https://stability.ai/lm"
+    },
+    {
+        "model_name": "Stable Audio",
+        "description": "High-quality audio generation model for creating music and sound effects from text prompts.",
+        "task": "Audio Generation, Music Creation",
+        "features": "High Quality, Multiple Styles",
+        "license": "Stability AI API",
+        "url": "https://stability.ai/stable-audio"
+    },
+    {
+        "model_name": "Stable Video Diffusion",
+        "description": "Advanced video generation model that creates short video clips from images or text.",
+        "task": "Video Generation",
+        "features": "Video Generation, Smooth Motion",
+        "license": "Commercial / Research",
+        "url": "https://stability.ai/stable-video"
+    },
+    {
+        "model_name": "Depth Anything",
+        "description": "Monocular depth estimation model for understanding 3D scene structure from single images.",
+        "task": "Depth Estimation, 3D Understanding",
+        "features": "Real-time, Accurate",
+        "license": "Open Source",
+        "url": "https://github.com/LiheYoung/Depth-Anything"
+    }
+]

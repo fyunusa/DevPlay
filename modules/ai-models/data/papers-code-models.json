@@ -1,0 +1,50 @@
+[
+    {
+        "model_name": "SOTA Benchmarks Collection",
+        "description": "Curated collection of state-of-the-art models across computer vision, NLP, and other domains.",
+        "task": "Various (See Leaderboards)",
+        "features": "SOTA Performance, Benchmarked",
+        "license": "Various",
+        "url": "https://paperswithcode.com/"
+    },
+    {
+        "model_name": "Computer Vision Models",
+        "description": "Best performing models for image classification, object detection, and segmentation tasks.",
+        "task": "Image Classification, Object Detection",
+        "features": "Leaderboard Rankings, Reproducible",
+        "license": "Various",
+        "url": "https://paperswithcode.com/tasks/image-classification"
+    },
+    {
+        "model_name": "NLP Models",
+        "description": "Top models for natural language processing tasks including translation, summarization, and QA.",
+        "task": "Translation, Summarization, QA",
+        "features": "Task-specific, Benchmarked",
+        "license": "Various",
+        "url": "https://paperswithcode.com/tasks/translation"
+    },
+    {
+        "model_name": "Reinforcement Learning Models",
+        "description": "State-of-the-art RL agents for game playing, robotics, and decision-making tasks.",
+        "task": "RL, Game Playing, Decision Making",
+        "features": "Task Performance, Code Included",
+        "license": "Various",
+        "url": "https://paperswithcode.com/area/game-theory-and-rl"
+    },
+    {
+        "model_name": "Audio Models",
+        "description": "Best models for speech recognition, audio classification, and music generation.",
+        "task": "Speech Recognition, Audio Classification",
+        "features": "Audio Processing, Real-time",
+        "license": "Various",
+        "url": "https://paperswithcode.com/area/audio"
+    },
+    {
+        "model_name": "Multimodal Models",
+        "description": "Advanced models that understand both vision and language for complex reasoning tasks.",
+        "task": "Vision-Language, Multimodal Understanding",
+        "features": "Cross-modal, Reasoning",
+        "license": "Various",
+        "url": "https://paperswithcode.com/area/multimodal"
+    }
+]

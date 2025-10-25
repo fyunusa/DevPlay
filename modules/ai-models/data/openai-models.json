@@ -1,0 +1,50 @@
+[
+    {
+        "model_name": "GPT-4",
+        "description": "Advanced multimodal model with state-of-the-art performance across language understanding, code generation, and complex reasoning tasks.",
+        "task": "Text Generation, Code Generation, Complex Reasoning",
+        "features": "Multimodal, Code Interpreter, Function Calling",
+        "license": "OpenAI API",
+        "url": "https://platform.openai.com/docs/models/gpt-4"
+    },
+    {
+        "model_name": "GPT-3.5 Turbo",
+        "description": "Fast and cost-effective model optimized for chat applications and simple tasks with excellent speed.",
+        "task": "Chat, Text Generation, Content Creation",
+        "features": "Function Calling, JSON Mode",
+        "license": "OpenAI API",
+        "url": "https://platform.openai.com/docs/models/gpt-3-5"
+    },
+    {
+        "model_name": "DALL·E 3",
+        "description": "Advanced image generation model capable of creating detailed, high-quality images from text descriptions with improved safety measures.",
+        "task": "Image Generation",
+        "features": "Text-to-Image, Safety Filters, High Quality",
+        "license": "OpenAI API",
+        "url": "https://openai.com/dall-e-3"
+    },
+    {
+        "model_name": "Whisper",
+        "description": "Robust speech recognition model capable of transcribing audio in multiple languages with high accuracy.",
+        "task": "Speech Recognition, Audio Transcription",
+        "features": "Multilingual, Translation, Diarization",
+        "license": "OpenAI API / Open Source",
+        "url": "https://openai.com/research/whisper"
+    },
+    {
+        "model_name": "CLIP",
+        "description": "Vision-language model that understands images and text together, enabling powerful image search and classification.",
+        "task": "Image Classification, Visual Search",
+        "features": "Vision-Language Understanding, Zero-shot",
+        "license": "Open Source",
+        "url": "https://openai.com/research/clip"
+    },
+    {
+        "model_name": "Codex",
+        "description": "AI system that translates natural language to code, powering GitHub Copilot and advanced code generation tools.",
+        "task": "Code Generation, Code Completion",
+        "features": "Multi-language Support, Code Understanding",
+        "license": "OpenAI API",
+        "url": "https://openai.com/blog/openai-codex"
+    }
+]

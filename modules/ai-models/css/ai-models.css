@@ -235,6 +235,101 @@ body {
   to { opacity: 1; transform: translateY(0); }
 }
 
+/* Global Search Container */
+.global-search-container {
+  margin-bottom: 3rem;
+}
+
+.search-wrapper {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.search-icon {
+  position: absolute;
+  left: 1.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--secondary);
+  font-size: 1.2rem;
+  z-index: 10;
+}
+
+.global-search-input {
+  width: 100%;
+  padding: 1.25rem 1.25rem 1.25rem 3.5rem;
+  border: 2px solid rgba(16, 185, 129, 0.2);
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 500;
+  background: white;
+  box-shadow: 0 4px 20px rgba(16, 185, 129, 0.1);
+  transition: all 0.3s ease;
+}
+
+.global-search-input:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 8px 30px rgba(16, 185, 129, 0.2);
+}
+
+.clear-search-btn {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.clear-search-btn:hover {
+  background: rgba(16, 185, 129, 0.1);
+  color: var(--primary);
+}
+
+.search-results-info {
+  text-align: center;
+  margin-top: 1rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+.search-results-info span {
+  color: var(--primary);
+  font-weight: 700;
+}
+
+/* Content Section */
+.content-section {
+  display: none;
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+.content-section.active {
+  display: block;
+}
+
+/* Search Mode Styling */
+.search-mode .content-section.active {
+  display: block !important;
+}
+
+.search-mode .tab-navigation-wrapper,
+.search-mode .category-selector {
+  display: none;
+}
+
+.search-mode .section-title {
+  margin-bottom: 1.5rem;
+}
+
 /* Category Selector */
 .category-selector {
   display: flex;
@@ -552,7 +647,13 @@ body {
   font-weight: 600;
   background: linear-gradient(135deg, var(--secondary), var(--primary));
   color: white;
-  box-shadow: 0 2px 8px rgba(99, 102, 241, 0.3);
+  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.3);
+}
+
+.tag-more {
+  background: linear-gradient(135deg, var(--text-secondary), var(--text-primary));
+  opacity: 0.8;
+  font-style: italic;
 }
 
 /* Use Cases Grid */
@@ -719,6 +820,12 @@ body {
   color: var(--text-primary);
   margin-bottom: 0.5rem;
   font-weight: 600;
+}
+
+/* Loading Trigger */
+.loading-trigger {
+  height: 10px;
+  margin: 2rem 0;
 }
 
 /* Responsive Design */

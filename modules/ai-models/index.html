@@ -48,6 +48,26 @@
 
     <!-- Main Container -->
     <div class="container">
+        <!-- Global Search Bar -->
+        <div class="global-search-container">
+            <div class="search-wrapper">
+                <i class="fas fa-search search-icon"></i>
+                <input 
+                    type="text" 
+                    id="global-search" 
+                    class="global-search-input" 
+                    placeholder="Search for AI models, datasets, features, or tasks..."
+                    autocomplete="off"
+                />
+                <button id="clear-search" class="clear-search-btn" style="display: none;">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div id="search-results-info" class="search-results-info" style="display: none;">
+                <span id="results-count">0</span> results found
+            </div>
+        </div>
+
         <!-- Category Selector -->
         <div class="category-selector">
             <button class="category-btn active" data-category="models">
@@ -193,7 +213,7 @@
                 <div id="datasets-kaggle-container" class="content-grid"></div>
             </div>
             <div class="tab-content" data-content="hf-datasets">
-                <div id="datasets-hf-datasets-container" class="content-grid"></div>
+                <div id="datasets-huggingface-container" class="content-grid"></div>
             </div>
             <div class="tab-content" data-content="google-search">
                 <div id="datasets-google-search-container" class="content-grid"></div>

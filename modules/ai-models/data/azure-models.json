@@ -1,0 +1,50 @@
+[
+    {
+        "model_name": "GPT-4",
+        "description": "OpenAI's GPT-4 available through Azure OpenAI Service with enterprise-grade security and compliance.",
+        "task": "Text Generation, Analysis",
+        "features": "Enterprise Security, Private Endpoints",
+        "license": "Microsoft Azure",
+        "url": "https://azure.microsoft.com/services/cognitive-services/openai-service/"
+    },
+    {
+        "model_name": "Embeddings Ada-002",
+        "description": "High-quality text embedding model for semantic search and similarity applications.",
+        "task": "Text Embeddings, Search",
+        "features": "High Dimensional, Semantic Understanding",
+        "license": "Microsoft Azure",
+        "url": "https://azure.microsoft.com/services/cognitive-services/openai-service/"
+    },
+    {
+        "model_name": "DALL·E 2",
+        "description": "Image generation model available through Azure for creating images from text descriptions.",
+        "task": "Image Generation",
+        "features": "Text-to-Image, Variants, Edits",
+        "license": "Microsoft Azure",
+        "url": "https://azure.microsoft.com/services/cognitive-services/openai-service/"
+    },
+    {
+        "model_name": "Speech Services",
+        "description": "Comprehensive speech API for real-time transcription, translation, and voice synthesis.",
+        "task": "Speech Recognition, TTS",
+        "features": "Real-time, Multilingual, Custom Models",
+        "license": "Microsoft Azure",
+        "url": "https://azure.microsoft.com/services/cognitive-services/speech-services/"
+    },
+    {
+        "model_name": "Computer Vision",
+        "description": "Vision API for image analysis, OCR, face detection, and visual content understanding.",
+        "task": "Image Analysis, OCR, Face Detection",
+        "features": "OCR, Object Detection, Face Recognition",
+        "license": "Microsoft Azure",
+        "url": "https://azure.microsoft.com/services/cognitive-services/computer-vision/"
+    },
+    {
+        "model_name": "Azure OpenAI Whisper",
+        "description": "Whisper speech recognition model available through Azure for transcription and translation.",
+        "task": "Speech Recognition, Audio Transcription",
+        "features": "Multilingual, Accurate, Enterprise Grade",
+        "license": "Microsoft Azure",
+        "url": "https://learn.microsoft.com/azure/ai-services/openai/"
+    }
+]

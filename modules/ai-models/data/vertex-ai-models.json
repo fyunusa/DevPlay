@@ -1,0 +1,50 @@
+[
+    {
+        "model_name": "PaLM 2",
+        "description": "Google's next-generation language model with improved multilingual, reasoning, and coding capabilities.",
+        "task": "Text Generation, Multilingual Tasks, Code",
+        "features": "Multilingual, Code Understanding, Reason",
+        "license": "Google Cloud",
+        "url": "https://cloud.google.com/vertex-ai/docs/generative-ai/model-reference/text"
+    },
+    {
+        "model_name": "Gemini",
+        "description": "Multimodal AI model that understands text, images, audio, and video for complex reasoning tasks.",
+        "task": "Multimodal Understanding, Reasoning",
+        "features": "Vision, Audio, Video, Text",
+        "license": "Google Cloud",
+        "url": "https://cloud.google.com/vertex-ai/docs/generative-ai/model-reference/gemini"
+    },
+    {
+        "model_name": "Imagen",
+        "description": "High-quality text-to-image generation model with photorealistic outputs and advanced capabilities.",
+        "task": "Image Generation",
+        "features": "Text-to-Image, Editing, Inpainting",
+        "license": "Google Cloud",
+        "url": "https://cloud.google.com/vertex-ai/docs/generative-ai/image"
+    },
+    {
+        "model_name": "Codey",
+        "description": "Specialized model for code generation, completion, and chat assistance across multiple programming languages.",
+        "task": "Code Generation, Code Chat",
+        "features": "Multi-language, Function Calling, Chat",
+        "license": "Google Cloud",
+        "url": "https://cloud.google.com/vertex-ai/docs/generative-ai/code"
+    },
+    {
+        "model_name": "Code Completion",
+        "description": "Autocomplete model that suggests code as you type, similar to GitHub Copilot functionality.",
+        "task": "Code Completion",
+        "features": "Real-time Suggestions, Multi-language",
+        "license": "Google Cloud",
+        "url": "https://cloud.google.com/vertex-ai/docs/generative-ai/code/code-completion"
+    },
+    {
+        "model_name": "T5",
+        "description": "Text-to-text transfer transformer that converts all NLP tasks to text generation, enabling unified model training.",
+        "task": "Text-to-Text, Summarization, Translation",
+        "features": "Unified Architecture, Fine-tuning",
+        "license": "Open Source",
+        "url": "https://cloud.google.com/vertex-ai/docs/generative-ai/model-reference/t5"
+    }
+]

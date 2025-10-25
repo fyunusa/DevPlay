@@ -1,0 +1,50 @@
+[
+    {
+        "model_name": "Claude 3 Opus",
+        "description": "Most powerful Claude model for highly complex tasks requiring advanced reasoning and analysis.",
+        "task": "Complex Reasoning, Analysis, Research",
+        "features": "Multimodal, Long Context, Advanced Reasoning",
+        "license": "Anthropic API",
+        "url": "https://www.anthropic.com/claude"
+    },
+    {
+        "model_name": "Claude 3 Sonnet",
+        "description": "Balanced model offering strong performance and speed for most enterprise and production workloads.",
+        "task": "Text Generation, Analysis, Coding",
+        "features": "Fast, Reliable, Multimodal",
+        "license": "Anthropic API",
+        "url": "https://www.anthropic.com/claude/docs"
+    },
+    {
+        "model_name": "Claude 3 Haiku",
+        "description": "Fastest and most compact Claude model, optimized for near-instant responses and high-throughput applications.",
+        "task": "Real-time Applications, Low-latency Tasks",
+        "features": "Ultra-fast, Cost-effective, Efficient",
+        "license": "Anthropic API",
+        "url": "https://www.anthropic.com/claude/docs"
+    },
+    {
+        "model_name": "Claude Instant",
+        "description": "Earlier generation Claude model optimized for speed and efficiency in conversational applications.",
+        "task": "Chat, Text Generation",
+        "features": "Fast Responses, Conversational",
+        "license": "Anthropic API",
+        "url": "https://www.anthropic.com/claude"
+    },
+    {
+        "model_name": "Claude Assistant API",
+        "description": "Structured API for building conversational AI assistants with memory, tool use, and streaming.",
+        "task": "Assistant Building, Chat Applications",
+        "features": "Memory, Tool Use, Streaming",
+        "license": "Anthropic API",
+        "url": "https://docs.anthropic.com/claude/reference/assistants-api"
+    },
+    {
+        "model_name": "Claude with Vision",
+        "description": "Multimodal capabilities allowing Claude to analyze and understand images, charts, and documents.",
+        "task": "Image Analysis, Document Understanding",
+        "features": "Vision Understanding, OCR, Chart Analysis",
+        "license": "Anthropic API",
+        "url": "https://www.anthropic.com/claude"
+    }
+]

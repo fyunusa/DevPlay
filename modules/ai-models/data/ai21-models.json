@@ -1,0 +1,50 @@
+[
+    {
+        "model_name": "Jurassic-2 Ultra",
+        "description": "Most powerful Jurassic model with exceptional language understanding and generation capabilities.",
+        "task": "Text Generation, Complex Tasks",
+        "features": "Large Context, High Quality",
+        "license": "AI21 API",
+        "url": "https://www.ai21.com/studio/j2-ultra"
+    },
+    {
+        "model_name": "Jurassic-2 Grande",
+        "description": "Balanced model providing strong performance for production use cases at competitive pricing.",
+        "task": "Text Generation, Content Creation",
+        "features": "Balanced Performance, Cost-effective",
+        "license": "AI21 API",
+        "url": "https://www.ai21.com/studio/j2-grande"
+    },
+    {
+        "model_name": "Jurassic-2 Jumbo",
+        "description": "Fast and efficient model optimized for speed while maintaining high-quality outputs.",
+        "task": "Fast Text Generation, Real-time Apps",
+        "features": "Low Latency, High Throughput",
+        "license": "AI21 API",
+        "url": "https://www.ai21.com/studio/j2-jumbo"
+    },
+    {
+        "model_name": "Contextual Answers",
+        "description": "Specialized model for answering questions based on provided context documents with citations.",
+        "task": "Question Answering, RAG",
+        "features": "Citations, Document Understanding",
+        "license": "AI21 API",
+        "url": "https://www.ai21.com/studio/contextual-answers"
+    },
+    {
+        "model_name": "Summarize",
+        "description": "Advanced summarization API that creates concise summaries of long documents and articles.",
+        "task": "Document Summarization",
+        "features": "Extractive, Abstractive, Custom Length",
+        "license": "AI21 API",
+        "url": "https://www.ai21.com/studio/summarize"
+    },
+    {
+        "model_name": "Paraphrase",
+        "description": "Text rewriting model that paraphrases content while maintaining meaning and style.",
+        "task": "Text Paraphrasing, Rewriting",
+        "features": "Multiple Styles, Quality Preservation",
+        "license": "AI21 API",
+        "url": "https://www.ai21.com/studio/paraphrase"
+    }
+]
