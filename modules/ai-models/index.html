@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Models & Datasets Hub | DevPlay Hub</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/ai-models.css">
+    <script src="js/ai-models.js" defer></script>
+</head>
+<body>
+    <!-- Magic Cursor -->
+    <div class="magic-cursor"></div>
+    
+    <!-- Corner Decorations -->
+    <div class="corner-decoration top-left"></div>
+    <div class="corner-decoration top-right"></div>
+    <div class="corner-decoration bottom-left"></div>
+    <div class="corner-decoration bottom-right"></div>
+
+    <!-- Header -->
+    <div class="header">
+        <a href="/index.html" class="back-link bounce-icon" title="Back to DevPlay Hub">
+            <i class="fas fa-home"></i>
+        </a>
+        <div class="header-content">
+            <h1>
+                <i class="fas fa-brain me-2"></i>AI Models & Datasets Hub<i class="fas fa-database ms-2"></i>
+            </h1>
+            <p class="header-tagline">
+                Your comprehensive search engine for AI models and datasets across the web!
+            </p>
+        </div>
+        <div class="floating-elements">
+            <i class="fas fa-brain floating-element"></i>
+            <i class="fas fa-chart-line floating-element"></i>
+            <i class="fas fa-project-diagram floating-element"></i>
+        </div>
+    </div>
+
+    <!-- Fun Divider -->
+    <div class="fun-divider">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"></path>
+        </svg>
+    </div>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Category Selector -->
+        <div class="category-selector">
+            <button class="category-btn active" data-category="models">
+                <i class="fas fa-brain"></i> AI Models
+            </button>
+            <button class="category-btn" data-category="datasets">
+                <i class="fas fa-database"></i> Datasets
+            </button>
+            <button class="category-btn" data-category="use-cases">
+                <i class="fas fa-lightbulb"></i> Use Cases
+            </button>
+        </div>
+
+        <!-- AI Models Section -->
+        <section class="content-section active" id="models-section">
+            <h2 class="section-title"><i class="fas fa-brain"></i> AI Model Sources</h2>
+            <div class="tab-navigation-wrapper">
+                <div class="tab-navigation horizontal-scroll" id="models-tabs">
+                    <button class="tab-btn active" data-tab="huggingface">
+                        <i class="fas fa-robot"></i> Hugging Face
+                    </button>
+                    <button class="tab-btn" data-tab="pytorch">
+                        <i class="fab fa-python"></i> PyTorch Hub
+                    </button>
+                    <button class="tab-btn" data-tab="tensorflow">
+                        <i class="fab fa-google"></i> TensorFlow Hub
+                    </button>
+                    <button class="tab-btn" data-tab="openai">
+                        <i class="fas fa-magic"></i> OpenAI Models
+                    </button>
+                    <button class="tab-btn" data-tab="vertex-ai">
+                        <i class="fas fa-seedling"></i> Google Model Garden
+                    </button>
+                    <button class="tab-btn" data-tab="cohere">
+                        <i class="fas fa-comments"></i> Cohere
+                    </button>
+                    <button class="tab-btn" data-tab="anthropic">
+                        <i class="fas fa-brain"></i> Anthropic (Claude)
+                    </button>
+                    <button class="tab-btn" data-tab="ai21">
+                        <i class="fas fa-dna"></i> AI21 Labs
+                    </button>
+                    <button class="tab-btn" data-tab="stability">
+                        <i class="fas fa-image"></i> Stability AI
+                    </button>
+                    <button class="tab-btn" data-tab="papers-code">
+                        <i class="fas fa-file-code"></i> Papers w/ Code
+                    </button>
+                    <button class="tab-btn" data-tab="meta">
+                        <i class="fab fa-meta"></i> Meta AI
+                    </button>
+                    <button class="tab-btn" data-tab="azure">
+                        <i class="fab fa-microsoft"></i> Azure AI
+                    </button>
+                </div>
+            </div>
+
+            <!-- Tab Contents for Models -->
+            <div class="tab-content active" data-content="huggingface">
+                <div id="models-huggingface-container" class="content-grid"></div>
+            </div>
+            <div class="tab-content" data-content="pytorch">
+                <div id="models-pytorch-container" class="content-grid"></div>
+            </div>
+            <div class="tab-content" data-content="tensorflow">
+                <div id="models-tensorflow-container" class="content-grid"></div>
+            </div>
+            <div class="tab-content" data-content="openai">
+                <div id="models-openai-container" class="content-grid"></div>
+            </div>
+            <div class="tab-content" data-content="vertex-ai">
+                <div id="models-vertex-ai-container" class="content-grid"></div>
+            </div>
+            <div class="tab-content" data-content="cohere">
+                <div id="models-cohere-container" class="content-grid"></div>
+            </div>
+            <div class="tab-content" data-content="anthropic">
+                <div id="models-anthropic-container" class="content-grid"></div>
+            </div>
+            <div class="tab-content" data-content="ai21">
+                <div id="models-ai21-container" class="content-grid"></div>
+            </div>
+            <div class="tab-content" data-content="stability">
+                <div id="models-stability-container" class="content-grid"></div>
+            </div>
+            <div class="tab-content" data-content="papers-code">
+                <div id="models-papers-code-container" class="content-grid"></div>
+            </div>
+            <div class="tab-content" data-content="meta">
+                <div id="models-meta-container" class="content-grid"></div>
+            </div>
+            <div class="tab-content" data-content="azure">
+                <div id="models-azure-container" class="content-grid"></div>
+            </div>
+        </section>
+
+        <!-- Datasets Section -->
+        <section class="content-section" id="datasets-section">
+            <h2 class="section-title"><i class="fas fa-database"></i> Dataset Sources</h2>
+            <div class="tab-navigation-wrapper">
+                <div class="tab-navigation horizontal-scroll" id="datasets-tabs">
+                    <button class="tab-btn active" data-tab="kaggle">
+                        <i class="fab fa-kaggle"></i> Kaggle
+                    </button>
+                    <button class="tab-btn" data-tab="hf-datasets">
+                        <i class="fas fa-robot"></i> Hugging Face
+                    </button>
+                    <button class="tab-btn" data-tab="google-search">
+                        <i class="fab fa-google"></i> Google Dataset Search
+                    </button>
+                    <button class="tab-btn" data-tab="uci">
+                        <i class="fas fa-university"></i> UCI ML Repo
+                    </button>
+                    <button class="tab-btn" data-tab="datagov">
+                        <i class="fas fa-landmark"></i> Data.gov
+                    </button>
+                    <button class="tab-btn" data-tab="aws-open">
+                        <i class="fab fa-aws"></i> AWS Open Data
+                    </button>
+                    <button class="tab-btn" data-tab="commoncrawl">
+                        <i class="fas fa-spider"></i> Common Crawl
+                    </button>
+                    <button class="tab-btn" data-tab="torrents">
+                        <i class="fas fa-download"></i> Academic Torrents
+                    </button>
+                    <button class="tab-btn" data-tab="openml">
+                        <i class="fas fa-cube"></i> OpenML
+                    </button>
+                    <button class="tab-btn" data-tab="zenodo">
+                        <i class="fas fa-archive"></i> Zenodo
+                    </button>
+                    <button class="tab-btn" data-tab="microsoft">
+                        <i class="fab fa-microsoft"></i> MS Research
+                    </button>
+                    <button class="tab-btn" data-tab="github">
+                        <i class="fab fa-github"></i> GitHub Datasets
+                    </button>
+                </div>
+            </div>
+
+            <!-- Tab Contents for Datasets -->
+            <div class="tab-content active" data-content="kaggle">
+                <div id="datasets-kaggle-container" class="content-grid"></div>
+            </div>
+            <div class="tab-content" data-content="hf-datasets">
+                <div id="datasets-hf-datasets-container" class="content-grid"></div>
+            </div>
+            <div class="tab-content" data-content="google-search">
+                <div id="datasets-google-search-container" class="content-grid"></div>
+            </div>
+            <div class="tab-content" data-content="uci">
+                <div id="datasets-uci-container" class="content-grid"></div>
+            </div>
+            <div class="tab-content" data-content="datagov">
+                <div id="datasets-datagov-container" class="content-grid"></div>
+            </div>
+            <div class="tab-content" data-content="aws-open">
+                <div id="datasets-aws-open-container" class="content-grid"></div>
+            </div>
+            <div class="tab-content" data-content="commoncrawl">
+                <div id="datasets-commoncrawl-container" class="content-grid"></div>
+            </div>
+            <div class="tab-content" data-content="torrents">
+                <div id="datasets-torrents-container" class="content-grid"></div>
+            </div>
+            <div class="tab-content" data-content="openml">
+                <div id="datasets-openml-container" class="content-grid"></div>
+            </div>
+            <div class="tab-content" data-content="zenodo">
+                <div id="datasets-zenodo-container" class="content-grid"></div>
+            </div>
+            <div class="tab-content" data-content="microsoft">
+                <div id="datasets-microsoft-container" class="content-grid"></div>
+            </div>
+            <div class="tab-content" data-content="github">
+                <div id="datasets-github-container" class="content-grid"></div>
+            </div>
+        </section>
+
+        <!-- Use Cases Section -->
+        <section class="content-section" id="use-cases-section">
+            <h2 class="section-title"><i class="fas fa-lightbulb"></i> AI Use Cases & Practical Applications</h2>
+            <div id="use-cases-container" class="use-cases-grid"></div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 DevPlay Hub | AI Models & Datasets Hub</p>
+        </div>
+    </footer>
+</body>
+</html>

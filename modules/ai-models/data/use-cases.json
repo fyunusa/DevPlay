@@ -1,0 +1,86 @@
+[
+    {
+        "use_case": "Image Classification",
+        "description": "Using AI models to classify images into predefined categories.",
+        "models": [
+            {
+                "name": "ResNet50",
+                "source": "Hugging Face",
+                "link": "https://huggingface.co/resnet50"
+            },
+            {
+                "name": "EfficientNet",
+                "source": "Hugging Face",
+                "link": "https://huggingface.co/efficientnet"
+            }
+        ],
+        "datasets": [
+            {
+                "name": "CIFAR-10",
+                "source": "Kaggle",
+                "link": "https://www.kaggle.com/c/cifar-10"
+            },
+            {
+                "name": "ImageNet",
+                "source": "Kaggle",
+                "link": "https://www.kaggle.com/c/imagenet"
+            }
+        ]
+    },
+    {
+        "use_case": "Natural Language Processing",
+        "description": "Applying AI models to understand and generate human language.",
+        "models": [
+            {
+                "name": "BERT",
+                "source": "Hugging Face",
+                "link": "https://huggingface.co/bert"
+            },
+            {
+                "name": "GPT-3",
+                "source": "Hugging Face",
+                "link": "https://huggingface.co/gpt3"
+            }
+        ],
+        "datasets": [
+            {
+                "name": "GLUE",
+                "source": "Kaggle",
+                "link": "https://www.kaggle.com/c/glue"
+            },
+            {
+                "name": "SQuAD",
+                "source": "Kaggle",
+                "link": "https://www.kaggle.com/c/squad"
+            }
+        ]
+    },
+    {
+        "use_case": "Speech Recognition",
+        "description": "Utilizing AI models to convert spoken language into text.",
+        "models": [
+            {
+                "name": "DeepSpeech",
+                "source": "Hugging Face",
+                "link": "https://huggingface.co/deepspeech"
+            },
+            {
+                "name": "Wav2Vec",
+                "source": "Hugging Face",
+                "link": "https://huggingface.co/wav2vec"
+            }
+        ],
+        "datasets": [
+            {
+                "name": "LibriSpeech",
+                "source": "Kaggle",
+                "link": "https://www.kaggle.com/c/librispeech"
+            },
+            {
+                "name": "Common Voice",
+                "source": "Kaggle",
+                "link": "https://www.kaggle.com/c/common-voice"
+            }
+        ]
+    }
+]

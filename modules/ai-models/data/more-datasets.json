@@ -1,0 +1,66 @@
+[
+    {
+        "dataset_name": "ImageNet",
+        "description": "Large-scale image database organized by WordNet hierarchy.",
+        "source": "ImageNet",
+        "size": "14M images, 20K categories",
+        "url": "https://www.image-net.org/",
+        "tags": ["image classification", "computer vision", "deep learning"]
+    },
+    {
+        "dataset_name": "COCO Dataset",
+        "description": "Large-scale object detection, segmentation, and captioning dataset.",
+        "source": "Microsoft COCO",
+        "size": "330K images, 2.5M labeled instances",
+        "url": "https://cocodataset.org/",
+        "tags": ["object detection", "segmentation", "captioning"]
+    },
+    {
+        "dataset_name": "Common Crawl",
+        "description": "Open repository of web crawl data for NLP and web analysis.",
+        "source": "Common Crawl",
+        "size": "Billions of web pages",
+        "url": "https://commoncrawl.org/",
+        "tags": ["text", "nlp", "web scraping"]
+    },
+    {
+        "dataset_name": "OpenAI GPT Datasets",
+        "description": "Curated datasets for training language models.",
+        "source": "OpenAI",
+        "size": "Various sizes",
+        "url": "https://github.com/openai/gpt-3",
+        "tags": ["nlp", "language models", "text generation"]
+    },
+    {
+        "dataset_name": "UCI Machine Learning Repository",
+        "description": "Large collection of datasets for machine learning research.",
+        "source": "UCI",
+        "size": "600+ datasets",
+        "url": "https://archive.ics.uci.edu/",
+        "tags": ["machine learning", "various domains", "research"]
+    },
+    {
+        "dataset_name": "Google Dataset Search",
+        "description": "Search engine across thousands of repositories.",
+        "source": "Google",
+        "size": "Millions of datasets",
+        "url": "https://datasetsearch.research.google.com/",
+        "tags": ["search", "various domains", "aggregated"]
+    },
+    {
+        "dataset_name": "Papers with Code Datasets",
+        "description": "Datasets associated with ML research papers and code.",
+        "source": "Papers with Code",
+        "size": "1000+ datasets",
+        "url": "https://paperswithcode.com/datasets",
+        "tags": ["research", "benchmarking", "various domains"]
+    },
+    {
+        "dataset_name": "Amazon Open Data",
+        "description": "Public datasets from AWS for various research purposes.",
+        "source": "Amazon",
+        "size": "100+ datasets",
+        "url": "https://registry.opendata.aws/",
+        "tags": ["cloud", "various domains", "large scale"]
+    }
+]

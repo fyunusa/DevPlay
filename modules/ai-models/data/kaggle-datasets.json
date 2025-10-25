@@ -1,0 +1,32 @@
+[
+    {
+        "dataset_name": "Titanic: Machine Learning from Disaster",
+        "description": "Predict survival on the Titanic and get familiar with machine learning.",
+        "url": "https://www.kaggle.com/c/titanic",
+        "tags": ["classification", "survival prediction", "titanic"]
+    },
+    {
+        "dataset_name": "House Prices: Advanced Regression Techniques",
+        "description": "Predict sales prices and practice feature engineering.",
+        "url": "https://www.kaggle.com/c/house-prices-advanced-regression-techniques",
+        "tags": ["regression", "house prices", "feature engineering"]
+    },
+    {
+        "dataset_name": "MNIST Handwritten Digits",
+        "description": "A dataset of handwritten digits for image classification.",
+        "url": "https://www.kaggle.com/c/digit-recognizer",
+        "tags": ["image classification", "digits", "mnist"]
+    },
+    {
+        "dataset_name": "Credit Card Fraud Detection",
+        "description": "Identify fraudulent transactions using machine learning.",
+        "url": "https://www.kaggle.com/dalpozz/creditcard-fraud",
+        "tags": ["anomaly detection", "fraud detection", "credit card"]
+    },
+    {
+        "dataset_name": "Natural Language Processing with Disaster Tweets",
+        "description": "Classify tweets as disaster-related or not.",
+        "url": "https://www.kaggle.com/c/nlp-getting-started",
+        "tags": ["text classification", "natural language processing", "tweets"]
+    }
+]

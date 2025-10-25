@@ -1,0 +1,50 @@
+[
+    {
+        "model_name": "ResNet",
+        "description": "Deep residual network for image classification with excellent performance.",
+        "task": "Image Classification",
+        "paper": "Deep Residual Learning for Image Recognition",
+        "license": "BSD",
+        "url": "https://pytorch.org/hub/pytorch_vision_resnet/"
+    },
+    {
+        "model_name": "EfficientNet",
+        "description": "Efficient convolutional neural networks with better accuracy and efficiency.",
+        "task": "Image Classification",
+        "paper": "EfficientNet: Rethinking Model Scaling",
+        "license": "Apache 2.0",
+        "url": "https://pytorch.org/hub/pytorch_vision_efficientnet_v2/"
+    },
+    {
+        "model_name": "Vision Transformer (ViT)",
+        "description": "Transformer-based vision model for image classification.",
+        "task": "Image Classification",
+        "paper": "An Image is Worth 16x16 Words",
+        "license": "Apache 2.0",
+        "url": "https://pytorch.org/hub/pytorch_vision_vit/"
+    },
+    {
+        "model_name": "BERT",
+        "description": "Bidirectional Encoder Representations from Transformers for NLP tasks.",
+        "task": "Natural Language Processing",
+        "paper": "BERT: Pre-training of Deep Bidirectional Transformers",
+        "license": "Apache 2.0",
+        "url": "https://pytorch.org/hub/huggingface_pytorch-transformers/"
+    },
+    {
+        "model_name": "YOLOv5",
+        "description": "Ultra fast and accurate object detection model.",
+        "task": "Object Detection",
+        "paper": "YOLOv5",
+        "license": "AGPL-3.0",
+        "url": "https://pytorch.org/hub/ultralytics_yolov5/"
+    },
+    {
+        "model_name": "GPT-2",
+        "description": "Generative Pre-trained Transformer for text generation.",
+        "task": "Text Generation",
+        "paper": "Language Models are Unsupervised Multitask Learners",
+        "license": "MIT",
+        "url": "https://pytorch.org/hub/huggingface_pytorch-transformers/"
+    }
+]

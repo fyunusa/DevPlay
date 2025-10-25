@@ -1,0 +1,42 @@
+[
+    {
+        "model_name": "BERT",
+        "description": "A transformer-based model designed for natural language processing tasks.",
+        "language": "English",
+        "task": "Text Classification, Question Answering",
+        "license": "Apache 2.0",
+        "url": "https://huggingface.co/bert-base-uncased"
+    },
+    {
+        "model_name": "GPT-2",
+        "description": "A generative pre-trained transformer model for text generation.",
+        "language": "English",
+        "task": "Text Generation, Language Modeling",
+        "license": "OpenAI License",
+        "url": "https://huggingface.co/gpt2"
+    },
+    {
+        "model_name": "T5",
+        "description": "A text-to-text transformer model that can perform various NLP tasks.",
+        "language": "English",
+        "task": "Text Summarization, Translation",
+        "license": "Apache 2.0",
+        "url": "https://huggingface.co/t5-base"
+    },
+    {
+        "model_name": "DistilBERT",
+        "description": "A smaller, faster, cheaper version of BERT.",
+        "language": "English",
+        "task": "Text Classification, Sentiment Analysis",
+        "license": "Apache 2.0",
+        "url": "https://huggingface.co/distilbert-base-uncased"
+    },
+    {
+        "model_name": "RoBERTa",
+        "description": "A robustly optimized BERT pretraining approach.",
+        "language": "English",
+        "task": "Text Classification, Named Entity Recognition",
+        "license": "MIT",
+        "url": "https://huggingface.co/roberta-base"
+    }
+]
