@@ -84,6 +84,42 @@
         <!-- AI Models Section -->
         <section class="content-section active" id="models-section">
             <h2 class="section-title"><i class="fas fa-brain"></i> AI Model Sources</h2>
+            <div class="models-toolbar" aria-label="Models filters and sorting">
+                <div class="toolbar-group">
+                    <label for="models-sort" class="sr-only">Sort</label>
+                    <select id="models-sort" class="toolbar-select">
+                        <option value="relevance">Sort: Relevance</option>
+                        <option value="name_asc">Name A–Z</option>
+                        <option value="name_desc">Name Z–A</option>
+                    </select>
+                </div>
+                <div class="toolbar-group">
+                    <label for="models-task" class="sr-only">Task</label>
+                    <select id="models-task" class="toolbar-select">
+                        <option value="">All Tasks</option>
+                    </select>
+                </div>
+                <div class="toolbar-group">
+                    <label for="models-language" class="sr-only">Language</label>
+                    <select id="models-language" class="toolbar-select">
+                        <option value="">All Languages</option>
+                    </select>
+                </div>
+                <div class="toolbar-group">
+                    <label for="models-license" class="sr-only">License</label>
+                    <select id="models-license" class="toolbar-select">
+                        <option value="">All Licenses</option>
+                    </select>
+                </div>
+                <div class="toolbar-group">
+                    <input type="checkbox" id="models-favorites-only" class="toolbar-checkbox" />
+                    <label for="models-favorites-only" class="favorites-toggle">
+                        <i class="fas fa-star"></i> Favorites only
+                    </label>
+                </div>
+                <div class="toolbar-spacer"></div>
+                <div class="toolbar-info" id="models-toolbar-info" aria-live="polite"></div>
+            </div>
             <div class="tab-navigation-wrapper">
                 <div class="tab-navigation horizontal-scroll" id="models-tabs">
                     <button class="tab-btn active" data-tab="huggingface">

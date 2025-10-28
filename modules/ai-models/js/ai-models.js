@@ -81,14 +81,83 @@ let allData = {
     useCases: []
 };
 
+// New: Models filter/sort/favorites state
+const MODELS_FAVORITES_KEY = 'dp_ai_models_favorites_v1';
+let modelsUI = {
+    sort: 'relevance',
+    task: '',
+    language: '',
+    license: '',
+    favoritesOnly: false,
+    favoritesSet: new Set(JSON.parse(localStorage.getItem(MODELS_FAVORITES_KEY) || '[]')),
+    highlightQuery: ''
+};
+
+function saveFavorites() {
+    try {
+        localStorage.setItem(MODELS_FAVORITES_KEY, JSON.stringify(Array.from(modelsUI.favoritesSet)));
+    } catch (_) {}
+}
+
+function getModelId(model) {
+    return (
+        model.id ||
+        model.model_id ||
+        model.model_name ||
+        model.name ||
+        model.url ||
+        JSON.stringify({ n: model.model_name || model.name, s: model.source || '' })
+    );
+}
+
+// Global favorite handlers so both loaders can use it
+function attachFavoriteHandlers(scope) {
+    const buttons = scope.querySelectorAll('.favorite-btn');
+    buttons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const id = btn.getAttribute('data-id');
+            if (modelsUI.favoritesSet.has(id)) {
+                modelsUI.favoritesSet.delete(id);
+                btn.classList.remove('active');
+            } else {
+                modelsUI.favoritesSet.add(id);
+                btn.classList.add('active');
+            }
+            saveFavorites();
+            const favOnlyEl = document.getElementById('models-favorites-only');
+            if (favOnlyEl && favOnlyEl.checked && typeof window.renderModelsWithToolbar === 'function') {
+                // Find the active models container id
+                const activeContainer = document.querySelector('#models-section .tab-content.active .content-grid');
+                const cid = activeContainer ? activeContainer.id : null;
+                if (cid) window.renderModelsWithToolbar(cid);
+            }
+        }, { passive: true });
+    });
+}
+
+function escapeRegex(str) {
+    return str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
+
+function highlightText(text, query) {
+    if (!query) return text;
+    try {
+        const rx = new RegExp(`(${escapeRegex(query)})`, 'ig');
+        return text.replace(rx, '<span class="highlight">$1</span>');
+    } catch (_) {
+        return text;
+    }
+}
+
 // Lazy Loading Configuration
-const ITEMS_PER_BATCH = 100;
+const ITEMS_PER_BATCH = 40;
 let currentBatch = {
     models: { start: 0, items: [], allLoaded: false },
     datasets: { start: 0, items: [], allLoaded: false },
     useCases: { start: 0, items: [], allLoaded: false }
 };
 
+// Hook up toolbar controls and filtering
 document.addEventListener('DOMContentLoaded', () => {
     const searchInput = document.getElementById('global-search');
     const clearSearchBtn = document.getElementById('clear-search');
@@ -96,28 +165,149 @@ document.addEventListener('DOMContentLoaded', () => {
     const resultsCount = document.getElementById('results-count');
     const container = document.querySelector('.container');
 
+    const sortEl = document.getElementById('models-sort');
+    const taskEl = document.getElementById('models-task');
+    const languageEl = document.getElementById('models-language');
+    const licenseEl = document.getElementById('models-license');
+    const favOnlyEl = document.getElementById('models-favorites-only');
+    const toolbarInfo = document.getElementById('models-toolbar-info');
+
+    function activeModelsTabKey() {
+        const modelsSection = document.getElementById('models-section');
+        const activeBtn = modelsSection.querySelector('#models-tabs .tab-btn.active');
+        const key = activeBtn ? activeBtn.getAttribute('data-tab') : 'huggingface';
+        return key; // e.g., 'huggingface'
+    }
+
+    function containerIdForTabKey(key) {
+        return `models-${key}-container`;
+    }
+
+    function collectUniqueOptions() {
+        const tasks = new Set();
+        const languages = new Set();
+        const licenses = new Set();
+        allData.models.forEach(m => {
+            if (m.task) String(m.task).split(',').map(s => s.trim()).forEach(t => t && tasks.add(t));
+            if (m.language) languages.add(String(m.language).trim());
+            if (m.license) licenses.add(String(m.license).trim());
+        });
+        return {
+            tasks: Array.from(tasks).sort((a,b)=>a.localeCompare(b)),
+            languages: Array.from(languages).sort((a,b)=>a.localeCompare(b)),
+            licenses: Array.from(licenses).sort((a,b)=>a.localeCompare(b))
+        };
+    }
+
+    function populateToolbarOptions() {
+        if (!taskEl || !languageEl || !licenseEl) return;
+        const { tasks, languages, licenses } = collectUniqueOptions();
+        const fill = (select, values, labelAll) => {
+            const current = select.value;
+            select.innerHTML = `<option value="">${labelAll}</option>` +
+                values.map(v => `<option value="${v}">${v}</option>`).join('');
+            if (Array.from(select.options).some(o => o.value === current)) {
+                select.value = current;
+            }
+        };
+        fill(taskEl, tasks, 'All Tasks');
+        fill(languageEl, languages, 'All Languages');
+        fill(licenseEl, licenses, 'All Licenses');
+    }
+
+    function applyFiltersToList(list) {
+        let filtered = list.slice();
+        if (modelsUI.task) {
+            filtered = filtered.filter(m => (m.task || '').toLowerCase().split(',').map(s=>s.trim()).includes(modelsUI.task.toLowerCase()))
+        }
+        if (modelsUI.language) {
+            filtered = filtered.filter(m => String(m.language || '').toLowerCase() === modelsUI.language.toLowerCase());
+        }
+        if (modelsUI.license) {
+            filtered = filtered.filter(m => String(m.license || '').toLowerCase() === modelsUI.license.toLowerCase());
+        }
+        if (modelsUI.favoritesOnly) {
+            filtered = filtered.filter(m => modelsUI.favoritesSet.has(getModelId(m)));
+        }
+        if (modelsUI.sort === 'name_asc') {
+            filtered.sort((a,b)=> (a.model_name || a.name || '').localeCompare(b.model_name || b.name || ''));
+        } else if (modelsUI.sort === 'name_desc') {
+            filtered.sort((a,b)=> (b.model_name || b.name || '').localeCompare(a.model_name || a.name || ''));
+        }
+        return filtered;
+    }
+
+    function renderModelsWithToolbar(containerId) {
+        const key = activeModelsTabKey();
+        const container = document.getElementById(containerId);
+        const sourceKey = containerId.replace('-container','');
+        const fullList = window.allDataCache.models[sourceKey] || [];
+        const filtered = applyFiltersToList(fullList);
+        if (toolbarInfo) {
+            toolbarInfo.textContent = `Showing ${filtered.length} of ${fullList.length}`;
+        }
+        // Render without lazy trigger when filtering/sorting or searching
+        renderModels(container, filtered, false, { disableLazy: true, highlightQuery: modelsUI.highlightQuery });
+        attachFavoriteHandlers(container);
+    }
+
+    // expose for other modules
+    window.renderModelsWithToolbar = renderModelsWithToolbar;
+
+    function onToolbarChange() {
+        modelsUI.sort = sortEl ? sortEl.value : 'relevance';
+        modelsUI.task = taskEl ? taskEl.value : '';
+        modelsUI.language = languageEl ? languageEl.value : '';
+        modelsUI.license = licenseEl ? licenseEl.value : '';
+        modelsUI.favoritesOnly = favOnlyEl ? !!favOnlyEl.checked : false;
+        modelsUI.highlightQuery = (searchInput && container.classList.contains('search-mode')) ? searchInput.value.trim() : '';
+        const cid = containerIdForTabKey(activeModelsTabKey());
+        renderModelsWithToolbar(cid);
+    }
+
+    if (sortEl) sortEl.addEventListener('change', onToolbarChange);
+    if (taskEl) taskEl.addEventListener('change', onToolbarChange);
+    if (languageEl) languageEl.addEventListener('change', onToolbarChange);
+    if (licenseEl) licenseEl.addEventListener('change', onToolbarChange);
+    if (favOnlyEl) favOnlyEl.addEventListener('change', onToolbarChange);
+
+    // Tab change should re-apply filters
+    const modelsTabs = document.getElementById('models-tabs');
+    if (modelsTabs) {
+        modelsTabs.addEventListener('click', (e) => {
+            const btn = e.target.closest('.tab-btn');
+            if (!btn) return;
+            setTimeout(() => onToolbarChange(), 0);
+        });
+    }
+
     // Clear search button handler
     clearSearchBtn.addEventListener('click', () => {
         searchInput.value = '';
         clearSearchBtn.style.display = 'none';
         resultsInfo.style.display = 'none';
         container.classList.remove('search-mode');
-        
+        modelsUI.highlightQuery = '';
         // Reset to default view
         document.querySelectorAll('.content-section').forEach(section => {
             section.classList.remove('active');
         });
         document.getElementById('models-section').classList.add('active');
+        // Re-render current tab with filters only
+        onToolbarChange();
     });
 
     // Search functionality
     searchInput.addEventListener('input', (e) => {
         const query = e.target.value.trim().toLowerCase();
+        modelsUI.highlightQuery = query;
         
         if (query.length === 0) {
             clearSearchBtn.style.display = 'none';
             resultsInfo.style.display = 'none';
             container.classList.remove('search-mode');
+            // When exiting search, re-render filtered tab
+            onToolbarChange();
             return;
         }
 
@@ -204,7 +394,9 @@ document.addEventListener('DOMContentLoaded', () => {
             const modelsSection = document.getElementById('models-section');
             modelsSection.querySelector('.section-title').innerHTML = 
                 `<i class="fas fa-brain"></i> Models (${results.models.length} results)`;
-            renderModels(document.getElementById('models-section').querySelector('.content-grid, .use-cases-grid'), results.models);
+            const modelsGrid = document.getElementById('models-section').querySelector('.content-grid, .use-cases-grid');
+            renderModels(modelsGrid, results.models, false, { disableLazy: true, highlightQuery: query });
+            attachFavoriteHandlers(modelsGrid);
         }
 
         if (results.datasets.length > 0) {
@@ -232,6 +424,22 @@ document.addEventListener('DOMContentLoaded', () => {
             `;
         }
     }
+
+    // Populate toolbar once data starts coming in
+    let populateDebounce;
+    const observer = new MutationObserver(() => {
+        if (populateDebounce) clearTimeout(populateDebounce);
+        populateDebounce = setTimeout(() => {
+            populateToolbarOptions();
+            // Disconnect once we have at least some options populated to avoid repeated work
+            const hasOptions = (document.getElementById('models-task')?.options?.length || 0) > 1
+                || (document.getElementById('models-language')?.options?.length || 0) > 1
+                || (document.getElementById('models-license')?.options?.length || 0) > 1;
+            if (hasOptions) observer.disconnect();
+        }, 150);
+    });
+    const modelsSection = document.getElementById('models-section');
+    if (modelsSection) observer.observe(modelsSection, { childList: true, subtree: true });
 });
 
 // Data Loading and Rendering
@@ -268,20 +476,35 @@ document.addEventListener('DOMContentLoaded', () => {
         // Cache data for lazy loading
         if (dataFile.includes('model')) {
             const containerKey = containerId.replace('-container', '');
-            window.allDataCache.models[containerKey] = data;
+            window.allDataCache.models[containerKey] = Array.isArray(data) ? data : [];
         } else if (dataFile.includes('dataset') || dataFile.includes('kaggle')) {
             const containerKey = containerId.replace('-container', '');
-            window.allDataCache.datasets[containerKey] = data;
+            window.allDataCache.datasets[containerKey] = Array.isArray(data) ? data : [];
         } else if (dataFile.includes('use-case')) {
-            window.allDataCache.useCases[containerId] = data;
+            window.allDataCache.useCases[containerId] = Array.isArray(data) ? data : [];
         }
         
-        // Load first batch of 100 items
-        const firstBatch = data.slice(0, ITEMS_PER_BATCH);
-        renderFunction(container, firstBatch);
+        // Load first batch
+        const list = Array.isArray(data) ? data : [];
+        const firstBatch = list.slice(0, ITEMS_PER_BATCH);
+        try {
+            renderFunction(container, firstBatch);
+            if (renderFunction === renderModels) {
+                attachFavoriteHandlers(container);
+            }
+        } catch (err) {
+            console.error('Render error:', err);
+            container.innerHTML = `
+                <div class="empty-state">
+                    <i class="fas fa-robot"></i>
+                    <h3>No Models Found</h3>
+                    <p>Unable to load AI models at this time.</p>
+                </div>
+            `;
+        }
         
         // Setup lazy loading if there's more data
-        if (data.length > ITEMS_PER_BATCH) {
+        if (list.length > ITEMS_PER_BATCH) {
             setTimeout(() => {
                 if (dataFile.includes('model')) {
                     setupLazyLoading(containerId, 'models');
@@ -294,7 +517,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    function renderModels(container, models, isLazyLoad = false) {
+    function renderModels(container, models, isLazyLoad = false, options = {}) {
         if (!models || models.length === 0) {
             if (!isLazyLoad) {
                 container.innerHTML = `
@@ -308,28 +531,47 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
-        const htmlContent = models.map((model, index) => `
+        const highlightQuery = options.highlightQuery || '';
+        const htmlContent = models.map((model, index) => {
+            const id = getModelId(model);
+            const isFav = modelsUI.favoritesSet.has(id);
+            const title = String(model.model_name || model.name || '');
+            const description = String(model.description || '');
+            const task = String(model.task || '');
+            const language = String(model.language || '');
+            const license = String(model.license || '');
+
+            const titleHtml = highlightText(title, highlightQuery);
+            const descHtml = highlightText(description, highlightQuery);
+            const taskHtml = highlightText(task, highlightQuery);
+            const langHtml = highlightText(language, highlightQuery);
+            const licHtml = highlightText(license, highlightQuery);
+
+            return `
             <div class="card model-card" style="animation-delay: ${index * 0.1}s">
-                <h3>${model.model_name || model.name}</h3>
-                <p>${model.description || ''}</p>
+                <button class="favorite-btn${isFav ? ' active' : ''}" data-id="${id}" aria-label="Toggle favorite">
+                    <i class="fas fa-star"></i>
+                </button>
+                <h3>${titleHtml}</h3>
+                <p>${descHtml}</p>
                 <div class="model-meta">
-                    ${model.task ? `<span class="model-meta-item">
+                    ${task ? `<span class="model-meta-item">
                         <i class="fas fa-tasks"></i>
-                        <span>${model.task}</span>
+                        <span>${taskHtml}</span>
                     </span>` : ''}
-                    ${model.language ? `<span class="model-meta-item">
+                    ${language ? `<span class="model-meta-item">
                         <i class="fas fa-language"></i>
-                        <span>${model.language}</span>
+                        <span>${langHtml}</span>
                     </span>` : ''}
-                    ${model.license ? `<span class="model-meta-item">
+                    ${license ? `<span class="model-meta-item">
                         <i class="fas fa-file-contract"></i>
-                        <span>${model.license}</span>
+                        <span>${licHtml}</span>
                     </span>` : ''}
                 </div>
                 <div class="model-meta">
-                    ${model.task ? `<span class="meta-badge task"><i class="fas fa-tag"></i> ${model.task.split(',')[0]}</span>` : ''}
-                    ${model.license ? `<span class="meta-badge license"><i class="fas fa-file-contract"></i> ${model.license}</span>` : ''}
-                    ${model.language ? `<span class="meta-badge language"><i class="fas fa-globe"></i> ${model.language}</span>` : ''}
+                    ${task ? `<span class="meta-badge task"><i class="fas fa-tag"></i> ${task.split(',')[0]}</span>` : ''}
+                    ${license ? `<span class="meta-badge license"><i class="fas fa-file-contract"></i> ${license}</span>` : ''}
+                    ${language ? `<span class="meta-badge language"><i class="fas fa-globe"></i> ${language}</span>` : ''}
                 </div>
                 ${model.url ? `
                     <a href="${model.url}" target="_blank" rel="noopener noreferrer" class="view-link">
@@ -337,23 +579,25 @@ document.addEventListener('DOMContentLoaded', () => {
                         <i class="fas fa-external-link-alt"></i>
                     </a>
                 ` : ''}
-            </div>
-        `).join('');
+            </div>`;
+        }).join('');
         
-        if (isLazyLoad) {
+        if (isLazyLoad && !options.disableLazy) {
             container.insertAdjacentHTML('beforeend', htmlContent);
-            // Add loading trigger at the end
+            const oldTrigger = container.querySelector('.loading-trigger#models-loading-trigger');
+            if (oldTrigger) oldTrigger.remove();
             const loadingTrigger = document.createElement('div');
             loadingTrigger.className = 'loading-trigger';
             loadingTrigger.id = 'models-loading-trigger';
             container.appendChild(loadingTrigger);
         } else {
             container.innerHTML = htmlContent;
-            // Add loading trigger at the end
-            const loadingTrigger = document.createElement('div');
-            loadingTrigger.className = 'loading-trigger';
-            loadingTrigger.id = 'models-loading-trigger';
-            container.appendChild(loadingTrigger);
+            if (!options.disableLazy) {
+                const loadingTrigger = document.createElement('div');
+                loadingTrigger.className = 'loading-trigger';
+                loadingTrigger.id = 'models-loading-trigger';
+                container.appendChild(loadingTrigger);
+            }
         }
     }
 
@@ -429,7 +673,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
             return;
         }
-
+        
         const htmlContent = useCases.map((useCase, index) => `
             <div class="use-case-card" style="animation-delay: ${index * 0.1}s">
                 <h3>${useCase.use_case || useCase.title}</h3>
@@ -533,6 +777,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Render the new batch
         if (dataType === 'models') {
             renderModels(document.getElementById(containerId), nextBatch, true);
+            attachFavoriteHandlers(document.getElementById(containerId));
         } else if (dataType === 'datasets') {
             renderDatasets(document.getElementById(containerId), nextBatch, true);
         } else if (dataType === 'useCases') {
