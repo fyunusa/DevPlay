@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Universe | DevPlay Hub</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/ai-universe.css">
+  <script src="js/ai-universe.js" defer></script>
+</head>
+<body>
+  <div class="aiu-cosmos" aria-hidden="true">
+    <div class="aiu-stars"></div>
+    <div class="aiu-twinkles"></div>
+    <div class="aiu-nebula"></div>
+  </div>
+  <header class="aiu-header">
+    <a href="/index.html" class="aiu-back" title="Back to DevPlay Hub"><i class="fas fa-home"></i></a>
+    <div class="aiu-hero">
+      <h1><i class="fas fa-globe"></i> AI Universe</h1>
+      <p>Your unified portal to explore models, datasets, tools, news, and more.</p>
+      <div class="aiu-search">
+        <i class="fas fa-search"></i>
+        <input id="aiu-search" type="text" placeholder="Search the AI Universe: e.g. voice cloning, summarization, open source..." autocomplete="off" />
+        <button id="aiu-clear" aria-label="Clear search"><i class="fas fa-times"></i></button>
+      </div>
+      <div id="aiu-search-meta" class="aiu-search-meta" aria-live="polite" style="display:none"></div>
+    </div>
+    <nav class="aiu-nav">
+      <div class="aiu-tab-indicator" id="aiu-tab-indicator"></div>
+      <button class="aiu-tab active" data-tab="dashboard"><i class="fas fa-compass"></i> Dashboard</button>
+      <button class="aiu-tab" data-tab="models"><i class="fas fa-brain"></i> Models</button>
+      <button class="aiu-tab" data-tab="datasets"><i class="fas fa-database"></i> Datasets</button>
+      <button class="aiu-tab" data-tab="tools"><i class="fas fa-toolbox"></i> Tools</button>
+      <button class="aiu-tab" data-tab="news"><i class="fas fa-newspaper"></i> News</button>
+      <button class="aiu-tab" data-tab="learn"><i class="fas fa-book"></i> Learn</button>
+      <button class="aiu-tab" data-tab="timeline"><i class="fas fa-stream"></i> Timeline</button>
+      <button class="aiu-tab" data-tab="galaxy"><i class="fas fa-satellite"></i> Galaxy</button>
+      <button class="aiu-tab" data-tab="demos"><i class="fas fa-flask"></i> Demos</button>
+      <button class="aiu-tab" data-tab="bookmarks"><i class="fas fa-star"></i> Bookmarks</button>
+    </nav>
+  </header>
+
+  <main class="aiu-container">
+    <section class="aiu-section active" data-content="dashboard">
+      <div class="aiu-grid">
+        <div class="aiu-card span-2">
+          <h2><i class="fas fa-bolt"></i> AI of the Day</h2>
+          <div id="aiu-spotlight"></div>
+        </div>
+        <div class="aiu-card">
+          <h2><i class="fas fa-chart-line"></i> Trending</h2>
+          <div id="aiu-trending"></div>
+        </div>
+        <div class="aiu-card">
+          <h2><i class="fas fa-bell"></i> Latest News</h2>
+          <div id="aiu-latest-news"></div>
+        </div>
+        <div class="aiu-card span-2">
+          <h2><i class="fas fa-lightbulb"></i> Learn & Try</h2>
+          <div id="aiu-learn-try"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="aiu-section" data-content="models">
+      <h2 class="aiu-title"><i class="fas fa-brain"></i> Models Hub</h2>
+      <div id="aiu-models" class="aiu-grid"></div>
+    </section>
+
+    <section class="aiu-section" data-content="datasets">
+      <h2 class="aiu-title"><i class="fas fa-database"></i> Datasets Hub</h2>
+      <div id="aiu-datasets" class="aiu-grid"></div>
+    </section>
+
+    <section class="aiu-section" data-content="tools">
+      <h2 class="aiu-title"><i class="fas fa-toolbox"></i> AI Tools Directory</h2>
+      <div id="aiu-tools" class="aiu-grid"></div>
+    </section>
+
+    <section class="aiu-section" data-content="news">
+      <h2 class="aiu-title"><i class="fas fa-newspaper"></i> AI News & Breakthroughs</h2>
+      <div id="aiu-news" class="aiu-list"></div>
+    </section>
+
+    <section class="aiu-section" data-content="learn">
+      <h2 class="aiu-title"><i class="fas fa-book"></i> AI Learn</h2>
+      <div id="aiu-learn" class="aiu-grid"></div>
+    </section>
+
+    <section class="aiu-section" data-content="timeline">
+      <h2 class="aiu-title"><i class="fas fa-stream"></i> AI Ecosystem Timeline</h2>
+      <div id="aiu-timeline" class="aiu-timeline"></div>
+    </section>
+
+    <section class="aiu-section" data-content="galaxy">
+      <h2 class="aiu-title"><i class="fas fa-satellite"></i> AI Galaxy Map</h2>
+      <div class="aiu-galaxy-placeholder">
+        <div class="aiu-empty">
+          <i class="fas fa-satellite-dish"></i>
+          <h3>Coming Soon</h3>
+          <p>Interactive AI Galaxy Map (2D/3D) powered by static JSON and Three.js.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="aiu-section" data-content="demos">
+      <h2 class="aiu-title"><i class="fas fa-flask"></i> Mini Demos (CPU-friendly)</h2>
+      <div id="aiu-demos" class="aiu-grid"></div>
+    </section>
+
+    <section class="aiu-section" data-content="bookmarks">
+      <h2 class="aiu-title"><i class="fas fa-star"></i> Your Bookmarks</h2>
+      <div id="aiu-bookmarks" class="aiu-grid"></div>
+    </section>
+  </main>
+
+  <footer class="aiu-footer">
+    <p>&copy; 2025 DevPlay Hub | AI Universe</p>
+  </footer>
+</body>
+</html>
+

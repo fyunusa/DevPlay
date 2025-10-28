@@ -1,0 +1,5 @@
+[
+  { "id": "demo-summarize", "name": "Text Summarization", "description": "CPU-friendly summarization using small models or API.", "type": "NLP", "url": "#" },
+  { "id": "demo-sentiment", "name": "Sentiment Analysis", "description": "Analyze sentiment of input text quickly.", "type": "NLP", "url": "#" }
+]
+

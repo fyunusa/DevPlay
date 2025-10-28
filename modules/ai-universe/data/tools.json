@@ -1,0 +1,17 @@
+[
+  {
+    "id": "hf-hub",
+    "name": "Hugging Face Hub",
+    "description": "Discover models, datasets, and Spaces.",
+    "category": "Platform",
+    "url": "https://huggingface.co"
+  },
+  {
+    "id": "replicate",
+    "name": "Replicate",
+    "description": "Run machine learning models with an API.",
+    "category": "API",
+    "url": "https://replicate.com"
+  }
+]
+

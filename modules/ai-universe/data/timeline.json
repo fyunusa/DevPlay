@@ -1,0 +1,7 @@
+[
+  { "year": 2018, "title": "BERT", "description": "Bidirectional Transformers redefine NLP pretraining." },
+  { "year": 2020, "title": "GPT-3", "description": "Large-scale language models enter mainstream awareness." },
+  { "year": 2022, "title": "Stable Diffusion", "description": "Text-to-image diffusion models explode in popularity." },
+  { "year": 2023, "title": "Instruction-tuned LLMs", "description": "Chat-style models improve alignment and usefulness." }
+]
+

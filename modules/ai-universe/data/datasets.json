@@ -1,0 +1,19 @@
+[
+  {
+    "id": "ag-news",
+    "name": "AG News",
+    "description": "News topic classification dataset.",
+    "size": "~500k rows",
+    "source": "Hugging Face Datasets",
+    "url": "https://huggingface.co/datasets/ag_news"
+  },
+  {
+    "id": "imdb",
+    "name": "IMDB Reviews",
+    "description": "Large Movie Review Dataset for sentiment analysis.",
+    "size": "50k reviews",
+    "source": "Stanford",
+    "url": "https://ai.stanford.edu/~amaas/data/sentiment/"
+  }
+]
+

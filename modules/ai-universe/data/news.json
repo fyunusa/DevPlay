@@ -1,0 +1,16 @@
+[
+  {
+    "id": "news-1",
+    "title": "OpenAI Announces New Alignment Advances",
+    "summary": "Research team shares progress in controllable outputs and safety benchmarks.
+",
+    "link": "https://openai.com/blog"
+  },
+  {
+    "id": "news-2",
+    "title": "Hugging Face Releases New Distilled Models",
+    "summary": "Smaller, faster variants aimed at CPU inference and edge devices.",
+    "link": "https://huggingface.co/blog"
+  }
+]
+

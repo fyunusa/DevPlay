@@ -1,0 +1,17 @@
+[
+  {
+    "id": "learn-prompts",
+    "title": "Prompt Engineering 101",
+    "description": "A practical guide to crafting effective prompts.",
+    "level": "Beginner",
+    "url": "https://www.promptingguide.ai/"
+  },
+  {
+    "id": "learn-finetune",
+    "title": "Fine-tuning on a Budget",
+    "description": "Conceptual fine-tuning workflow with small datasets and CPU-compatible steps.",
+    "level": "Intermediate",
+    "url": "https://huggingface.co/docs/transformers/training"
+  }
+]
+

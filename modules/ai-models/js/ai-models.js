@@ -1,6 +1,38 @@
 // Magic Cursor Effect
 document.addEventListener('DOMContentLoaded', () => {
     const magicCursor = document.querySelector('.magic-cursor');
+    const themeToggle = document.getElementById('theme-toggle');
+    const themeStylesheet = document.getElementById('theme-stylesheet');
+    const THEME_KEY = 'ai-models-theme';
+
+    // Get saved theme or default to dark
+    const savedTheme = localStorage.getItem(THEME_KEY) || 'dark';
+    setTheme(savedTheme);
+
+    function setTheme(theme) {
+        const isDark = theme === 'dark';
+        themeStylesheet.href = isDark 
+            ? 'css/ai-models-dark.css' 
+            : 'css/ai-models.css';
+        
+        // Update button icon
+        themeToggle.innerHTML = isDark 
+            ? '<i class="fas fa-sun"></i>' 
+            : '<i class="fas fa-moon"></i>';
+        
+        // Save preference
+        localStorage.setItem(THEME_KEY, theme);
+        
+        // Update document attribute for CSS selectors
+        document.documentElement.setAttribute('data-theme', theme);
+    }
+
+    // Toggle theme on click
+    themeToggle.addEventListener('click', () => {
+        const currentTheme = localStorage.getItem(THEME_KEY) || 'dark';
+        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+        setTheme(newTheme);
+    });
     
     if (magicCursor && window.innerWidth >= 992) {
         document.addEventListener('mousemove', (e) => {
